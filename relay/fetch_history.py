@@ -100,11 +100,13 @@ def main():
     print("yfinance", getattr(yf, "__version__", "?"), "| history for", len(tk), "tickers", flush=True)
 
     weekly = {}    # our-ticker -> list[(date, close)]
+    wvol = {}      # our-ticker -> list[weekly volume] aligned to weekly[t]
     for i in range(0, len(ysyms), BATCH):
         chunk = ysyms[i:i + BATCH]
         df = _dl(chunk, period="3y", interval="1wk")
         if df is not None:
             closes = _col(df, "Close", chunk)
+            vols = _col(df, "Volume", chunk)
             for ys, s in closes.items():
                 t = back.get(ys)
                 if not t:
@@ -115,6 +117,15 @@ def main():
                     now.date())
                 if len(bars) >= MIN_BARS:
                     weekly[t] = bars
+                    # WEEKLY volume aligned to the same bars. This exists so a BACKRUN can evaluate the
+                    # same volume gate the live run does. Without it the backrun would have to skip the
+                    # volume condition (looser than live) or invent history (never). Aligning by date
+                    # keeps the two paths honest and identical.
+                    sv = vols.get(ys)
+                    if sv is not None:
+                        m = {idx.strftime("%Y-%m-%d"): (None if pd.isna(v) else float(v))
+                             for idx, v in sv.items()}
+                        wvol[t] = [m.get(d) for d, _ in bars]
         print("  weekly %d-%d: running %d/%d" % (i, i + len(chunk), len(weekly), len(tk)), flush=True)
         time.sleep(SLEEP)
 
@@ -167,11 +178,13 @@ def main():
         closes = [c for _, c in series]
         last52 = closes[-52:] if len(closes) >= 52 else closes
         adv, ratio = vol.get(t, (None, None))
+        wv = wvol.get(t) or []
         out["tickers"][t] = {
             "last_bar": series[-1][0],
             "w": closes[-WEEKLY_KEEP:],
             "w_ext": closes[-WEEKLY_EXT_KEEP:],
             "d_ext": [d for d, _ in series[-WEEKLY_EXT_KEEP:]],
+            "v_ext": [None if v is None else round(v, 0) for v in wv[-WEEKLY_EXT_KEEP:]],
             "hi52": round(max(last52), 4) if last52 else None,
             "lo52": round(min(last52), 4) if last52 else None,
             "adv20_usd": adv,
