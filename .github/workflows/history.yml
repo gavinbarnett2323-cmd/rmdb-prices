@@ -1,0 +1,37 @@
+# Weekly history relay — feeds the Research Monster Emergence Scanner (W1.1).
+# Deployed at .github/workflows/history.yml in github.com/gavinbarnett2323-cmd/rmdb-prices.
+# Kept as a SEPARATE workflow from price-relay so a slow or failed history run can never break the
+# daily price sweep (the decision path depends on prices; the scanner is only an attention layer).
+name: history-relay
+on:
+  schedule:
+    - cron: "0 23 * * 6"       # Saturday 23:00 UTC — after Friday's close, so the weekly bar is settled.
+  workflow_dispatch: {}
+  push:
+    paths:                      # re-run when the emitter or this workflow changes (the verification path)
+      - "relay/fetch_history.py"
+      - ".github/workflows/history.yml"
+permissions:
+  contents: write
+concurrency:
+  group: history-relay
+  cancel-in-progress: false
+jobs:
+  history:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Fetch weekly history (yfinance, batched, no key)
+        run: |
+          pip install --quiet yfinance pandas
+          python3 relay/fetch_history.py
+      - name: Commit history.json
+        run: |
+          git config user.name  "history-relay-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add relay/history.json
+          git diff --staged --quiet || git commit -m "history $(date -u +%F\ %H:%M)"
+          git push
