@@ -58,6 +58,26 @@ def _dl(syms, **kw):
     return None
 
 
+def _complete_weeks(series, today):
+    """Drop any trailing bar whose week has NOT finished.
+
+    yfinance labels a weekly bar with the week's MONDAY. A run on Tuesday therefore returns a final
+    "week" containing one day of trading. Feeding that to the detectors would read a single day's
+    move as a full weekly bar — a silent, systematic error in every RS and stabilization test. A week
+    is complete once its Friday (Monday+4) is strictly in the past.
+    """
+    out = list(series)
+    while out:
+        try:
+            wk = datetime.date.fromisoformat(out[-1][0])
+        except Exception:
+            break
+        if wk + datetime.timedelta(days=4) < today:
+            break
+        out.pop()
+    return out
+
+
 def _col(df, field, syms):
     """Extract a {symbol: Series} map for one OHLCV field from a single- or multi-index frame."""
     if isinstance(df.columns, pd.MultiIndex):
@@ -90,8 +110,11 @@ def main():
                 if not t:
                     continue
                 s = s.dropna()
-                if len(s) >= MIN_BARS:
-                    weekly[t] = [(idx.strftime("%Y-%m-%d"), round(float(v), 4)) for idx, v in s.items()]
+                bars = _complete_weeks(
+                    [(idx.strftime("%Y-%m-%d"), round(float(v), 4)) for idx, v in s.items()],
+                    now.date())
+                if len(bars) >= MIN_BARS:
+                    weekly[t] = bars
         print("  weekly %d-%d: running %d/%d" % (i, i + len(chunk), len(weekly), len(tk)), flush=True)
         time.sleep(SLEEP)
 
