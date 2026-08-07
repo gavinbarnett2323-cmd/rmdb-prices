@@ -22,7 +22,22 @@ of scope until something asks for them.
 """
 import json, os, datetime, sys, time
 
+try:
+    from zoneinfo import ZoneInfo
+    _ET = ZoneInfo("America/New_York")
+except Exception:
+    _ET = None
+
 import yfinance as yf
+
+
+def _market_today():
+    # as_of must be the US MARKET DAY, not the runner's UTC day. The runner is UTC; after ~20:00 ET the UTC
+    # date rolls to tomorrow while the trading day is still today, which stamps a "future" date the vault's
+    # freshness guard then rejects. Anchor to America/New_York so the quote's date is the day it was quoted.
+    if _ET is not None:
+        return datetime.datetime.now(_ET).date()
+    return datetime.date.today()
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "options.json")
@@ -58,7 +73,7 @@ def pick_expiries(expiries, today):
 
 
 def main():
-    today = datetime.date.today()
+    today = _market_today()
     tk = [l.strip().upper() for l in open(WATCH) if l.strip() and not l.startswith("#")]
     asof = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     print("options relay | yfinance %s | %d tickers" % (getattr(yf, "__version__", "?"), len(tk)), flush=True)
