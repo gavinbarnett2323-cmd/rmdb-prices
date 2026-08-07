@@ -1,0 +1,38 @@
+# GitHub Actions OPTIONS relay — drop at .github/workflows/options.yml in gavinbarnett2323-cmd/rmdb-prices.
+# Sibling of prices.yml. Runs after the US close, pulls CALL chains for the vault's BUY-flagged + held
+# names, commits relay/options.json.
+#
+# THE POINT OF THE DAILY CRON: no free historical option-quote archive exists, so this file's commit
+# history IS the archive. Every day it does not run is a day the [sourced] record can never have.
+name: options-relay
+on:
+  schedule:
+    - cron: "40 21 * * 1-5"   # ~21:40 UTC weekdays, 10 min after the price relay so it never contends
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: options-relay
+  cancel-in-progress: false
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Fetch option chains (yfinance, no key)
+        run: |
+          pip install --quiet yfinance pandas
+          python3 relay/fetch_options.py
+      - name: Commit options.json
+        run: |
+          git config user.name  "options-relay-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add relay/options.json
+          git diff --staged --quiet && echo "nothing to commit" && exit 0
+          git commit -m "options $(date -u +%F\ %H:%M)"
+          # push-race hardening (2026-08-06): the price relay + vault ticker pushes hit this same repo, so a
+          # bare `git push` can lose the race. Rebase onto remote and retry before giving up (mirror of the
+          # Discord-relay fix). A missed commit here is a permanently-missing day of the option-quote archive.
+          for i in 1 2 3 4 5; do git pull --rebase --autostash origin main && git push && break || sleep 3; done
