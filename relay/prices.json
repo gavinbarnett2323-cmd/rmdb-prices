@@ -1,5602 +1,5612 @@
 [
 {
 "symbol": "A",
-"price": 148.72,
-"asof": "2026-08-10 22:08 UTC"
+"price": 149.49,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AA",
-"price": 51.63,
-"asof": "2026-08-10 22:08 UTC"
+"price": 54.08,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AADX",
-"price": 21.52,
-"asof": "2026-08-10 22:08 UTC"
+"price": 20.59,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AAL",
-"price": 15.0,
-"asof": "2026-08-10 22:08 UTC"
+"price": 15.29,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AAOI",
-"price": 132.81,
-"asof": "2026-08-10 22:08 UTC"
+"price": 134.33,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AAON",
-"price": 89.24,
-"asof": "2026-08-10 22:08 UTC"
+"price": 85.78,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AAPL",
-"price": 308.26,
-"asof": "2026-08-10 22:08 UTC"
+"price": 304.91,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ABBV",
-"price": 247.97,
-"asof": "2026-08-10 22:08 UTC"
+"price": 250.09,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ABNB",
-"price": 184.7,
-"asof": "2026-08-10 22:08 UTC"
+"price": 184.98,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ABR",
-"price": 5.36,
-"asof": "2026-08-10 22:08 UTC"
+"price": 5.35,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ABSI",
-"price": 9.01,
-"asof": "2026-08-10 22:08 UTC"
+"price": 9.41,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ABT",
-"price": 108.62,
-"asof": "2026-08-10 22:08 UTC"
+"price": 109.72,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ACCS",
-"price": 6.5,
-"asof": "2026-08-10 22:08 UTC"
+"price": 5.37,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ACGL",
-"price": 98.25,
-"asof": "2026-08-10 22:08 UTC"
+"price": 98.26,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ACHC",
-"price": 31.78,
-"asof": "2026-08-10 22:08 UTC"
+"price": 31.1,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ACI",
-"price": 12.13,
-"asof": "2026-08-10 22:08 UTC"
+"price": 12.25,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ACM",
-"price": 73.3,
-"asof": "2026-08-10 22:08 UTC"
+"price": 67.05,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ACN",
-"price": 178.25,
-"asof": "2026-08-10 22:08 UTC"
+"price": 179.82,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ADBE",
-"price": 272.96,
-"asof": "2026-08-10 22:08 UTC"
+"price": 263.71,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ADC",
-"price": 74.14,
-"asof": "2026-08-10 22:08 UTC"
+"price": 73.39,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ADI",
-"price": 383.92,
-"asof": "2026-08-10 22:08 UTC"
+"price": 385.3,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ADM",
-"price": 80.49,
-"asof": "2026-08-10 22:08 UTC"
+"price": 80.46,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ADP",
-"price": 273.67,
-"asof": "2026-08-10 22:08 UTC"
+"price": 271.09,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ADSK",
-"price": 256.07,
-"asof": "2026-08-10 22:08 UTC"
+"price": 251.59,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ADT",
-"price": 7.51,
-"asof": "2026-08-10 22:08 UTC"
+"price": 7.45,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AEBI",
-"price": 12.75,
-"asof": "2026-08-10 22:08 UTC"
+"price": 12.87,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AEE",
-"price": 107.0,
-"asof": "2026-08-10 22:08 UTC"
+"price": 107.82,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AEIS",
-"price": 314.49,
-"asof": "2026-08-10 22:08 UTC"
+"price": 327.59,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AEM",
-"price": 180.48,
-"asof": "2026-08-10 22:08 UTC"
+"price": 181.75,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AEP",
-"price": 122.84,
-"asof": "2026-08-10 22:08 UTC"
+"price": 123.58,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AES",
-"price": 14.73,
-"asof": "2026-08-10 22:08 UTC"
+"price": 14.7,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AFG",
-"price": 143.87,
-"asof": "2026-08-10 22:08 UTC"
+"price": 144.35,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AFL",
-"price": 121.94,
-"asof": "2026-08-10 22:08 UTC"
+"price": 121.07,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AFRM",
-"price": 75.54,
-"asof": "2026-08-10 22:08 UTC"
+"price": 76.71,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AGCO",
-"price": 100.87,
-"asof": "2026-08-10 22:08 UTC"
+"price": 101.43,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AGNC",
-"price": 10.76,
-"asof": "2026-08-10 22:08 UTC"
+"price": 10.89,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AGO",
-"price": 75.94,
-"asof": "2026-08-10 22:08 UTC"
+"price": 75.31,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AIG",
-"price": 77.61,
-"asof": "2026-08-10 22:08 UTC"
+"price": 77.31,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AII",
-"price": 20.55,
-"asof": "2026-08-10 22:08 UTC"
+"price": 20.19,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AIT",
-"price": 357.8,
-"asof": "2026-08-10 22:08 UTC"
+"price": 352.35,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AIZ",
-"price": 287.22,
-"asof": "2026-08-10 22:08 UTC"
+"price": 281.41,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AJG",
-"price": 252.43,
-"asof": "2026-08-10 22:08 UTC"
+"price": 253.51,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AKAM",
-"price": 117.65,
-"asof": "2026-08-10 22:08 UTC"
+"price": 116.67,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ALAB",
-"price": 317.23,
-"asof": "2026-08-10 22:08 UTC"
+"price": 311.99,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ALB",
-"price": 131.21,
-"asof": "2026-08-10 22:08 UTC"
+"price": 129.36,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ALGM",
-"price": 42.46,
-"asof": "2026-08-10 22:08 UTC"
+"price": 42.52,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ALGN",
-"price": 176.04,
-"asof": "2026-08-10 22:08 UTC"
+"price": 172.96,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ALK",
-"price": 47.26,
-"asof": "2026-08-10 22:08 UTC"
+"price": 48.4,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ALL",
-"price": 269.67,
-"asof": "2026-08-10 22:08 UTC"
+"price": 262.23,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ALLE",
-"price": 165.53,
-"asof": "2026-08-10 22:08 UTC"
+"price": 168.44,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ALLY",
-"price": 43.79,
-"asof": "2026-08-10 22:08 UTC"
+"price": 43.95,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ALNY",
-"price": 216.98,
-"asof": "2026-08-10 22:08 UTC"
+"price": 221.2,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ALSN",
-"price": 124.52,
-"asof": "2026-08-10 22:08 UTC"
+"price": 124.99,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AM",
-"price": 21.94,
-"asof": "2026-08-10 22:08 UTC"
+"price": 22.1,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AMAT",
-"price": 522.12,
-"asof": "2026-08-10 22:08 UTC"
+"price": 525.61,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AMCR",
-"price": 47.11,
-"asof": "2026-08-10 22:08 UTC"
+"price": 47.4,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AMD",
-"price": 469.56,
-"asof": "2026-08-10 22:08 UTC"
+"price": 474.32,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AME",
-"price": 252.88,
-"asof": "2026-08-10 22:08 UTC"
+"price": 256.3,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AMG",
-"price": 363.39,
-"asof": "2026-08-10 22:08 UTC"
+"price": 359.07,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AMGN",
-"price": 417.2,
-"asof": "2026-08-10 22:08 UTC"
+"price": 414.3,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AMH",
-"price": 34.13,
-"asof": "2026-08-10 22:08 UTC"
+"price": 33.87,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AMKR",
-"price": 52.87,
-"asof": "2026-08-10 22:08 UTC"
+"price": 54.3,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AMP",
-"price": 557.53,
-"asof": "2026-08-10 22:08 UTC"
+"price": 562.98,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AMPX",
-"price": 11.81,
-"asof": "2026-08-10 22:08 UTC"
+"price": 12.08,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AMSC",
-"price": 30.99,
-"asof": "2026-08-10 22:08 UTC"
+"price": 32.13,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AMT",
-"price": 169.11,
-"asof": "2026-08-10 22:08 UTC"
+"price": 169.55,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AMTM",
-"price": 24.44,
-"asof": "2026-08-10 22:08 UTC"
+"price": 22.43,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AMZN",
-"price": 278.09,
-"asof": "2026-08-10 22:08 UTC"
+"price": 272.27,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AN",
-"price": 208.09,
-"asof": "2026-08-10 22:08 UTC"
+"price": 208.46,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ANET",
-"price": 191.52,
-"asof": "2026-08-10 22:08 UTC"
+"price": 197.85,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AON",
-"price": 356.97,
-"asof": "2026-08-10 22:08 UTC"
+"price": 356.46,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AOS",
-"price": 62.41,
-"asof": "2026-08-10 22:08 UTC"
+"price": 63.67,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AOSL",
-"price": 34.56,
-"asof": "2026-08-10 22:08 UTC"
+"price": 34.84,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "APA",
-"price": 41.02,
-"asof": "2026-08-10 22:08 UTC"
+"price": 40.62,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "APD",
-"price": 308.18,
-"asof": "2026-08-10 22:08 UTC"
+"price": 309.31,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "APG",
-"price": 42.32,
-"asof": "2026-08-10 22:08 UTC"
+"price": 42.89,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "APH",
-"price": 167.7,
-"asof": "2026-08-10 22:08 UTC"
+"price": 167.23,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "APO",
-"price": 132.02,
-"asof": "2026-08-10 22:08 UTC"
+"price": 140.28,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "APP",
-"price": 339.0,
-"asof": "2026-08-10 22:08 UTC"
+"price": 318.68,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "APPF",
-"price": 199.54,
-"asof": "2026-08-10 22:08 UTC"
+"price": 203.02,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "APTV",
-"price": 49.81,
-"asof": "2026-08-10 22:08 UTC"
+"price": 49.62,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AR",
-"price": 37.07,
-"asof": "2026-08-10 22:08 UTC"
+"price": 37.83,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ARDT",
-"price": 11.06,
-"asof": "2026-08-10 22:08 UTC"
+"price": 10.97,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ARE",
-"price": 48.35,
-"asof": "2026-08-10 22:08 UTC"
+"price": 48.12,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ARES",
-"price": 137.66,
-"asof": "2026-08-10 22:08 UTC"
+"price": 143.11,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ARM",
-"price": 267.85,
-"asof": "2026-08-10 22:08 UTC"
+"price": 268.93,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ARMK",
-"price": 55.71,
-"asof": "2026-08-10 22:08 UTC"
+"price": 60.47,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ARW",
-"price": 202.57,
-"asof": "2026-08-10 22:08 UTC"
+"price": 206.47,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AS",
-"price": 36.17,
-"asof": "2026-08-10 22:08 UTC"
+"price": 33.85,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ASH",
-"price": 75.4,
-"asof": "2026-08-10 22:08 UTC"
+"price": 74.58,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ASML",
-"price": 1733.48,
-"asof": "2026-08-10 22:08 UTC"
+"price": 1799.38,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ASTS",
-"price": 68.76,
-"asof": "2026-08-10 22:08 UTC"
+"price": 71.63,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ATI",
-"price": 228.19,
-"asof": "2026-08-10 22:08 UTC"
+"price": 230.08,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ATO",
-"price": 167.92,
-"asof": "2026-08-10 22:08 UTC"
+"price": 169.21,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ATR",
-"price": 133.68,
-"asof": "2026-08-10 22:08 UTC"
+"price": 134.75,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AU",
-"price": 97.25,
-"asof": "2026-08-10 22:08 UTC"
+"price": 97.44,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AUR",
-"price": 6.98,
-"asof": "2026-08-10 22:08 UTC"
+"price": 6.95,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AVB",
-"price": 183.84,
-"asof": "2026-08-10 22:08 UTC"
+"price": 181.76,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AVBC",
-"price": 21.29,
-"asof": "2026-08-10 22:08 UTC"
+"price": 21.45,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AVGO",
-"price": 422.4,
-"asof": "2026-08-10 22:08 UTC"
+"price": 416.08,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AVT",
-"price": 97.4,
-"asof": "2026-08-10 22:08 UTC"
+"price": 95.96,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AVTR",
-"price": 13.73,
-"asof": "2026-08-10 22:08 UTC"
+"price": 13.77,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AVY",
-"price": 178.35,
-"asof": "2026-08-10 22:08 UTC"
+"price": 179.73,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AWI",
-"price": 183.35,
-"asof": "2026-08-10 22:08 UTC"
+"price": 186.7,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AWK",
-"price": 135.45,
-"asof": "2026-08-10 22:08 UTC"
+"price": 136.06,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AXON",
-"price": 596.33,
-"asof": "2026-08-10 22:08 UTC"
+"price": 636.31,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AXP",
-"price": 338.86,
-"asof": "2026-08-10 22:08 UTC"
+"price": 340.81,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AXS",
-"price": 101.79,
-"asof": "2026-08-10 22:08 UTC"
+"price": 100.72,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AXTA",
-"price": 37.44,
-"asof": "2026-08-10 22:08 UTC"
+"price": 37.28,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AYI",
-"price": 353.4,
-"asof": "2026-08-10 22:08 UTC"
+"price": 357.08,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "AZO",
-"price": 3067.99,
-"asof": "2026-08-10 22:08 UTC"
+"price": 3042.65,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BA",
-"price": 232.79,
-"asof": "2026-08-10 22:08 UTC"
+"price": 233.24,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BAC",
-"price": 63.86,
-"asof": "2026-08-10 22:08 UTC"
+"price": 64.0,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BAER",
-"price": 1.37,
-"asof": "2026-08-10 22:08 UTC"
+"price": 1.3,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BAH",
-"price": 77.9,
-"asof": "2026-08-10 22:08 UTC"
+"price": 78.57,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BALL",
-"price": 62.58,
-"asof": "2026-08-10 22:08 UTC"
+"price": 62.9,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BAM",
-"price": 52.84,
-"asof": "2026-08-10 22:08 UTC"
+"price": 55.36,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BAX",
-"price": 27.78,
-"asof": "2026-08-10 22:08 UTC"
+"price": 27.61,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BBBY",
-"price": 4.44,
-"asof": "2026-08-10 22:08 UTC"
+"price": 4.27,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BBWI",
-"price": 19.32,
-"asof": "2026-08-10 22:08 UTC"
+"price": 18.88,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BBY",
-"price": 82.43,
-"asof": "2026-08-10 22:08 UTC"
+"price": 83.28,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BC",
-"price": 80.43,
-"asof": "2026-08-10 22:08 UTC"
+"price": 81.41,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BCML",
-"price": 30.39,
-"asof": "2026-08-10 22:08 UTC"
+"price": 31.25,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BDX",
-"price": 179.63,
-"asof": "2026-08-10 22:08 UTC"
+"price": 181.41,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BE",
-"price": 210.63,
-"asof": "2026-08-10 22:08 UTC"
+"price": 211.21,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BEN",
-"price": 33.52,
-"asof": "2026-08-10 22:08 UTC"
+"price": 33.36,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BEPC",
-"price": 33.22,
-"asof": "2026-08-10 22:08 UTC"
+"price": 34.79,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BETR",
-"price": 18.05,
-"asof": "2026-08-10 22:08 UTC"
+"price": 15.53,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BFAM",
-"price": 72.48,
-"asof": "2026-08-10 22:08 UTC"
+"price": 71.52,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BFB",
-"price": 28.19,
-"asof": "2026-08-10 22:08 UTC"
+"price": 28.03,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BFLY",
-"price": 9.7,
-"asof": "2026-08-10 22:08 UTC"
+"price": 9.37,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BG",
-"price": 112.65,
-"asof": "2026-08-10 22:08 UTC"
+"price": 111.6,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BHF",
-"price": 60.09,
-"asof": "2026-08-10 22:08 UTC"
+"price": 58.8,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BIIB",
-"price": 207.13,
-"asof": "2026-08-10 22:08 UTC"
+"price": 203.89,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BILL",
-"price": 49.26,
-"asof": "2026-08-10 22:08 UTC"
+"price": 49.48,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BIO",
-"price": 354.54,
-"asof": "2026-08-10 22:08 UTC"
+"price": 356.25,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BIRK",
-"price": 39.72,
-"asof": "2026-08-10 22:08 UTC"
+"price": 37.47,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BJ",
-"price": 96.2,
-"asof": "2026-08-10 22:08 UTC"
+"price": 93.96,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BKNG",
-"price": 212.88,
-"asof": "2026-08-10 22:08 UTC"
+"price": 212.87,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BKR",
-"price": 64.07,
-"asof": "2026-08-10 22:08 UTC"
+"price": 64.81,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BLDR",
-"price": 71.98,
-"asof": "2026-08-10 22:08 UTC"
+"price": 75.1,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BLK",
-"price": 1131.4,
-"asof": "2026-08-10 22:08 UTC"
+"price": 1148.84,
+"asof": "2026-08-11 22:20 UTC"
+},
+{
+"symbol": "BLSM",
+"price": 16.52,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BMRN",
-"price": 68.88,
-"asof": "2026-08-10 22:08 UTC"
+"price": 69.55,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BMY",
-"price": 64.84,
-"asof": "2026-08-10 22:08 UTC"
+"price": 63.61,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BNY",
-"price": 159.43,
-"asof": "2026-08-10 22:08 UTC"
+"price": 160.32,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BOKF",
-"price": 143.16,
-"asof": "2026-08-10 22:08 UTC"
+"price": 144.03,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BPOP",
-"price": 173.96,
-"asof": "2026-08-10 22:08 UTC"
+"price": 174.84,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BR",
-"price": 173.4,
-"asof": "2026-08-10 22:08 UTC"
+"price": 170.73,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BRBR",
-"price": 11.38,
-"asof": "2026-08-10 22:08 UTC"
+"price": 11.55,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BRCB",
-"price": 7.3,
-"asof": "2026-08-10 22:08 UTC"
+"price": 6.91,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BRKB",
-"price": 529.42,
-"asof": "2026-08-10 22:08 UTC"
+"price": 516.38,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BRKR",
-"price": 56.32,
-"asof": "2026-08-10 22:08 UTC"
+"price": 57.02,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BRO",
-"price": 71.6,
-"asof": "2026-08-10 22:08 UTC"
+"price": 71.44,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BROS",
-"price": 51.29,
-"asof": "2026-08-10 22:08 UTC"
+"price": 49.57,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BRVE",
-"price": 27.53,
-"asof": "2026-08-10 22:08 UTC"
+"price": 25.01,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BRX",
-"price": 29.81,
-"asof": "2026-08-10 22:08 UTC"
+"price": 29.61,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BSOL",
-"price": 10.41,
-"asof": "2026-08-10 22:08 UTC"
+"price": 10.33,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BSX",
-"price": 50.46,
-"asof": "2026-08-10 22:08 UTC"
+"price": 51.19,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BSY",
-"price": 35.31,
-"asof": "2026-08-10 22:08 UTC"
+"price": 36.25,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BURL",
-"price": 371.5,
-"asof": "2026-08-10 22:08 UTC"
+"price": 358.83,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BWA",
-"price": 69.28,
-"asof": "2026-08-10 22:08 UTC"
+"price": 69.68,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BWXT",
-"price": 168.88,
-"asof": "2026-08-10 22:08 UTC"
+"price": 169.71,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BX",
-"price": 141.66,
-"asof": "2026-08-10 22:08 UTC"
+"price": 147.17,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BXP",
-"price": 67.9,
-"asof": "2026-08-10 22:08 UTC"
+"price": 67.49,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BYD",
-"price": 81.46,
-"asof": "2026-08-10 22:08 UTC"
+"price": 82.37,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "BYRN",
-"price": 4.85,
-"asof": "2026-08-10 22:08 UTC"
+"price": 4.68,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "C",
-"price": 135.22,
-"asof": "2026-08-10 22:08 UTC"
+"price": 135.77,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CACI",
-"price": 648.24,
-"asof": "2026-08-10 22:08 UTC"
+"price": 667.57,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CAG",
-"price": 14.77,
-"asof": "2026-08-10 22:08 UTC"
+"price": 14.93,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CAH",
-"price": 237.18,
-"asof": "2026-08-10 22:08 UTC"
+"price": 240.26,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CAI",
-"price": 23.4,
-"asof": "2026-08-10 22:08 UTC"
+"price": 23.14,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CAR",
-"price": 138.61,
-"asof": "2026-08-10 22:08 UTC"
+"price": 140.66,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CARR",
-"price": 63.44,
-"asof": "2026-08-10 22:08 UTC"
+"price": 63.62,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CART",
-"price": 50.56,
-"asof": "2026-08-10 22:08 UTC"
+"price": 49.39,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CASY",
-"price": 854.46,
-"asof": "2026-08-10 22:08 UTC"
+"price": 829.91,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CAT",
-"price": 837.58,
-"asof": "2026-08-10 22:08 UTC"
+"price": 843.37,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CAVA",
-"price": 61.58,
-"asof": "2026-08-10 22:08 UTC"
+"price": 60.81,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CB",
-"price": 348.3,
-"asof": "2026-08-10 22:08 UTC"
+"price": 347.07,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CBOE",
-"price": 285.02,
-"asof": "2026-08-10 22:08 UTC"
+"price": 282.73,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CBRE",
-"price": 143.94,
-"asof": "2026-08-10 22:08 UTC"
+"price": 147.46,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CBSH",
-"price": 58.65,
-"asof": "2026-08-10 22:08 UTC"
+"price": 59.02,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CBZ",
-"price": 54.43,
-"asof": "2026-08-10 22:08 UTC"
+"price": 54.6,
+"asof": "2026-08-11 22:20 UTC"
+},
+{
+"symbol": "CCB",
+"price": 51.86,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CCI",
-"price": 73.61,
-"asof": "2026-08-10 22:08 UTC"
+"price": 73.64,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CCK",
-"price": 120.31,
-"asof": "2026-08-10 22:08 UTC"
+"price": 120.01,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CCL",
-"price": 27.75,
-"asof": "2026-08-10 22:08 UTC"
+"price": 27.73,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CDNS",
-"price": 331.91,
-"asof": "2026-08-10 22:08 UTC"
+"price": 327.53,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CDW",
-"price": 136.43,
-"asof": "2026-08-10 22:08 UTC"
+"price": 135.37,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CE",
-"price": 44.46,
-"asof": "2026-08-10 22:08 UTC"
+"price": 44.84,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CEG",
-"price": 270.43,
-"asof": "2026-08-10 22:08 UTC"
+"price": 278.36,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CELH",
-"price": 27.21,
-"asof": "2026-08-10 22:08 UTC"
+"price": 28.09,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CF",
-"price": 121.48,
-"asof": "2026-08-10 22:08 UTC"
+"price": 117.8,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CFG",
-"price": 72.67,
-"asof": "2026-08-10 22:08 UTC"
+"price": 72.99,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CFR",
-"price": 165.65,
-"asof": "2026-08-10 22:08 UTC"
+"price": 166.01,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CG",
-"price": 47.8,
-"asof": "2026-08-10 22:08 UTC"
+"price": 48.36,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CGNX",
-"price": 64.36,
-"asof": "2026-08-10 22:08 UTC"
+"price": 62.9,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CHD",
-"price": 103.3,
-"asof": "2026-08-10 22:08 UTC"
+"price": 102.78,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CHDN",
-"price": 86.37,
-"asof": "2026-08-10 22:08 UTC"
+"price": 88.62,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CHE",
-"price": 549.48,
-"asof": "2026-08-10 22:08 UTC"
+"price": 537.14,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CHRD",
-"price": 138.52,
-"asof": "2026-08-10 22:08 UTC"
+"price": 139.23,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CHRW",
-"price": 148.29,
-"asof": "2026-08-10 22:08 UTC"
+"price": 145.1,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CHTR",
-"price": 153.29,
-"asof": "2026-08-10 22:08 UTC"
+"price": 157.69,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CHWY",
-"price": 22.59,
-"asof": "2026-08-10 22:08 UTC"
+"price": 22.47,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CI",
-"price": 278.4,
-"asof": "2026-08-10 22:08 UTC"
+"price": 273.87,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CIEN",
-"price": 387.7,
-"asof": "2026-08-10 22:08 UTC"
+"price": 387.53,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CINF",
-"price": 173.86,
-"asof": "2026-08-10 22:08 UTC"
+"price": 173.21,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CL",
-"price": 93.15,
-"asof": "2026-08-10 22:08 UTC"
+"price": 92.31,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CLBK",
-"price": 10.81,
-"asof": "2026-08-10 22:08 UTC"
+"price": 11.09,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CLF",
-"price": 12.49,
-"asof": "2026-08-10 22:08 UTC"
+"price": 12.41,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CLH",
-"price": 310.0,
-"asof": "2026-08-10 22:08 UTC"
+"price": 311.55,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CLS",
-"price": 314.59,
-"asof": "2026-08-10 22:08 UTC"
+"price": 310.38,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CLX",
-"price": 107.7,
-"asof": "2026-08-10 22:08 UTC"
+"price": 108.25,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CMCSA",
-"price": 25.2,
-"asof": "2026-08-10 22:08 UTC"
+"price": 25.65,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CME",
-"price": 263.65,
-"asof": "2026-08-10 22:08 UTC"
+"price": 259.32,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CMG",
-"price": 32.14,
-"asof": "2026-08-10 22:08 UTC"
+"price": 32.0,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CMI",
-"price": 634.82,
-"asof": "2026-08-10 22:08 UTC"
+"price": 632.95,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CMS",
-"price": 69.06,
-"asof": "2026-08-10 22:08 UTC"
+"price": 69.62,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CNA",
-"price": 51.27,
-"asof": "2026-08-10 22:08 UTC"
+"price": 50.87,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CNC",
-"price": 66.57,
-"asof": "2026-08-10 22:08 UTC"
+"price": 64.88,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CNH",
-"price": 10.48,
-"asof": "2026-08-10 22:08 UTC"
+"price": 10.63,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CNM",
-"price": 46.3,
-"asof": "2026-08-10 22:08 UTC"
+"price": 46.63,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CNP",
-"price": 40.03,
-"asof": "2026-08-10 22:08 UTC"
+"price": 40.18,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CNXC",
-"price": 25.5,
-"asof": "2026-08-10 22:08 UTC"
+"price": 25.69,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "COF",
-"price": 218.97,
-"asof": "2026-08-10 22:08 UTC"
+"price": 219.15,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "COHR",
-"price": 325.15,
-"asof": "2026-08-10 22:08 UTC"
+"price": 328.57,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "COIN",
-"price": 148.68,
-"asof": "2026-08-10 22:08 UTC"
+"price": 148.58,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "COKE",
-"price": 185.55,
-"asof": "2026-08-10 22:08 UTC"
+"price": 181.71,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "COLB",
-"price": 31.26,
-"asof": "2026-08-10 22:08 UTC"
+"price": 31.71,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "COLD",
-"price": 14.59,
-"asof": "2026-08-10 22:08 UTC"
+"price": 14.48,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "COLM",
-"price": 57.02,
-"asof": "2026-08-10 22:08 UTC"
+"price": 56.32,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "COO",
-"price": 76.32,
-"asof": "2026-08-10 22:08 UTC"
+"price": 76.82,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "COP",
-"price": 123.03,
-"asof": "2026-08-10 22:08 UTC"
+"price": 125.92,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "COR",
-"price": 325.0,
-"asof": "2026-08-10 22:08 UTC"
+"price": 333.87,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CORT",
-"price": 114.23,
-"asof": "2026-08-10 22:08 UTC"
+"price": 111.86,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "COST",
-"price": 952.75,
-"asof": "2026-08-10 22:08 UTC"
+"price": 944.32,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "COTY",
-"price": 2.85,
-"asof": "2026-08-10 22:08 UTC"
+"price": 2.82,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CPAY",
-"price": 400.88,
-"asof": "2026-08-10 22:08 UTC"
+"price": 406.16,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CPB",
-"price": 22.42,
-"asof": "2026-08-10 22:08 UTC"
+"price": 22.72,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CPNG",
-"price": 16.19,
-"asof": "2026-08-10 22:08 UTC"
+"price": 16.5,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CPRT",
-"price": 29.59,
-"asof": "2026-08-10 22:08 UTC"
+"price": 29.4,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CPT",
-"price": 109.08,
-"asof": "2026-08-10 22:08 UTC"
+"price": 108.29,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CR",
-"price": 219.35,
-"asof": "2026-08-10 22:08 UTC"
+"price": 220.56,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CRBG",
-"price": 34.49,
-"asof": "2026-08-10 22:08 UTC"
+"price": 33.39,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CRCL",
-"price": 67.05,
-"asof": "2026-08-10 22:08 UTC"
+"price": 71.16,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CREX",
-"price": 2.99,
-"asof": "2026-08-10 22:08 UTC"
+"price": 3.0,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CRH",
-"price": 100.6,
-"asof": "2026-08-10 22:08 UTC"
+"price": 101.29,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CRL",
-"price": 277.0,
-"asof": "2026-08-10 22:08 UTC"
+"price": 282.0,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CRM",
-"price": 197.51,
-"asof": "2026-08-10 22:08 UTC"
+"price": 197.47,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CRNX",
-"price": 84.15,
-"asof": "2026-08-10 22:08 UTC"
+"price": 84.36,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CROX",
-"price": 138.19,
-"asof": "2026-08-10 22:08 UTC"
+"price": 131.71,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CRS",
-"price": 559.98,
-"asof": "2026-08-10 22:08 UTC"
+"price": 537.57,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CRSR",
-"price": 13.71,
-"asof": "2026-08-10 22:08 UTC"
+"price": 12.83,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CRUS",
-"price": 121.84,
-"asof": "2026-08-10 22:08 UTC"
+"price": 121.99,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CRWD",
-"price": 225.16,
-"asof": "2026-08-10 22:08 UTC"
+"price": 221.9,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CSCO",
-"price": 122.57,
-"asof": "2026-08-10 22:08 UTC"
+"price": 120.43,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CSGP",
-"price": 31.48,
-"asof": "2026-08-10 22:08 UTC"
+"price": 31.12,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CSL",
-"price": 385.25,
-"asof": "2026-08-10 22:08 UTC"
+"price": 389.96,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CSX",
-"price": 50.12,
-"asof": "2026-08-10 22:08 UTC"
+"price": 49.94,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CTAS",
-"price": 202.71,
-"asof": "2026-08-10 22:08 UTC"
+"price": 205.28,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CTBI",
-"price": 77.47,
-"asof": "2026-08-10 22:08 UTC"
+"price": 78.09,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CTEV",
-"price": 34.07,
-"asof": "2026-08-10 22:08 UTC"
+"price": 34.96,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CTGO",
-"price": 19.52,
-"asof": "2026-08-10 22:08 UTC"
+"price": 19.93,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CTSH",
-"price": 58.31,
-"asof": "2026-08-10 22:08 UTC"
+"price": 58.6,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CTVA",
-"price": 76.47,
-"asof": "2026-08-10 22:08 UTC"
+"price": 76.22,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CUBE",
-"price": 40.99,
-"asof": "2026-08-10 22:08 UTC"
+"price": 40.84,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CUZ",
-"price": 29.37,
-"asof": "2026-08-10 22:08 UTC"
+"price": 29.34,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CVNA",
-"price": 74.16,
-"asof": "2026-08-10 22:08 UTC"
+"price": 72.0,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CVS",
-"price": 95.67,
-"asof": "2026-08-10 22:08 UTC"
+"price": 93.5,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CVX",
-"price": 194.91,
-"asof": "2026-08-10 22:08 UTC"
+"price": 196.66,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CW",
-"price": 694.35,
-"asof": "2026-08-10 22:08 UTC"
+"price": 705.96,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CWEN",
-"price": 33.05,
-"asof": "2026-08-10 22:08 UTC"
+"price": 34.5,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "CZR",
-"price": 30.07,
-"asof": "2026-08-10 22:08 UTC"
+"price": 29.74,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "D",
-"price": 67.15,
-"asof": "2026-08-10 22:08 UTC"
+"price": 68.1,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DAL",
-"price": 89.21,
-"asof": "2026-08-10 22:08 UTC"
+"price": 90.41,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DAR",
-"price": 62.83,
-"asof": "2026-08-10 22:08 UTC"
+"price": 62.36,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DASH",
-"price": 209.86,
-"asof": "2026-08-10 22:08 UTC"
+"price": 212.0,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DBX",
-"price": 34.59,
-"asof": "2026-08-10 22:08 UTC"
+"price": 34.08,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DCI",
-"price": 96.74,
-"asof": "2026-08-10 22:08 UTC"
+"price": 96.91,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DD",
-"price": 141.55,
-"asof": "2026-08-10 22:08 UTC"
+"price": 144.49,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DDOG",
-"price": 260.78,
-"asof": "2026-08-10 22:08 UTC"
+"price": 246.78,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DDS",
-"price": 633.98,
-"asof": "2026-08-10 22:08 UTC"
+"price": 646.04,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DE",
-"price": 609.28,
-"asof": "2026-08-10 22:08 UTC"
+"price": 617.95,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DECK",
-"price": 97.44,
-"asof": "2026-08-10 22:08 UTC"
+"price": 93.84,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DELL",
-"price": 457.88,
-"asof": "2026-08-10 22:08 UTC"
+"price": 440.97,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DFDV",
-"price": 2.86,
-"asof": "2026-08-10 22:08 UTC"
+"price": 2.85,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DG",
-"price": 122.42,
-"asof": "2026-08-10 22:08 UTC"
+"price": 120.07,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DGX",
-"price": 237.63,
-"asof": "2026-08-10 22:08 UTC"
+"price": 237.5,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DHI",
-"price": 146.66,
-"asof": "2026-08-10 22:08 UTC"
+"price": 150.79,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DHR",
-"price": 209.37,
-"asof": "2026-08-10 22:08 UTC"
+"price": 207.44,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DINO",
-"price": 85.22,
-"asof": "2026-08-10 22:08 UTC"
+"price": 85.55,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DIS",
-"price": 103.18,
-"asof": "2026-08-10 22:08 UTC"
+"price": 103.53,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DJT",
-"price": 9.39,
-"asof": "2026-08-10 22:08 UTC"
+"price": 8.91,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DKNG",
-"price": 24.27,
-"asof": "2026-08-10 22:08 UTC"
+"price": 25.34,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DKS",
-"price": 214.1,
-"asof": "2026-08-10 22:08 UTC"
+"price": 205.03,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DLB",
-"price": 62.1,
-"asof": "2026-08-10 22:08 UTC"
+"price": 61.36,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DLR",
-"price": 191.3,
-"asof": "2026-08-10 22:08 UTC"
+"price": 190.81,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DLTR",
-"price": 129.37,
-"asof": "2026-08-10 22:08 UTC"
+"price": 128.06,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DMLP",
-"price": 26.53,
-"asof": "2026-08-10 22:08 UTC"
+"price": 27.18,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DOC",
-"price": 20.9,
-"asof": "2026-08-10 22:08 UTC"
+"price": 20.51,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DOCS",
-"price": 25.63,
-"asof": "2026-08-10 22:08 UTC"
+"price": 26.11,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DOCU",
-"price": 59.64,
-"asof": "2026-08-10 22:08 UTC"
+"price": 59.34,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DOV",
-"price": 210.1,
-"asof": "2026-08-10 22:08 UTC"
+"price": 208.45,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DOW",
-"price": 30.58,
-"asof": "2026-08-10 22:08 UTC"
+"price": 31.26,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DOX",
-"price": 58.59,
-"asof": "2026-08-10 22:08 UTC"
+"price": 57.49,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DPC",
-"price": 51.48,
-"asof": "2026-08-10 22:08 UTC"
+"price": 53.77,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DPZ",
-"price": 347.85,
-"asof": "2026-08-10 22:08 UTC"
+"price": 357.34,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DRI",
-"price": 217.97,
-"asof": "2026-08-10 22:08 UTC"
+"price": 218.9,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DRS",
-"price": 45.05,
-"asof": "2026-08-10 22:08 UTC"
+"price": 44.66,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DT",
-"price": 50.57,
-"asof": "2026-08-10 22:08 UTC"
+"price": 49.66,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DTE",
-"price": 136.78,
-"asof": "2026-08-10 22:08 UTC"
+"price": 137.64,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DTM",
-"price": 134.18,
-"asof": "2026-08-10 22:08 UTC"
+"price": 134.78,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DUK",
-"price": 121.19,
-"asof": "2026-08-10 22:08 UTC"
+"price": 123.19,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DUOL",
-"price": 137.19,
-"asof": "2026-08-10 22:08 UTC"
+"price": 135.44,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DV",
-"price": 13.22,
-"asof": "2026-08-10 22:08 UTC"
+"price": 13.25,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DVA",
-"price": 183.69,
-"asof": "2026-08-10 22:08 UTC"
+"price": 178.34,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DVN",
-"price": 45.36,
-"asof": "2026-08-10 22:08 UTC"
+"price": 45.4,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DXC",
-"price": 10.91,
-"asof": "2026-08-10 22:08 UTC"
+"price": 10.81,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "DXCM",
-"price": 87.65,
-"asof": "2026-08-10 22:08 UTC"
+"price": 89.53,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "EA",
 "price": 209.7,
-"asof": "2026-08-10 22:08 UTC"
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "EAT",
-"price": 227.54,
-"asof": "2026-08-10 22:08 UTC"
+"price": 221.38,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "EBAY",
-"price": 107.71,
-"asof": "2026-08-10 22:08 UTC"
+"price": 106.01,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ECG",
-"price": 131.89,
-"asof": "2026-08-10 22:08 UTC"
+"price": 134.48,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ECL",
-"price": 284.4,
-"asof": "2026-08-10 22:08 UTC"
+"price": 284.63,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ED",
-"price": 106.3,
-"asof": "2026-08-10 22:08 UTC"
+"price": 107.5,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "EEFT",
-"price": 70.89,
-"asof": "2026-08-10 22:08 UTC"
+"price": 70.47,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "EFX",
-"price": 181.04,
-"asof": "2026-08-10 22:08 UTC"
+"price": 181.96,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "EG",
-"price": 369.9,
-"asof": "2026-08-10 22:08 UTC"
+"price": 365.7,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "EGP",
-"price": 201.86,
-"asof": "2026-08-10 22:08 UTC"
+"price": 201.63,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "EHC",
-"price": 125.81,
-"asof": "2026-08-10 22:08 UTC"
+"price": 125.35,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "EIX",
-"price": 67.83,
-"asof": "2026-08-10 22:08 UTC"
+"price": 69.89,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "EL",
-"price": 87.19,
-"asof": "2026-08-10 22:08 UTC"
+"price": 87.78,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ELAN",
-"price": 22.28,
-"asof": "2026-08-10 22:08 UTC"
+"price": 22.73,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ELF",
-"price": 95.24,
-"asof": "2026-08-10 22:08 UTC"
+"price": 94.99,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ELS",
-"price": 64.58,
-"asof": "2026-08-10 22:08 UTC"
+"price": 64.05,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ELV",
-"price": 397.7,
-"asof": "2026-08-10 22:08 UTC"
+"price": 390.37,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "EMBC",
-"price": 4.99,
-"asof": "2026-08-10 22:08 UTC"
+"price": 4.88,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "EME",
-"price": 809.33,
-"asof": "2026-08-10 22:08 UTC"
+"price": 816.86,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "EMN",
-"price": 73.42,
-"asof": "2026-08-10 22:08 UTC"
+"price": 74.77,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "EMR",
-"price": 158.71,
-"asof": "2026-08-10 22:08 UTC"
+"price": 164.38,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ENPH",
-"price": 40.92,
-"asof": "2026-08-10 22:08 UTC"
+"price": 42.3,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ENS",
-"price": 186.3,
-"asof": "2026-08-10 22:08 UTC"
+"price": 186.21,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ENTG",
-"price": 144.21,
-"asof": "2026-08-10 22:08 UTC"
+"price": 150.21,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "EOG",
-"price": 142.22,
-"asof": "2026-08-10 22:08 UTC"
+"price": 143.4,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "EPAM",
-"price": 97.37,
-"asof": "2026-08-10 22:08 UTC"
+"price": 99.9,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "EPR",
-"price": 60.4,
-"asof": "2026-08-10 22:08 UTC"
+"price": 59.78,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "EQH",
-"price": 52.67,
-"asof": "2026-08-10 22:08 UTC"
+"price": 51.35,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "EQIX",
-"price": 1043.38,
-"asof": "2026-08-10 22:08 UTC"
+"price": 1032.4,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "EQR",
-"price": 65.83,
-"asof": "2026-08-10 22:08 UTC"
+"price": 65.09,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "EQT",
-"price": 54.08,
-"asof": "2026-08-10 22:08 UTC"
+"price": 54.37,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ERO",
-"price": 36.54,
-"asof": "2026-08-10 22:08 UTC"
+"price": 36.3,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ES",
-"price": 71.17,
-"asof": "2026-08-10 22:08 UTC"
+"price": 71.13,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ESAB",
-"price": 85.58,
-"asof": "2026-08-10 22:08 UTC"
+"price": 87.96,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ESEA",
-"price": 74.84,
-"asof": "2026-08-10 22:08 UTC"
+"price": 72.02,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ESI",
-"price": 37.27,
-"asof": "2026-08-10 22:08 UTC"
+"price": 37.65,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ESS",
-"price": 283.21,
-"asof": "2026-08-10 22:08 UTC"
+"price": 282.46,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ESTC",
-"price": 76.32,
-"asof": "2026-08-10 22:08 UTC"
+"price": 76.35,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ETHA",
-"price": 14.14,
-"asof": "2026-08-10 22:08 UTC"
+"price": 14.18,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ETN",
-"price": 444.96,
-"asof": "2026-08-10 22:08 UTC"
+"price": 459.29,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ETR",
-"price": 105.65,
-"asof": "2026-08-10 22:08 UTC"
+"price": 106.57,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ETSY",
-"price": 80.4,
-"asof": "2026-08-10 22:08 UTC"
+"price": 79.48,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "EVR",
-"price": 297.97,
-"asof": "2026-08-10 22:08 UTC"
+"price": 303.06,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "EVRG",
-"price": 82.09,
-"asof": "2026-08-10 22:08 UTC"
+"price": 82.03,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "EVTC",
-"price": 29.64,
-"asof": "2026-08-10 22:08 UTC"
+"price": 29.51,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "EW",
-"price": 92.03,
-"asof": "2026-08-10 22:08 UTC"
+"price": 93.66,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "EWBC",
-"price": 131.85,
-"asof": "2026-08-10 22:08 UTC"
+"price": 133.04,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "EXC",
-"price": 44.5,
-"asof": "2026-08-10 22:08 UTC"
+"price": 44.87,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "EXE",
-"price": 97.56,
-"asof": "2026-08-10 22:08 UTC"
+"price": 98.24,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "EXEL",
-"price": 52.96,
-"asof": "2026-08-10 22:08 UTC"
+"price": 51.33,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "EXLS",
-"price": 35.07,
-"asof": "2026-08-10 22:08 UTC"
+"price": 34.9,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "EXP",
-"price": 210.98,
-"asof": "2026-08-10 22:08 UTC"
+"price": 214.31,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "EXPD",
-"price": 179.0,
-"asof": "2026-08-10 22:08 UTC"
+"price": 177.21,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "EXPE",
-"price": 314.01,
-"asof": "2026-08-10 22:08 UTC"
+"price": 321.07,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "EXR",
-"price": 146.66,
-"asof": "2026-08-10 22:08 UTC"
+"price": 146.55,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "EYE",
-"price": 22.43,
-"asof": "2026-08-10 22:08 UTC"
+"price": 22.06,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "F",
-"price": 14.0,
-"asof": "2026-08-10 22:08 UTC"
+"price": 13.98,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FAF",
-"price": 72.21,
-"asof": "2026-08-10 22:08 UTC"
+"price": 71.69,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FANG",
-"price": 198.97,
-"asof": "2026-08-10 22:08 UTC"
+"price": 201.71,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FAST",
-"price": 52.15,
-"asof": "2026-08-10 22:08 UTC"
+"price": 52.38,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FBIN",
-"price": 47.99,
-"asof": "2026-08-10 22:08 UTC"
+"price": 50.0,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FCBM",
-"price": 12.69,
-"asof": "2026-08-10 22:08 UTC"
+"price": 12.86,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FCN",
-"price": 150.87,
-"asof": "2026-08-10 22:08 UTC"
+"price": 152.83,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FCNCA",
-"price": 2233.35,
-"asof": "2026-08-10 22:08 UTC"
+"price": 2253.13,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FCX",
-"price": 70.51,
-"asof": "2026-08-10 22:08 UTC"
+"price": 68.87,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FDS",
-"price": 284.12,
-"asof": "2026-08-10 22:08 UTC"
+"price": 282.95,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FDX",
-"price": 325.08,
-"asof": "2026-08-10 22:08 UTC"
+"price": 322.43,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FE",
-"price": 46.76,
-"asof": "2026-08-10 22:08 UTC"
+"price": 46.84,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FERG",
-"price": 263.78,
-"asof": "2026-08-10 22:08 UTC"
+"price": 251.51,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FFIV",
-"price": 409.99,
-"asof": "2026-08-10 22:08 UTC"
+"price": 414.0,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FHB",
-"price": 27.27,
-"asof": "2026-08-10 22:08 UTC"
+"price": 27.47,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FHN",
-"price": 25.23,
-"asof": "2026-08-10 22:08 UTC"
+"price": 25.43,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FICO",
-"price": 1049.74,
-"asof": "2026-08-10 22:08 UTC"
+"price": 1038.23,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FIGS",
-"price": 14.39,
-"asof": "2026-08-10 22:08 UTC"
+"price": 14.27,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FIS",
-"price": 42.51,
-"asof": "2026-08-10 22:08 UTC"
+"price": 42.76,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FISV",
-"price": 52.22,
-"asof": "2026-08-10 22:08 UTC"
+"price": 52.72,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FITB",
-"price": 57.13,
-"asof": "2026-08-10 22:08 UTC"
+"price": 57.6,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FIVE",
-"price": 235.36,
-"asof": "2026-08-10 22:08 UTC"
+"price": 234.24,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FIX",
-"price": 1674.84,
-"asof": "2026-08-10 22:08 UTC"
+"price": 1688.05,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FLEX",
-"price": 119.7,
-"asof": "2026-08-10 22:08 UTC"
+"price": 122.41,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FLO",
-"price": 7.14,
-"asof": "2026-08-10 22:08 UTC"
+"price": 7.16,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FLS",
-"price": 79.49,
-"asof": "2026-08-10 22:08 UTC"
+"price": 80.86,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FLUT",
-"price": 94.27,
-"asof": "2026-08-10 22:08 UTC"
+"price": 99.02,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FMC",
-"price": 10.46,
-"asof": "2026-08-10 22:08 UTC"
+"price": 10.41,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FNB",
-"price": 18.95,
-"asof": "2026-08-10 22:08 UTC"
+"price": 19.11,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FND",
-"price": 59.17,
-"asof": "2026-08-10 22:08 UTC"
+"price": 60.5,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FNF",
-"price": 47.99,
-"asof": "2026-08-10 22:08 UTC"
+"price": 47.57,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FNV",
-"price": 240.9,
-"asof": "2026-08-10 22:08 UTC"
+"price": 240.74,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FOUR",
-"price": 43.16,
-"asof": "2026-08-10 22:08 UTC"
+"price": 41.04,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FOX",
-"price": 56.33,
-"asof": "2026-08-10 22:08 UTC"
+"price": 55.34,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FOXA",
-"price": 63.42,
-"asof": "2026-08-10 22:08 UTC"
+"price": 62.14,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FPS",
-"price": 37.6,
-"asof": "2026-08-10 22:08 UTC"
+"price": 37.72,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FR",
-"price": 63.03,
-"asof": "2026-08-10 22:08 UTC"
+"price": 62.98,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FRHC",
-"price": 150.0,
-"asof": "2026-08-10 22:08 UTC"
+"price": 151.0,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FRPT",
-"price": 67.77,
-"asof": "2026-08-10 22:08 UTC"
+"price": 71.75,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FRT",
-"price": 117.13,
-"asof": "2026-08-10 22:08 UTC"
+"price": 116.74,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FSLR",
-"price": 239.33,
-"asof": "2026-08-10 22:08 UTC"
+"price": 240.91,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FTAI",
-"price": 215.0,
-"asof": "2026-08-10 22:08 UTC"
+"price": 225.6,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FTI",
-"price": 74.13,
-"asof": "2026-08-10 22:08 UTC"
+"price": 75.32,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FTNT",
-"price": 164.21,
-"asof": "2026-08-10 22:08 UTC"
+"price": 161.89,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FTV",
-"price": 61.75,
-"asof": "2026-08-10 22:08 UTC"
+"price": 61.68,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FUN",
-"price": 15.85,
-"asof": "2026-08-10 22:08 UTC"
+"price": 15.91,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FWDI",
-"price": 4.24,
-"asof": "2026-08-10 22:08 UTC"
+"price": 4.28,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FWONK",
-"price": 102.73,
-"asof": "2026-08-10 22:08 UTC"
+"price": 102.38,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "FWRD",
-"price": 18.77,
-"asof": "2026-08-10 22:08 UTC"
+"price": 18.6,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "G",
-"price": 34.13,
-"asof": "2026-08-10 22:08 UTC"
+"price": 33.96,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "GAP",
-"price": 21.51,
-"asof": "2026-08-10 22:08 UTC"
+"price": 20.96,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "GBFH",
-"price": 20.86,
-"asof": "2026-08-10 22:08 UTC"
+"price": 21.55,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "GD",
-"price": 395.97,
-"asof": "2026-08-10 22:08 UTC"
+"price": 391.89,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "GDDY",
-"price": 91.49,
-"asof": "2026-08-10 22:08 UTC"
+"price": 90.74,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "GE",
-"price": 366.7,
-"asof": "2026-08-10 22:08 UTC"
+"price": 368.06,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "GEHC",
-"price": 72.94,
-"asof": "2026-08-10 22:08 UTC"
+"price": 72.75,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "GEN",
-"price": 29.29,
-"asof": "2026-08-10 22:08 UTC"
+"price": 29.01,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "GEV",
-"price": 990.85,
-"asof": "2026-08-10 22:08 UTC"
+"price": 1011.88,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "GFS",
-"price": 50.05,
-"asof": "2026-08-10 22:08 UTC"
+"price": 50.82,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "GGG",
-"price": 83.38,
-"asof": "2026-08-10 22:08 UTC"
+"price": 83.53,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "GILD",
-"price": 133.06,
-"asof": "2026-08-10 22:08 UTC"
+"price": 135.77,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "GIS",
-"price": 37.26,
-"asof": "2026-08-10 22:08 UTC"
+"price": 37.93,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "GKOS",
-"price": 181.42,
-"asof": "2026-08-10 22:08 UTC"
+"price": 182.0,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "GL",
-"price": 183.26,
-"asof": "2026-08-10 22:08 UTC"
+"price": 181.04,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "GLD",
-"price": 402.54,
-"asof": "2026-08-10 22:08 UTC"
+"price": 400.96,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "GLOB",
-"price": 38.55,
-"asof": "2026-08-10 22:08 UTC"
+"price": 38.98,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "GLOO",
-"price": 3.48,
-"asof": "2026-08-10 22:08 UTC"
+"price": 3.46,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "GLPI",
-"price": 42.81,
-"asof": "2026-08-10 22:08 UTC"
+"price": 42.64,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "GLW",
-"price": 157.76,
-"asof": "2026-08-10 22:08 UTC"
+"price": 159.19,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "GM",
-"price": 87.96,
-"asof": "2026-08-10 22:08 UTC"
+"price": 89.35,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "GME",
-"price": 18.79,
-"asof": "2026-08-10 22:08 UTC"
+"price": 18.82,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "GMED",
-"price": 86.15,
-"asof": "2026-08-10 22:08 UTC"
+"price": 85.15,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "GNRC",
-"price": 206.09,
-"asof": "2026-08-10 22:08 UTC"
+"price": 215.86,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "GNTX",
-"price": 23.85,
-"asof": "2026-08-10 22:08 UTC"
+"price": 23.93,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "GOGO",
-"price": 3.19,
-"asof": "2026-08-10 22:08 UTC"
+"price": 2.89,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "GOLD",
-"price": 43.47,
-"asof": "2026-08-10 22:08 UTC"
+"price": 43.44,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "GOOG",
-"price": 355.84,
-"asof": "2026-08-10 22:08 UTC"
+"price": 343.0,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "GOOGL",
-"price": 357.52,
-"asof": "2026-08-10 22:08 UTC"
+"price": 343.8,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "GPC",
-"price": 134.54,
-"asof": "2026-08-10 22:08 UTC"
+"price": 135.09,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "GPGI",
-"price": 14.35,
-"asof": "2026-08-10 22:08 UTC"
+"price": 14.17,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "GPK",
-"price": 11.91,
-"asof": "2026-08-10 22:08 UTC"
+"price": 11.96,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "GPN",
-"price": 86.13,
-"asof": "2026-08-10 22:08 UTC"
+"price": 85.86,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "GRMN",
-"price": 313.16,
-"asof": "2026-08-10 22:08 UTC"
+"price": 309.65,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "GRNT",
-"price": 5.08,
-"asof": "2026-08-10 22:08 UTC"
+"price": 5.18,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "GS",
-"price": 1034.51,
-"asof": "2026-08-10 22:08 UTC"
+"price": 1034.41,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "GSHD",
-"price": 64.55,
-"asof": "2026-08-10 22:08 UTC"
+"price": 65.31,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "GSUI",
-"price": 10.06,
-"asof": "2026-08-10 22:08 UTC"
+"price": 9.9,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "GTES",
-"price": 28.4,
-"asof": "2026-08-10 22:08 UTC"
+"price": 28.44,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "GTLB",
-"price": 40.73,
-"asof": "2026-08-10 22:08 UTC"
+"price": 42.11,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "GWRE",
-"price": 172.94,
-"asof": "2026-08-10 22:08 UTC"
+"price": 176.65,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "GWRS",
-"price": 7.37,
-"asof": "2026-08-10 22:08 UTC"
+"price": 7.61,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "GWW",
-"price": 1297.45,
-"asof": "2026-08-10 22:08 UTC"
+"price": 1301.94,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "GXO",
-"price": 46.96,
-"asof": "2026-08-10 22:08 UTC"
+"price": 46.67,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "H",
-"price": 170.08,
-"asof": "2026-08-10 22:08 UTC"
+"price": 172.64,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "HAL",
-"price": 33.64,
-"asof": "2026-08-10 22:08 UTC"
+"price": 33.8,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "HALO",
 "price": 102.62,
-"asof": "2026-08-10 22:08 UTC"
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "HAS",
-"price": 94.49,
-"asof": "2026-08-10 22:08 UTC"
+"price": 97.04,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "HBAN",
-"price": 17.6,
-"asof": "2026-08-10 22:08 UTC"
+"price": 17.77,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "HCA",
-"price": 414.03,
-"asof": "2026-08-10 22:08 UTC"
+"price": 411.44,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "HD",
-"price": 350.78,
-"asof": "2026-08-10 22:08 UTC"
+"price": 354.48,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "HEI",
-"price": 363.94,
-"asof": "2026-08-10 22:08 UTC"
+"price": 366.92,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "HHH",
-"price": 65.55,
-"asof": "2026-08-10 22:08 UTC"
+"price": 67.03,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "HIG",
-"price": 141.15,
-"asof": "2026-08-10 22:08 UTC"
+"price": 139.08,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "HII",
-"price": 330.81,
-"asof": "2026-08-10 22:08 UTC"
+"price": 327.85,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "HIMX",
-"price": 14.73,
-"asof": "2026-08-10 22:08 UTC"
+"price": 14.98,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "HLI",
-"price": 123.39,
-"asof": "2026-08-10 22:08 UTC"
+"price": 125.45,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "HLT",
-"price": 311.0,
-"asof": "2026-08-10 22:08 UTC"
+"price": 314.66,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "HOG",
-"price": 26.09,
-"asof": "2026-08-10 22:08 UTC"
+"price": 26.72,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "HON",
-"price": 242.93,
-"asof": "2026-08-10 22:08 UTC"
+"price": 230.12,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "HOOD",
-"price": 94.52,
-"asof": "2026-08-10 22:08 UTC"
+"price": 94.38,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "HPE",
-"price": 54.68,
-"asof": "2026-08-10 22:08 UTC"
+"price": 54.38,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "HPQ",
-"price": 29.8,
-"asof": "2026-08-10 22:08 UTC"
+"price": 29.07,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "HR",
-"price": 19.64,
-"asof": "2026-08-10 22:08 UTC"
+"price": 19.15,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "HRB",
-"price": 45.93,
-"asof": "2026-08-10 22:08 UTC"
+"price": 46.67,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "HRL",
-"price": 24.7,
-"asof": "2026-08-10 22:08 UTC"
+"price": 24.3,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "HSDT",
-"price": 1.7,
-"asof": "2026-08-10 22:08 UTC"
+"price": 1.74,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "HSIC",
-"price": 88.08,
-"asof": "2026-08-10 22:08 UTC"
+"price": 89.18,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "HST",
-"price": 22.67,
-"asof": "2026-08-10 22:08 UTC"
+"price": 22.29,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "HSY",
-"price": 182.75,
-"asof": "2026-08-10 22:08 UTC"
+"price": 181.98,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "HUBB",
-"price": 504.9,
-"asof": "2026-08-10 22:08 UTC"
+"price": 519.62,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "HUBS",
-"price": 215.91,
-"asof": "2026-08-10 22:08 UTC"
+"price": 220.51,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "HUM",
-"price": 385.7,
-"asof": "2026-08-10 22:08 UTC"
+"price": 372.82,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "HUN",
-"price": 10.36,
-"asof": "2026-08-10 22:08 UTC"
+"price": 10.44,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "HURN",
-"price": 152.03,
-"asof": "2026-08-10 22:08 UTC"
+"price": 152.75,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "HWM",
-"price": 283.71,
-"asof": "2026-08-10 22:08 UTC"
+"price": 281.34,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "HXL",
-"price": 100.83,
-"asof": "2026-08-10 22:08 UTC"
+"price": 100.51,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "IBIT",
-"price": 36.23,
-"asof": "2026-08-10 22:08 UTC"
+"price": 35.94,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "IBKR",
-"price": 90.66,
-"asof": "2026-08-10 22:08 UTC"
+"price": 89.78,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "IBM",
-"price": 236.31,
-"asof": "2026-08-10 22:08 UTC"
+"price": 238.42,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ICE",
-"price": 150.54,
-"asof": "2026-08-10 22:08 UTC"
+"price": 151.25,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ICFI",
-"price": 91.51,
-"asof": "2026-08-10 22:08 UTC"
+"price": 90.58,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ICHR",
-"price": 64.77,
-"asof": "2026-08-10 22:08 UTC"
+"price": 67.51,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "IDA",
-"price": 139.69,
-"asof": "2026-08-10 22:08 UTC"
+"price": 140.15,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "IDXX",
-"price": 595.76,
-"asof": "2026-08-10 22:08 UTC"
+"price": 586.64,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "IEX",
-"price": 233.27,
-"asof": "2026-08-10 22:08 UTC"
+"price": 237.31,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "IFF",
-"price": 85.09,
-"asof": "2026-08-10 22:08 UTC"
+"price": 85.0,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ILMN",
-"price": 191.79,
-"asof": "2026-08-10 22:08 UTC"
+"price": 192.84,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ILPT",
-"price": 8.74,
-"asof": "2026-08-10 22:08 UTC"
+"price": 8.85,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "INCY",
-"price": 121.55,
-"asof": "2026-08-10 22:08 UTC"
+"price": 121.07,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "INGR",
-"price": 103.48,
-"asof": "2026-08-10 22:08 UTC"
+"price": 104.67,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "INSM",
-"price": 134.75,
-"asof": "2026-08-10 22:08 UTC"
+"price": 132.57,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "INSP",
-"price": 59.72,
-"asof": "2026-08-10 22:08 UTC"
+"price": 59.13,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "INTC",
-"price": 97.52,
-"asof": "2026-08-10 22:08 UTC"
+"price": 97.71,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "INTU",
-"price": 334.43,
-"asof": "2026-08-10 22:08 UTC"
+"price": 336.44,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "INVH",
-"price": 29.89,
-"asof": "2026-08-10 22:08 UTC"
+"price": 29.79,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "IONS",
-"price": 56.94,
-"asof": "2026-08-10 22:08 UTC"
+"price": 55.42,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "IOT",
-"price": 39.86,
-"asof": "2026-08-10 22:08 UTC"
+"price": 40.32,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "IP",
-"price": 41.34,
-"asof": "2026-08-10 22:08 UTC"
+"price": 41.8,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "IPGP",
-"price": 84.89,
-"asof": "2026-08-10 22:08 UTC"
+"price": 85.8,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "IPX",
-"price": 25.66,
-"asof": "2026-08-10 22:08 UTC"
+"price": 25.25,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "IQV",
-"price": 241.99,
-"asof": "2026-08-10 22:08 UTC"
+"price": 243.84,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "IR",
-"price": 86.63,
-"asof": "2026-08-10 22:08 UTC"
+"price": 85.02,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "IRDM",
-"price": 49.32,
-"asof": "2026-08-10 22:08 UTC"
+"price": 49.38,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "IRM",
-"price": 121.56,
-"asof": "2026-08-10 22:08 UTC"
+"price": 122.39,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ISRG",
-"price": 393.38,
-"asof": "2026-08-10 22:08 UTC"
+"price": 401.23,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ISTR",
-"price": 29.83,
-"asof": "2026-08-10 22:08 UTC"
+"price": 30.28,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "IT",
-"price": 193.17,
-"asof": "2026-08-10 22:08 UTC"
+"price": 187.27,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ITT",
-"price": 211.92,
-"asof": "2026-08-10 22:08 UTC"
+"price": 216.89,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ITW",
-"price": 294.52,
-"asof": "2026-08-10 22:08 UTC"
+"price": 293.15,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "IVZ",
-"price": 31.74,
-"asof": "2026-08-10 22:08 UTC"
+"price": 31.36,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "IWM",
-"price": 299.98,
-"asof": "2026-08-10 22:08 UTC"
+"price": 300.99,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "J",
-"price": 147.33,
-"asof": "2026-08-10 22:08 UTC"
+"price": 147.62,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "JAZZ",
-"price": 256.52,
-"asof": "2026-08-10 22:08 UTC"
+"price": 247.98,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "JBHT",
-"price": 266.14,
-"asof": "2026-08-10 22:08 UTC"
+"price": 265.38,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "JBL",
-"price": 336.63,
-"asof": "2026-08-10 22:08 UTC"
+"price": 356.61,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "JCI",
-"price": 150.7,
-"asof": "2026-08-10 22:08 UTC"
+"price": 154.76,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "JEF",
-"price": 55.31,
-"asof": "2026-08-10 22:08 UTC"
+"price": 55.0,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "JHX",
-"price": 30.43,
-"asof": "2026-08-10 22:08 UTC"
+"price": 31.08,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "JKHY",
-"price": 155.08,
-"asof": "2026-08-10 22:08 UTC"
+"price": 153.63,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "JLL",
-"price": 357.35,
-"asof": "2026-08-10 22:08 UTC"
+"price": 363.36,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "JNJ",
-"price": 261.81,
-"asof": "2026-08-10 22:08 UTC"
+"price": 259.8,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "JPM",
-"price": 359.79,
-"asof": "2026-08-10 22:08 UTC"
+"price": 362.04,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "KBR",
-"price": 38.29,
-"asof": "2026-08-10 22:08 UTC"
+"price": 37.56,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "KD",
-"price": 13.63,
-"asof": "2026-08-10 22:08 UTC"
+"price": 13.36,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "KDP",
-"price": 29.3,
-"asof": "2026-08-10 22:08 UTC"
+"price": 29.18,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "KEX",
-"price": 132.49,
-"asof": "2026-08-10 22:08 UTC"
+"price": 132.65,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "KEY",
-"price": 22.68,
-"asof": "2026-08-10 22:08 UTC"
+"price": 22.69,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "KEYS",
-"price": 335.41,
-"asof": "2026-08-10 22:08 UTC"
+"price": 343.7,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "KHC",
-"price": 24.93,
-"asof": "2026-08-10 22:08 UTC"
+"price": 24.65,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "KIM",
-"price": 24.11,
-"asof": "2026-08-10 22:08 UTC"
+"price": 23.97,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "KKR",
-"price": 103.83,
-"asof": "2026-08-10 22:08 UTC"
+"price": 110.97,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "KLAC",
-"price": 192.74,
-"asof": "2026-08-10 22:08 UTC"
+"price": 200.47,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "KMB",
-"price": 108.02,
-"asof": "2026-08-10 22:08 UTC"
+"price": 108.57,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "KMI",
-"price": 31.39,
-"asof": "2026-08-10 22:08 UTC"
+"price": 31.48,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "KMPR",
-"price": 26.39,
-"asof": "2026-08-10 22:08 UTC"
+"price": 26.18,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "KMX",
-"price": 58.78,
-"asof": "2026-08-10 22:08 UTC"
+"price": 58.18,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "KNSL",
-"price": 368.6,
-"asof": "2026-08-10 22:08 UTC"
+"price": 374.6,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "KNX",
-"price": 68.67,
-"asof": "2026-08-10 22:08 UTC"
+"price": 68.53,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "KO",
-"price": 86.87,
-"asof": "2026-08-10 22:08 UTC"
+"price": 86.48,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "KR",
-"price": 56.48,
-"asof": "2026-08-10 22:08 UTC"
+"price": 56.25,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "KRC",
-"price": 37.15,
-"asof": "2026-08-10 22:08 UTC"
+"price": 36.44,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "KRMN",
-"price": 62.16,
-"asof": "2026-08-10 22:08 UTC"
+"price": 61.94,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "KTOS",
-"price": 62.42,
-"asof": "2026-08-10 22:08 UTC"
+"price": 63.73,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "KVUE",
-"price": 19.03,
-"asof": "2026-08-10 22:08 UTC"
+"price": 19.05,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "L",
-"price": 113.8,
-"asof": "2026-08-10 22:08 UTC"
+"price": 113.15,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "LAD",
-"price": 379.84,
-"asof": "2026-08-10 22:08 UTC"
+"price": 378.33,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "LAMR",
-"price": 154.64,
-"asof": "2026-08-10 22:08 UTC"
+"price": 153.82,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "LAW",
-"price": 4.17,
-"asof": "2026-08-10 22:08 UTC"
+"price": 4.21,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "LAZ",
-"price": 42.67,
-"asof": "2026-08-10 22:08 UTC"
+"price": 43.51,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "LCID",
-"price": 6.61,
-"asof": "2026-08-10 22:08 UTC"
+"price": 6.7,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "LDOS",
-"price": 139.1,
-"asof": "2026-08-10 22:08 UTC"
+"price": 140.89,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "LEA",
-"price": 120.87,
-"asof": "2026-08-10 22:08 UTC"
+"price": 121.93,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "LECO",
-"price": 277.33,
-"asof": "2026-08-10 22:08 UTC"
+"price": 284.27,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "LEN",
-"price": 85.6,
-"asof": "2026-08-10 22:08 UTC"
+"price": 87.55,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "LEU",
-"price": 189.34,
-"asof": "2026-08-10 22:08 UTC"
+"price": 189.19,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "LFUS",
-"price": 455.18,
-"asof": "2026-08-10 22:08 UTC"
+"price": 453.87,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "LH",
-"price": 321.31,
-"asof": "2026-08-10 22:08 UTC"
+"price": 322.42,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "LHX",
-"price": 289.72,
-"asof": "2026-08-10 22:08 UTC"
+"price": 286.02,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "LII",
-"price": 423.28,
-"asof": "2026-08-10 22:08 UTC"
+"price": 430.83,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "LILA",
-"price": 8.51,
-"asof": "2026-08-10 22:08 UTC"
+"price": 8.57,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "LIN",
-"price": 492.46,
-"asof": "2026-08-10 22:08 UTC"
+"price": 490.53,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "LITE",
-"price": 813.51,
-"asof": "2026-08-10 22:08 UTC"
+"price": 820.59,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "LKQ",
-"price": 24.57,
-"asof": "2026-08-10 22:08 UTC"
+"price": 24.7,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "LLY",
-"price": 1231.94,
-"asof": "2026-08-10 22:08 UTC"
+"price": 1215.02,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "LMT",
-"price": 603.16,
-"asof": "2026-08-10 22:08 UTC"
+"price": 597.77,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "LNC",
-"price": 45.68,
-"asof": "2026-08-10 22:08 UTC"
+"price": 44.43,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "LNG",
-"price": 265.68,
-"asof": "2026-08-10 22:08 UTC"
+"price": 265.43,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "LNT",
-"price": 68.21,
-"asof": "2026-08-10 22:08 UTC"
+"price": 68.58,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "LODE",
-"price": 3.25,
-"asof": "2026-08-10 22:08 UTC"
+"price": 3.55,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "LOGC",
-"price": 10.22,
-"asof": "2026-08-10 22:08 UTC"
+"price": 10.34,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "LOPE",
-"price": 146.5,
-"asof": "2026-08-10 22:08 UTC"
+"price": 144.38,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "LOVE",
-"price": 17.3,
-"asof": "2026-08-10 22:08 UTC"
+"price": 17.6,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "LOW",
-"price": 218.88,
-"asof": "2026-08-10 22:08 UTC"
+"price": 221.25,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "LPLA",
-"price": 372.11,
-"asof": "2026-08-10 22:08 UTC"
+"price": 371.19,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "LPX",
-"price": 74.39,
-"asof": "2026-08-10 22:08 UTC"
+"price": 75.52,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "LRCX",
-"price": 306.4,
-"asof": "2026-08-10 22:08 UTC"
+"price": 311.41,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "LSCC",
-"price": 128.32,
-"asof": "2026-08-10 22:08 UTC"
+"price": 126.12,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "LSTR",
-"price": 178.35,
-"asof": "2026-08-10 22:08 UTC"
+"price": 177.74,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "LTC",
-"price": 39.42,
-"asof": "2026-08-10 22:08 UTC"
+"price": 38.11,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "LTRX",
-"price": 5.73,
-"asof": "2026-08-10 22:08 UTC"
+"price": 5.91,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "LULU",
-"price": 127.8,
-"asof": "2026-08-10 22:08 UTC"
+"price": 125.61,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "LUV",
-"price": 44.9,
-"asof": "2026-08-10 22:08 UTC"
+"price": 45.52,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "LVS",
-"price": 45.46,
-"asof": "2026-08-10 22:08 UTC"
+"price": 45.72,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "LW",
-"price": 51.81,
-"asof": "2026-08-10 22:08 UTC"
+"price": 52.59,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "LYB",
-"price": 62.65,
-"asof": "2026-08-10 22:08 UTC"
+"price": 63.98,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "LYFT",
-"price": 17.26,
-"asof": "2026-08-10 22:08 UTC"
+"price": 17.54,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "LYV",
-"price": 184.64,
-"asof": "2026-08-10 22:08 UTC"
+"price": 183.33,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "M",
-"price": 24.9,
-"asof": "2026-08-10 22:08 UTC"
+"price": 24.52,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MA",
-"price": 563.17,
-"asof": "2026-08-10 22:08 UTC"
+"price": 561.44,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MAA",
-"price": 132.34,
-"asof": "2026-08-10 22:08 UTC"
+"price": 131.74,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MAN",
-"price": 56.52,
-"asof": "2026-08-10 22:08 UTC"
+"price": 56.24,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MANH",
-"price": 195.69,
-"asof": "2026-08-10 22:08 UTC"
+"price": 195.2,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MAR",
-"price": 348.44,
-"asof": "2026-08-10 22:08 UTC"
+"price": 349.49,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MAS",
-"price": 74.72,
-"asof": "2026-08-10 22:08 UTC"
+"price": 76.14,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MAT",
-"price": 14.74,
-"asof": "2026-08-10 22:08 UTC"
+"price": 15.03,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MBC",
-"price": 9.06,
-"asof": "2026-08-10 22:08 UTC"
+"price": 9.22,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MBX",
-"price": 66.15,
-"asof": "2026-08-10 22:08 UTC"
+"price": 66.01,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MCD",
-"price": 273.72,
-"asof": "2026-08-10 22:08 UTC"
+"price": 274.15,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MCHP",
-"price": 81.39,
-"asof": "2026-08-10 22:08 UTC"
+"price": 81.02,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MCK",
-"price": 879.87,
-"asof": "2026-08-10 22:08 UTC"
+"price": 901.77,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MCO",
-"price": 478.14,
-"asof": "2026-08-10 22:08 UTC"
+"price": 476.48,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MDB",
-"price": 416.67,
-"asof": "2026-08-10 22:08 UTC"
+"price": 439.16,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MDLN",
-"price": 33.81,
-"asof": "2026-08-10 22:08 UTC"
+"price": 35.04,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MDLZ",
-"price": 61.53,
-"asof": "2026-08-10 22:08 UTC"
+"price": 61.78,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MDT",
-"price": 89.41,
-"asof": "2026-08-10 22:08 UTC"
+"price": 90.68,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MDU",
-"price": 20.41,
-"asof": "2026-08-10 22:08 UTC"
+"price": 20.5,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MEDP",
-"price": 602.43,
-"asof": "2026-08-10 22:08 UTC"
+"price": 605.5,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MELI",
-"price": 1824.34,
-"asof": "2026-08-10 22:08 UTC"
+"price": 1940.0,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MET",
-"price": 97.03,
-"asof": "2026-08-10 22:08 UTC"
+"price": 96.8,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "META",
-"price": 594.92,
-"asof": "2026-08-10 22:08 UTC"
+"price": 599.12,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MFP",
-"price": 44.82,
-"asof": "2026-08-10 22:08 UTC"
+"price": 44.95,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MGM",
-"price": 43.36,
-"asof": "2026-08-10 22:08 UTC"
+"price": 44.13,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MHK",
-"price": 135.65,
-"asof": "2026-08-10 22:08 UTC"
+"price": 136.68,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MIDD",
-"price": 130.3,
-"asof": "2026-08-10 22:08 UTC"
+"price": 119.99,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MIR",
-"price": 15.07,
-"asof": "2026-08-10 22:08 UTC"
+"price": 15.27,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MITK",
-"price": 18.55,
-"asof": "2026-08-10 22:08 UTC"
+"price": 18.52,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MKC",
-"price": 53.13,
-"asof": "2026-08-10 22:08 UTC"
+"price": 52.89,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MKL",
-"price": 1840.08,
-"asof": "2026-08-10 22:08 UTC"
+"price": 1841.04,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MKSI",
-"price": 292.35,
-"asof": "2026-08-10 22:08 UTC"
+"price": 294.38,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MKTX",
-"price": 162.5,
-"asof": "2026-08-10 22:08 UTC"
+"price": 162.53,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MLI",
-"price": 68.9,
-"asof": "2026-08-10 22:08 UTC"
+"price": 68.45,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MLM",
-"price": 549.54,
-"asof": "2026-08-10 22:08 UTC"
+"price": 553.67,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MMM",
-"price": 182.04,
-"asof": "2026-08-10 22:08 UTC"
+"price": 183.13,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MNST",
-"price": 91.43,
-"asof": "2026-08-10 22:08 UTC"
+"price": 45.53,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MO",
-"price": 65.54,
-"asof": "2026-08-10 22:08 UTC"
+"price": 65.03,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MOBI",
-"price": 12.73,
-"asof": "2026-08-10 22:08 UTC"
+"price": 12.58,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MOH",
-"price": 198.84,
-"asof": "2026-08-10 22:08 UTC"
+"price": 194.54,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MORN",
-"price": 201.03,
-"asof": "2026-08-10 22:08 UTC"
+"price": 195.38,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MOS",
-"price": 23.47,
-"asof": "2026-08-10 22:08 UTC"
+"price": 23.1,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MP",
-"price": 54.66,
-"asof": "2026-08-10 22:08 UTC"
+"price": 55.24,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MPC",
-"price": 320.32,
-"asof": "2026-08-10 22:08 UTC"
+"price": 336.42,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MPT",
-"price": 4.15,
-"asof": "2026-08-10 22:08 UTC"
+"price": 4.02,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MPWR",
-"price": 1381.1,
-"asof": "2026-08-10 22:08 UTC"
+"price": 1402.11,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MRK",
-"price": 130.92,
-"asof": "2026-08-10 22:08 UTC"
+"price": 130.42,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MRNA",
-"price": 59.81,
-"asof": "2026-08-10 22:08 UTC"
+"price": 60.57,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MRP",
-"price": 28.8,
-"asof": "2026-08-10 22:08 UTC"
+"price": 29.73,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MRSH",
-"price": 190.79,
-"asof": "2026-08-10 22:08 UTC"
+"price": 191.25,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MRVL",
-"price": 208.56,
-"asof": "2026-08-10 22:08 UTC"
+"price": 212.31,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MS",
-"price": 215.33,
-"asof": "2026-08-10 22:08 UTC"
+"price": 215.07,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MSA",
-"price": 193.13,
-"asof": "2026-08-10 22:08 UTC"
+"price": 192.96,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MSCI",
-"price": 563.08,
-"asof": "2026-08-10 22:08 UTC"
+"price": 561.71,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MSFT",
-"price": 506.06,
-"asof": "2026-08-10 22:08 UTC"
+"price": 503.81,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MSGS",
-"price": 391.87,
-"asof": "2026-08-10 22:08 UTC"
+"price": 393.47,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MSI",
-"price": 461.98,
-"asof": "2026-08-10 22:08 UTC"
+"price": 466.86,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MSM",
-"price": 122.93,
-"asof": "2026-08-10 22:08 UTC"
+"price": 120.06,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MSTR",
-"price": 97.33,
-"asof": "2026-08-10 22:08 UTC"
+"price": 96.09,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MTB",
-"price": 251.13,
-"asof": "2026-08-10 22:08 UTC"
+"price": 252.16,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MTCH",
-"price": 36.73,
-"asof": "2026-08-10 22:08 UTC"
+"price": 36.8,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MTD",
-"price": 1427.53,
-"asof": "2026-08-10 22:08 UTC"
+"price": 1437.18,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MTDR",
-"price": 52.23,
-"asof": "2026-08-10 22:08 UTC"
+"price": 52.62,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MTG",
-"price": 30.27,
-"asof": "2026-08-10 22:08 UTC"
+"price": 30.35,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MTN",
-"price": 146.26,
-"asof": "2026-08-10 22:08 UTC"
+"price": 147.66,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MTSI",
-"price": 297.03,
-"asof": "2026-08-10 22:08 UTC"
+"price": 299.93,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MTZ",
-"price": 268.28,
-"asof": "2026-08-10 22:08 UTC"
+"price": 272.65,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MU",
-"price": 861.0,
-"asof": "2026-08-10 22:08 UTC"
+"price": 868.52,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MUSA",
-"price": 552.84,
-"asof": "2026-08-10 22:08 UTC"
+"price": 544.22,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "MXL",
-"price": 68.44,
-"asof": "2026-08-10 22:08 UTC"
+"price": 69.02,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "NBBK",
-"price": 22.58,
-"asof": "2026-08-10 22:08 UTC"
+"price": 22.75,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "NBIS",
-"price": 184.11,
-"asof": "2026-08-10 22:08 UTC"
+"price": 193.23,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "NBIX",
-"price": 164.92,
-"asof": "2026-08-10 22:08 UTC"
+"price": 161.94,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "NCLH",
-"price": 18.55,
-"asof": "2026-08-10 22:08 UTC"
+"price": 18.7,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "NCNO",
-"price": 18.97,
-"asof": "2026-08-10 22:08 UTC"
+"price": 19.16,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "NDAQ",
-"price": 95.62,
-"asof": "2026-08-10 22:08 UTC"
+"price": 95.02,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "NDSN",
-"price": 308.68,
-"asof": "2026-08-10 22:08 UTC"
+"price": 311.36,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "NEE",
-"price": 84.7,
-"asof": "2026-08-10 22:08 UTC"
+"price": 85.74,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "NEM",
-"price": 117.26,
-"asof": "2026-08-10 22:08 UTC"
+"price": 117.21,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "NET",
-"price": 310.59,
-"asof": "2026-08-10 22:08 UTC"
+"price": 306.97,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "NEU",
-"price": 909.98,
-"asof": "2026-08-10 22:08 UTC"
+"price": 917.09,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "NFG",
-"price": 81.82,
-"asof": "2026-08-10 22:08 UTC"
+"price": 82.25,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "NFLX",
-"price": 76.29,
-"asof": "2026-08-10 22:08 UTC"
+"price": 74.79,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "NI",
-"price": 41.78,
-"asof": "2026-08-10 22:08 UTC"
+"price": 42.01,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "NKE",
-"price": 42.11,
-"asof": "2026-08-10 22:08 UTC"
+"price": 41.32,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "NLY",
-"price": 22.91,
-"asof": "2026-08-10 22:08 UTC"
+"price": 23.14,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "NNN",
-"price": 45.86,
-"asof": "2026-08-10 22:08 UTC"
+"price": 45.37,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "NOC",
-"price": 577.89,
-"asof": "2026-08-10 22:08 UTC"
+"price": 575.69,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "NOMD",
-"price": 11.65,
-"asof": "2026-08-10 22:08 UTC"
+"price": 11.37,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "NOV",
-"price": 20.7,
-"asof": "2026-08-10 22:08 UTC"
+"price": 21.02,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "NOW",
-"price": 127.44,
-"asof": "2026-08-10 22:08 UTC"
+"price": 127.54,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "NPB",
-"price": 16.99,
-"asof": "2026-08-10 22:08 UTC"
+"price": 17.09,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "NRG",
-"price": 118.91,
-"asof": "2026-08-10 22:08 UTC"
+"price": 119.79,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "NSC",
-"price": 333.95,
-"asof": "2026-08-10 22:08 UTC"
+"price": 334.6,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "NTAP",
-"price": 198.72,
-"asof": "2026-08-10 22:08 UTC"
+"price": 198.47,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "NTNX",
-"price": 64.46,
-"asof": "2026-08-10 22:08 UTC"
+"price": 64.32,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "NTR",
-"price": 66.31,
-"asof": "2026-08-10 22:08 UTC"
+"price": 67.28,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "NTRA",
-"price": 318.35,
-"asof": "2026-08-10 22:08 UTC"
+"price": 312.72,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "NTRS",
-"price": 187.86,
-"asof": "2026-08-10 22:08 UTC"
+"price": 187.78,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "NU",
-"price": 13.86,
-"asof": "2026-08-10 22:08 UTC"
+"price": 13.65,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "NUE",
-"price": 274.61,
-"asof": "2026-08-10 22:08 UTC"
+"price": 271.95,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "NVCR",
-"price": 17.31,
-"asof": "2026-08-10 22:08 UTC"
+"price": 17.66,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "NVDA",
-"price": 217.55,
-"asof": "2026-08-10 22:08 UTC"
+"price": 217.5,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "NVR",
-"price": 6292.28,
-"asof": "2026-08-10 22:08 UTC"
+"price": 6429.96,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "NVRI",
-"price": 21.87,
-"asof": "2026-08-10 22:08 UTC"
+"price": 20.14,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "NVST",
-"price": 28.19,
-"asof": "2026-08-10 22:08 UTC"
+"price": 28.52,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "NVT",
-"price": 162.33,
-"asof": "2026-08-10 22:08 UTC"
+"price": 167.16,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "NWBI",
-"price": 15.49,
-"asof": "2026-08-10 22:08 UTC"
+"price": 15.63,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "NWL",
-"price": 5.9,
-"asof": "2026-08-10 22:08 UTC"
+"price": 6.15,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "NWS",
-"price": 32.5,
-"asof": "2026-08-10 22:08 UTC"
+"price": 32.67,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "NWSA",
-"price": 28.49,
-"asof": "2026-08-10 22:08 UTC"
+"price": 28.63,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "NXST",
-"price": 191.73,
-"asof": "2026-08-10 22:08 UTC"
+"price": 184.56,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "NYT",
-"price": 64.8,
-"asof": "2026-08-10 22:08 UTC"
+"price": 63.73,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "O",
 "price": 61.89,
-"asof": "2026-08-10 22:08 UTC"
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "OC",
-"price": 153.8,
-"asof": "2026-08-10 22:08 UTC"
+"price": 158.92,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ODFL",
-"price": 212.55,
-"asof": "2026-08-10 22:08 UTC"
+"price": 209.44,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "OGE",
-"price": 46.18,
-"asof": "2026-08-10 22:08 UTC"
+"price": 46.32,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "OGN",
-"price": 13.62,
-"asof": "2026-08-10 22:08 UTC"
+"price": 13.65,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "OHI",
-"price": 47.39,
-"asof": "2026-08-10 22:08 UTC"
+"price": 45.57,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "OI",
-"price": 7.0,
-"asof": "2026-08-10 22:08 UTC"
+"price": 7.15,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "OKE",
-"price": 90.34,
-"asof": "2026-08-10 22:08 UTC"
+"price": 91.52,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "OKTA",
-"price": 150.77,
-"asof": "2026-08-10 22:08 UTC"
+"price": 150.33,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "OLED",
-"price": 90.54,
-"asof": "2026-08-10 22:08 UTC"
+"price": 94.04,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "OLLI",
-"price": 79.38,
-"asof": "2026-08-10 22:08 UTC"
+"price": 78.71,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "OLN",
-"price": 18.82,
-"asof": "2026-08-10 22:08 UTC"
+"price": 19.08,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "OMC",
-"price": 84.65,
-"asof": "2026-08-10 22:08 UTC"
+"price": 85.95,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "OMDA",
-"price": 24.99,
-"asof": "2026-08-10 22:08 UTC"
+"price": 24.01,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "OMF",
-"price": 63.16,
-"asof": "2026-08-10 22:08 UTC"
+"price": 63.67,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ON",
-"price": 79.78,
-"asof": "2026-08-10 22:08 UTC"
+"price": 81.11,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ONON",
-"price": 38.78,
-"asof": "2026-08-10 22:08 UTC"
+"price": 30.91,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ONT",
-"price": 15.54,
-"asof": "2026-08-10 22:08 UTC"
+"price": 16.41,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ONTO",
-"price": 291.35,
-"asof": "2026-08-10 22:08 UTC"
+"price": 319.79,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ORCL",
-"price": 151.05,
-"asof": "2026-08-10 22:08 UTC"
+"price": 145.48,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ORI",
-"price": 42.47,
-"asof": "2026-08-10 22:08 UTC"
+"price": 42.43,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ORN",
-"price": 9.79,
-"asof": "2026-08-10 22:08 UTC"
+"price": 9.77,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "OSK",
-"price": 155.39,
-"asof": "2026-08-10 22:08 UTC"
+"price": 155.78,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "OSS",
-"price": 12.65,
-"asof": "2026-08-10 22:08 UTC"
+"price": 12.72,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "OTIS",
-"price": 72.87,
-"asof": "2026-08-10 22:08 UTC"
+"price": 73.04,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "OVV",
-"price": 63.56,
-"asof": "2026-08-10 22:08 UTC"
+"price": 63.45,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "OWL",
-"price": 11.65,
-"asof": "2026-08-10 22:08 UTC"
+"price": 12.32,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "OXY",
-"price": 58.65,
-"asof": "2026-08-10 22:08 UTC"
+"price": 59.06,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "OZK",
-"price": 51.59,
-"asof": "2026-08-10 22:08 UTC"
+"price": 51.87,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "P",
-"price": 97.98,
-"asof": "2026-08-10 22:08 UTC"
+"price": 109.38,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PAG",
-"price": 216.27,
-"asof": "2026-08-10 22:08 UTC"
+"price": 216.66,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PAM",
-"price": 82.71,
-"asof": "2026-08-10 22:08 UTC"
+"price": 79.81,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PANW",
-"price": 385.04,
-"asof": "2026-08-10 22:08 UTC"
+"price": 383.8,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PATH",
-"price": 15.59,
-"asof": "2026-08-10 22:08 UTC"
+"price": 15.72,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PAYC",
-"price": 213.45,
-"asof": "2026-08-10 22:08 UTC"
+"price": 212.23,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PAYX",
-"price": 121.18,
-"asof": "2026-08-10 22:08 UTC"
+"price": 121.3,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PB",
-"price": 73.34,
-"asof": "2026-08-10 22:08 UTC"
+"price": 73.64,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PCAR",
-"price": 131.24,
-"asof": "2026-08-10 22:08 UTC"
+"price": 132.53,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PCG",
-"price": 17.04,
-"asof": "2026-08-10 22:08 UTC"
+"price": 17.3,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PCOR",
-"price": 58.19,
-"asof": "2026-08-10 22:08 UTC"
+"price": 58.74,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PCTY",
-"price": 145.65,
-"asof": "2026-08-10 22:08 UTC"
+"price": 145.05,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PEB",
-"price": 17.72,
-"asof": "2026-08-10 22:08 UTC"
+"price": 17.79,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PEG",
-"price": 74.56,
-"asof": "2026-08-10 22:08 UTC"
+"price": 75.21,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PEGA",
-"price": 33.01,
-"asof": "2026-08-10 22:08 UTC"
+"price": 33.07,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PEN",
-"price": 325.98,
-"asof": "2026-08-10 22:08 UTC"
+"price": 326.28,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PENN",
-"price": 18.85,
-"asof": "2026-08-10 22:08 UTC"
+"price": 19.13,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PEP",
-"price": 137.73,
-"asof": "2026-08-10 22:08 UTC"
+"price": 138.41,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PFBX",
-"price": 23.63,
-"asof": "2026-08-10 22:08 UTC"
+"price": 22.75,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PFE",
-"price": 27.05,
-"asof": "2026-08-10 22:08 UTC"
+"price": 26.62,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PFG",
-"price": 113.81,
-"asof": "2026-08-10 22:08 UTC"
+"price": 113.03,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PFGC",
-"price": 113.79,
-"asof": "2026-08-10 22:08 UTC"
+"price": 113.96,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PG",
-"price": 146.44,
-"asof": "2026-08-10 22:08 UTC"
+"price": 145.21,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PGR",
-"price": 213.95,
-"asof": "2026-08-10 22:08 UTC"
+"price": 212.35,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PH",
-"price": 1060.5,
-"asof": "2026-08-10 22:08 UTC"
+"price": 1061.33,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PHM",
-"price": 130.05,
-"asof": "2026-08-10 22:08 UTC"
+"price": 132.42,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PICS",
-"price": 11.52,
-"asof": "2026-08-10 22:08 UTC"
+"price": 10.94,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PINS",
-"price": 24.37,
-"asof": "2026-08-10 22:08 UTC"
+"price": 23.75,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PKG",
-"price": 254.75,
-"asof": "2026-08-10 22:08 UTC"
+"price": 257.43,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PL",
-"price": 23.1,
-"asof": "2026-08-10 22:08 UTC"
+"price": 23.7,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PLD",
-"price": 138.76,
-"asof": "2026-08-10 22:08 UTC"
+"price": 139.5,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PLNT",
-"price": 48.96,
-"asof": "2026-08-10 22:08 UTC"
+"price": 47.92,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PLPC",
-"price": 462.63,
-"asof": "2026-08-10 22:08 UTC"
+"price": 480.77,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PLSE",
-"price": 41.51,
-"asof": "2026-08-10 22:08 UTC"
+"price": 44.4,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PLTR",
-"price": 175.23,
-"asof": "2026-08-10 22:08 UTC"
+"price": 174.94,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PM",
-"price": 186.0,
-"asof": "2026-08-10 22:08 UTC"
+"price": 186.22,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PNC",
-"price": 251.76,
-"asof": "2026-08-10 22:08 UTC"
+"price": 254.23,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PNFP",
-"price": 104.55,
-"asof": "2026-08-10 22:08 UTC"
+"price": 105.7,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PNR",
-"price": 66.73,
-"asof": "2026-08-10 22:08 UTC"
+"price": 67.19,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PNW",
-"price": 99.23,
-"asof": "2026-08-10 22:08 UTC"
+"price": 100.04,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PODD",
-"price": 142.85,
-"asof": "2026-08-10 22:08 UTC"
+"price": 144.7,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "POOL",
-"price": 199.98,
-"asof": "2026-08-10 22:08 UTC"
+"price": 201.5,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "POST",
-"price": 76.23,
-"asof": "2026-08-10 22:08 UTC"
+"price": 78.49,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "POWI",
-"price": 61.97,
-"asof": "2026-08-10 22:08 UTC"
+"price": 63.27,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "POWL",
-"price": 207.22,
-"asof": "2026-08-10 22:08 UTC"
+"price": 208.38,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PPC",
-"price": 26.51,
-"asof": "2026-08-10 22:08 UTC"
+"price": 26.86,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PPG",
-"price": 115.48,
-"asof": "2026-08-10 22:08 UTC"
+"price": 116.16,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PPL",
-"price": 34.99,
-"asof": "2026-08-10 22:08 UTC"
+"price": 35.28,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PPTA",
-"price": 24.89,
-"asof": "2026-08-10 22:08 UTC"
+"price": 25.43,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PR",
-"price": 21.23,
-"asof": "2026-08-10 22:08 UTC"
+"price": 21.46,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PRGO",
-"price": 12.64,
-"asof": "2026-08-10 22:08 UTC"
+"price": 12.85,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PRI",
-"price": 313.52,
-"asof": "2026-08-10 22:08 UTC"
+"price": 312.79,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PRMB",
-"price": 23.51,
-"asof": "2026-08-10 22:08 UTC"
+"price": 23.61,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PRU",
-"price": 122.11,
-"asof": "2026-08-10 22:08 UTC"
+"price": 122.32,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PSA",
-"price": 325.71,
-"asof": "2026-08-10 22:08 UTC"
+"price": 325.1,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PSN",
-"price": 46.13,
-"asof": "2026-08-10 22:08 UTC"
+"price": 48.25,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PSX",
-"price": 215.52,
-"asof": "2026-08-10 22:08 UTC"
+"price": 224.36,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PTC",
-"price": 151.02,
-"asof": "2026-08-10 22:08 UTC"
+"price": 150.44,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PUBM",
-"price": 17.76,
-"asof": "2026-08-10 22:08 UTC"
+"price": 17.65,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PVH",
-"price": 87.13,
-"asof": "2026-08-10 22:08 UTC"
+"price": 84.86,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PWR",
-"price": 660.86,
-"asof": "2026-08-10 22:08 UTC"
+"price": 670.58,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "PYPL",
-"price": 59.07,
-"asof": "2026-08-10 22:08 UTC"
+"price": 59.0,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "Q",
-"price": 134.37,
-"asof": "2026-08-10 22:08 UTC"
+"price": 138.24,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "QCOM",
-"price": 162.17,
-"asof": "2026-08-10 22:08 UTC"
+"price": 162.68,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "QGEN",
-"price": 43.85,
-"asof": "2026-08-10 22:08 UTC"
+"price": 42.65,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "QNST",
-"price": 22.02,
-"asof": "2026-08-10 22:08 UTC"
+"price": 20.9,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "QNT",
-"price": 56.59,
-"asof": "2026-08-10 22:08 UTC"
+"price": 56.06,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "QRVO",
-"price": 97.0,
-"asof": "2026-08-10 22:08 UTC"
+"price": 96.68,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "QS",
-"price": 6.19,
-"asof": "2026-08-10 22:08 UTC"
+"price": 6.34,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "QSR",
-"price": 72.86,
-"asof": "2026-08-10 22:08 UTC"
+"price": 73.33,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "QXO",
-"price": 15.38,
-"asof": "2026-08-10 22:08 UTC"
+"price": 15.55,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "R",
-"price": 260.16,
-"asof": "2026-08-10 22:08 UTC"
+"price": 258.59,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "RAL",
-"price": 69.39,
-"asof": "2026-08-10 22:08 UTC"
+"price": 71.52,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "RARE",
-"price": 26.8,
-"asof": "2026-08-10 22:08 UTC"
+"price": 26.96,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "RBA",
-"price": 93.82,
-"asof": "2026-08-10 22:08 UTC"
+"price": 89.63,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "RBC",
-"price": 556.5,
-"asof": "2026-08-10 22:08 UTC"
+"price": 552.48,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "RBKB",
 "price": 12.48,
-"asof": "2026-08-10 22:08 UTC"
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "RBLX",
-"price": 37.05,
-"asof": "2026-08-10 22:08 UTC"
+"price": 36.22,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "RBRK",
-"price": 97.91,
-"asof": "2026-08-10 22:08 UTC"
+"price": 96.93,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "RCL",
-"price": 308.0,
-"asof": "2026-08-10 22:08 UTC"
+"price": 307.15,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "RDDT",
-"price": 158.72,
-"asof": "2026-08-10 22:08 UTC"
+"price": 156.19,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "REG",
-"price": 76.11,
-"asof": "2026-08-10 22:08 UTC"
+"price": 75.82,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "REGN",
-"price": 808.05,
-"asof": "2026-08-10 22:08 UTC"
+"price": 797.0,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "REXR",
-"price": 36.47,
-"asof": "2026-08-10 22:08 UTC"
+"price": 36.19,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "REYN",
 "price": 26.13,
-"asof": "2026-08-10 22:08 UTC"
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "RF",
-"price": 31.46,
-"asof": "2026-08-10 22:08 UTC"
+"price": 31.6,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "RGA",
-"price": 242.1,
-"asof": "2026-08-10 22:08 UTC"
+"price": 244.65,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "RGEN",
-"price": 163.17,
-"asof": "2026-08-10 22:08 UTC"
+"price": 164.77,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "RGLD",
-"price": 234.13,
-"asof": "2026-08-10 22:08 UTC"
+"price": 233.51,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "RGR",
-"price": 37.17,
-"asof": "2026-08-10 22:08 UTC"
+"price": 37.45,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "RH",
-"price": 183.57,
-"asof": "2026-08-10 22:08 UTC"
+"price": 182.85,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "RHI",
-"price": 42.68,
-"asof": "2026-08-10 22:08 UTC"
+"price": 42.14,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "RHLD",
-"price": 131.62,
-"asof": "2026-08-10 22:08 UTC"
+"price": 132.37,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "RITM",
-"price": 10.11,
-"asof": "2026-08-10 22:08 UTC"
+"price": 10.25,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "RIVN",
-"price": 16.39,
-"asof": "2026-08-10 22:08 UTC"
+"price": 16.36,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "RJF",
-"price": 179.09,
-"asof": "2026-08-10 22:08 UTC"
+"price": 180.02,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "RKLB",
-"price": 80.04,
-"asof": "2026-08-10 22:08 UTC"
+"price": 80.01,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "RKT",
-"price": 13.76,
-"asof": "2026-08-10 22:08 UTC"
+"price": 14.32,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "RL",
-"price": 406.89,
-"asof": "2026-08-10 22:08 UTC"
+"price": 397.72,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "RLI",
-"price": 63.58,
-"asof": "2026-08-10 22:08 UTC"
+"price": 63.94,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "RMD",
-"price": 220.05,
-"asof": "2026-08-10 22:08 UTC"
+"price": 224.84,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "RNG",
-"price": 64.1,
-"asof": "2026-08-10 22:08 UTC"
+"price": 63.45,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "RNR",
-"price": 318.42,
-"asof": "2026-08-10 22:08 UTC"
+"price": 316.52,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ROCK",
-"price": 48.86,
-"asof": "2026-08-10 22:08 UTC"
+"price": 49.77,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ROIV",
-"price": 35.78,
-"asof": "2026-08-10 22:08 UTC"
+"price": 35.25,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ROK",
-"price": 435.22,
-"asof": "2026-08-10 22:08 UTC"
+"price": 447.0,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ROKU",
-"price": 151.84,
-"asof": "2026-08-10 22:08 UTC"
+"price": 150.91,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ROL",
-"price": 37.23,
-"asof": "2026-08-10 22:08 UTC"
+"price": 37.01,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ROP",
-"price": 403.89,
-"asof": "2026-08-10 22:08 UTC"
+"price": 399.5,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ROST",
-"price": 254.82,
-"asof": "2026-08-10 22:08 UTC"
+"price": 251.81,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "RPM",
-"price": 115.93,
-"asof": "2026-08-10 22:08 UTC"
+"price": 116.66,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "RPRX",
-"price": 57.97,
-"asof": "2026-08-10 22:08 UTC"
+"price": 57.79,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "RRC",
-"price": 40.29,
-"asof": "2026-08-10 22:08 UTC"
+"price": 40.67,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "RRX",
-"price": 173.42,
-"asof": "2026-08-10 22:08 UTC"
+"price": 172.55,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "RS",
-"price": 428.49,
-"asof": "2026-08-10 22:08 UTC"
+"price": 423.5,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "RSG",
-"price": 214.62,
-"asof": "2026-08-10 22:08 UTC"
+"price": 215.08,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "RTX",
-"price": 224.12,
-"asof": "2026-08-10 22:08 UTC"
+"price": 223.86,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "RVMD",
-"price": 206.97,
-"asof": "2026-08-10 22:08 UTC"
+"price": 205.55,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "RVTY",
-"price": 116.02,
-"asof": "2026-08-10 22:08 UTC"
+"price": 115.73,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "RYAN",
-"price": 42.45,
-"asof": "2026-08-10 22:08 UTC"
+"price": 42.17,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "RYN",
-"price": 21.69,
-"asof": "2026-08-10 22:08 UTC"
+"price": 21.45,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "S",
-"price": 22.23,
-"asof": "2026-08-10 22:08 UTC"
+"price": 22.46,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SAIA",
-"price": 355.77,
-"asof": "2026-08-10 22:08 UTC"
+"price": 356.96,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SAIC",
-"price": 125.46,
-"asof": "2026-08-10 22:08 UTC"
+"price": 125.39,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SAM",
-"price": 180.99,
-"asof": "2026-08-10 22:08 UTC"
+"price": 179.96,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SARO",
-"price": 28.33,
-"asof": "2026-08-10 22:08 UTC"
+"price": 28.2,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SBAC",
-"price": 181.05,
-"asof": "2026-08-10 22:08 UTC"
+"price": 181.97,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SBMT",
 "price": 6.83,
-"asof": "2026-08-10 22:08 UTC"
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SBUX",
-"price": 104.65,
-"asof": "2026-08-10 22:08 UTC"
+"price": 106.66,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SCCO",
-"price": 200.11,
-"asof": "2026-08-10 22:08 UTC"
+"price": 194.48,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SCHW",
-"price": 107.99,
-"asof": "2026-08-10 22:08 UTC"
+"price": 107.7,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SCI",
-"price": 83.4,
-"asof": "2026-08-10 22:08 UTC"
+"price": 83.35,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SCTX",
-"price": 24.93,
-"asof": "2026-08-10 22:08 UTC"
+"price": 23.44,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SEIC",
-"price": 104.72,
-"asof": "2026-08-10 22:08 UTC"
+"price": 104.63,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SF",
-"price": 83.68,
-"asof": "2026-08-10 22:08 UTC"
+"price": 84.4,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SFD",
-"price": 24.44,
-"asof": "2026-08-10 22:08 UTC"
+"price": 23.88,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SFM",
-"price": 85.33,
-"asof": "2026-08-10 22:08 UTC"
+"price": 84.4,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SGI",
-"price": 64.82,
-"asof": "2026-08-10 22:08 UTC"
+"price": 65.24,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SHC",
-"price": 18.97,
-"asof": "2026-08-10 22:08 UTC"
+"price": 19.11,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SHW",
-"price": 362.71,
-"asof": "2026-08-10 22:08 UTC"
+"price": 364.42,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SIDU",
-"price": 2.33,
-"asof": "2026-08-10 22:08 UTC"
+"price": 2.6,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SIRI",
-"price": 28.78,
-"asof": "2026-08-10 22:08 UTC"
+"price": 28.51,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SITE",
-"price": 99.41,
-"asof": "2026-08-10 22:08 UTC"
+"price": 98.97,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SJM",
-"price": 118.07,
-"asof": "2026-08-10 22:08 UTC"
+"price": 117.34,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SLB",
-"price": 53.2,
-"asof": "2026-08-10 22:08 UTC"
+"price": 53.68,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SLGN",
-"price": 41.15,
-"asof": "2026-08-10 22:08 UTC"
+"price": 41.17,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SLM",
-"price": 27.32,
-"asof": "2026-08-10 22:08 UTC"
+"price": 27.16,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SMCI",
-"price": 31.46,
-"asof": "2026-08-10 22:08 UTC"
+"price": 31.6,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SMG",
-"price": 62.27,
-"asof": "2026-08-10 22:08 UTC"
+"price": 62.03,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SMMT",
-"price": 14.87,
-"asof": "2026-08-10 22:08 UTC"
+"price": 15.11,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SMWB",
-"price": 7.42,
-"asof": "2026-08-10 22:08 UTC"
+"price": 7.25,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SN",
-"price": 186.17,
-"asof": "2026-08-10 22:08 UTC"
+"price": 187.68,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SNA",
-"price": 411.11,
-"asof": "2026-08-10 22:08 UTC"
+"price": 411.78,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SNDK",
-"price": 1237.92,
-"asof": "2026-08-10 22:08 UTC"
+"price": 1271.05,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SNDR",
-"price": 35.26,
-"asof": "2026-08-10 22:08 UTC"
+"price": 34.89,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SNOW",
-"price": 334.7,
-"asof": "2026-08-10 22:08 UTC"
+"price": 334.14,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SNPS",
-"price": 411.68,
-"asof": "2026-08-10 22:08 UTC"
+"price": 410.91,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SNX",
-"price": 253.74,
-"asof": "2026-08-10 22:08 UTC"
+"price": 254.0,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SO",
-"price": 91.34,
-"asof": "2026-08-10 22:08 UTC"
+"price": 91.92,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SOFI",
-"price": 18.12,
-"asof": "2026-08-10 22:08 UTC"
+"price": 17.98,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SOLS",
-"price": 60.32,
-"asof": "2026-08-10 22:08 UTC"
+"price": 61.11,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SOLV",
-"price": 85.21,
-"asof": "2026-08-10 22:08 UTC"
+"price": 84.1,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SON",
-"price": 57.87,
-"asof": "2026-08-10 22:08 UTC"
+"price": 57.8,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SPCX",
-"price": 138.74,
-"asof": "2026-08-10 22:08 UTC"
+"price": 133.29,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SPG",
-"price": 220.55,
-"asof": "2026-08-10 22:08 UTC"
+"price": 219.53,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SPGI",
-"price": 410.94,
-"asof": "2026-08-10 22:08 UTC"
+"price": 408.69,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SPOK",
-"price": 11.33,
-"asof": "2026-08-10 22:08 UTC"
+"price": 11.44,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SPOT",
-"price": 511.82,
-"asof": "2026-08-10 22:08 UTC"
+"price": 501.0,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SPY",
-"price": 773.03,
-"asof": "2026-08-10 22:08 UTC"
+"price": 770.56,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SRE",
-"price": 84.31,
-"asof": "2026-08-10 22:08 UTC"
+"price": 85.48,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SRPT",
-"price": 17.18,
-"asof": "2026-08-10 22:08 UTC"
+"price": 18.22,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SSB",
-"price": 108.56,
-"asof": "2026-08-10 22:08 UTC"
+"price": 110.38,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SSD",
-"price": 195.31,
-"asof": "2026-08-10 22:08 UTC"
+"price": 199.89,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SSMR",
-"price": 16.83,
-"asof": "2026-08-10 22:08 UTC"
+"price": 17.0,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SSNC",
-"price": 79.77,
-"asof": "2026-08-10 22:08 UTC"
+"price": 79.85,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ST",
-"price": 45.79,
-"asof": "2026-08-10 22:08 UTC"
+"price": 46.23,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "STAG",
-"price": 36.77,
-"asof": "2026-08-10 22:08 UTC"
+"price": 36.74,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "STE",
-"price": 238.91,
-"asof": "2026-08-10 22:08 UTC"
+"price": 238.23,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "STKE",
-"price": 1.03,
-"asof": "2026-08-10 22:08 UTC"
+"price": 1.07,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "STLD",
-"price": 268.6,
-"asof": "2026-08-10 22:08 UTC"
+"price": 263.69,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "STT",
-"price": 186.68,
-"asof": "2026-08-10 22:08 UTC"
+"price": 187.22,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "STWD",
-"price": 16.65,
-"asof": "2026-08-10 22:08 UTC"
+"price": 16.66,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "STZ",
-"price": 133.39,
-"asof": "2026-08-10 22:08 UTC"
+"price": 133.98,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SUI",
-"price": 118.57,
-"asof": "2026-08-10 22:08 UTC"
+"price": 118.67,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SVC",
-"price": 8.09,
-"asof": "2026-08-10 22:08 UTC"
+"price": 8.13,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SVCO",
-"price": 7.37,
-"asof": "2026-08-10 22:08 UTC"
+"price": 7.59,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SW",
-"price": 47.59,
-"asof": "2026-08-10 22:08 UTC"
+"price": 49.62,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SWIM",
-"price": 7.31,
-"asof": "2026-08-10 22:08 UTC"
+"price": 7.59,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SWK",
-"price": 102.64,
-"asof": "2026-08-10 22:08 UTC"
+"price": 104.0,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SWKS",
-"price": 68.79,
-"asof": "2026-08-10 22:08 UTC"
+"price": 68.33,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SYF",
-"price": 78.19,
-"asof": "2026-08-10 22:08 UTC"
+"price": 78.47,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SYK",
-"price": 345.81,
-"asof": "2026-08-10 22:08 UTC"
+"price": 348.15,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SYNA",
-"price": 104.71,
-"asof": "2026-08-10 22:08 UTC"
+"price": 106.92,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "SYY",
-"price": 83.87,
-"asof": "2026-08-10 22:08 UTC"
+"price": 84.26,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "T",
-"price": 24.05,
-"asof": "2026-08-10 22:08 UTC"
+"price": 24.5,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TAP",
-"price": 42.52,
-"asof": "2026-08-10 22:08 UTC"
+"price": 41.98,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TDC",
-"price": 27.69,
-"asof": "2026-08-10 22:08 UTC"
+"price": 26.86,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TDG",
-"price": 1223.48,
-"asof": "2026-08-10 22:08 UTC"
+"price": 1242.04,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TDY",
-"price": 690.25,
-"asof": "2026-08-10 22:08 UTC"
+"price": 681.74,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TEAM",
-"price": 151.87,
-"asof": "2026-08-10 22:08 UTC"
+"price": 154.08,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TECH",
-"price": 72.12,
-"asof": "2026-08-10 22:08 UTC"
+"price": 72.15,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TEM",
-"price": 55.06,
-"asof": "2026-08-10 22:08 UTC"
+"price": 55.69,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TER",
-"price": 365.1,
-"asof": "2026-08-10 22:08 UTC"
+"price": 379.56,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TFC",
-"price": 51.86,
-"asof": "2026-08-10 22:08 UTC"
+"price": 52.31,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TFSL",
-"price": 17.21,
-"asof": "2026-08-10 22:08 UTC"
+"price": 17.24,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TFX",
-"price": 133.0,
-"asof": "2026-08-10 22:08 UTC"
+"price": 133.54,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TGT",
-"price": 152.02,
-"asof": "2026-08-10 22:08 UTC"
+"price": 152.29,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "THC",
-"price": 259.93,
-"asof": "2026-08-10 22:08 UTC"
+"price": 259.45,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "THG",
-"price": 225.75,
-"asof": "2026-08-10 22:08 UTC"
+"price": 221.94,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "THO",
-"price": 79.51,
-"asof": "2026-08-10 22:08 UTC"
+"price": 81.31,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TIGO",
-"price": 95.88,
-"asof": "2026-08-10 22:08 UTC"
+"price": 95.03,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TJX",
-"price": 158.82,
-"asof": "2026-08-10 22:08 UTC"
+"price": 155.74,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TKO",
-"price": 189.42,
-"asof": "2026-08-10 22:08 UTC"
+"price": 194.73,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TKR",
-"price": 126.57,
-"asof": "2026-08-10 22:08 UTC"
+"price": 128.54,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TLN",
-"price": 343.19,
-"asof": "2026-08-10 22:08 UTC"
+"price": 357.88,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TMO",
-"price": 599.69,
-"asof": "2026-08-10 22:08 UTC"
+"price": 605.0,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TMUS",
-"price": 178.2,
-"asof": "2026-08-10 22:08 UTC"
+"price": 178.58,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TNL",
-"price": 73.4,
-"asof": "2026-08-10 22:08 UTC"
+"price": 73.82,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TNXP",
-"price": 12.59,
-"asof": "2026-08-10 22:08 UTC"
+"price": 12.34,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TOL",
-"price": 150.0,
-"asof": "2026-08-10 22:08 UTC"
+"price": 152.91,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TOST",
-"price": 35.69,
-"asof": "2026-08-10 22:08 UTC"
+"price": 34.88,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TPG",
-"price": 49.4,
-"asof": "2026-08-10 22:08 UTC"
+"price": 50.6,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TPL",
-"price": 350.44,
-"asof": "2026-08-10 22:08 UTC"
+"price": 364.97,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TPR",
-"price": 164.78,
-"asof": "2026-08-10 22:08 UTC"
+"price": 160.54,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TRAX",
-"price": 47.92,
-"asof": "2026-08-10 22:08 UTC"
+"price": 46.75,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TREX",
-"price": 48.17,
-"asof": "2026-08-10 22:08 UTC"
+"price": 49.74,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TRGP",
-"price": 266.21,
-"asof": "2026-08-10 22:08 UTC"
+"price": 265.45,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TRMB",
-"price": 58.44,
-"asof": "2026-08-10 22:08 UTC"
+"price": 57.98,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TROW",
-"price": 113.77,
-"asof": "2026-08-10 22:08 UTC"
+"price": 113.75,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TRU",
-"price": 79.14,
-"asof": "2026-08-10 22:08 UTC"
+"price": 80.37,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TRV",
-"price": 375.62,
-"asof": "2026-08-10 22:08 UTC"
+"price": 375.61,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TSCO",
-"price": 34.62,
-"asof": "2026-08-10 22:08 UTC"
+"price": 35.29,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TSEM",
-"price": 252.55,
-"asof": "2026-08-10 22:08 UTC"
+"price": 249.58,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TSLA",
-"price": 330.88,
-"asof": "2026-08-10 22:08 UTC"
+"price": 332.81,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TSM",
-"price": 418.47,
-"asof": "2026-08-10 22:08 UTC"
+"price": 422.06,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TSN",
-"price": 57.16,
-"asof": "2026-08-10 22:08 UTC"
+"price": 56.43,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TT",
-"price": 476.99,
-"asof": "2026-08-10 22:08 UTC"
+"price": 483.96,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TTC",
-"price": 98.66,
-"asof": "2026-08-10 22:08 UTC"
+"price": 98.81,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TTD",
-"price": 13.39,
-"asof": "2026-08-10 22:08 UTC"
+"price": 13.56,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TTEK",
-"price": 35.04,
-"asof": "2026-08-10 22:08 UTC"
+"price": 35.38,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TTWO",
-"price": 253.57,
-"asof": "2026-08-10 22:08 UTC"
+"price": 250.5,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TW",
-"price": 103.7,
-"asof": "2026-08-10 22:08 UTC"
+"price": 104.42,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TWLO",
-"price": 250.06,
-"asof": "2026-08-10 22:08 UTC"
+"price": 255.95,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TXN",
-"price": 280.44,
-"asof": "2026-08-10 22:08 UTC"
+"price": 281.24,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TXRH",
-"price": 207.46,
-"asof": "2026-08-10 22:08 UTC"
+"price": 209.82,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TXT",
-"price": 89.2,
-"asof": "2026-08-10 22:08 UTC"
+"price": 88.21,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "TYL",
-"price": 318.63,
-"asof": "2026-08-10 22:08 UTC"
+"price": 322.93,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "U",
-"price": 43.1,
-"asof": "2026-08-10 22:08 UTC"
+"price": 43.87,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "UAA",
-"price": 5.87,
-"asof": "2026-08-10 22:08 UTC"
+"price": 5.34,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "UAL",
-"price": 123.76,
-"asof": "2026-08-10 22:08 UTC"
+"price": 126.31,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "UBCP",
 "price": 15.65,
-"asof": "2026-08-10 22:08 UTC"
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "UBER",
-"price": 78.03,
-"asof": "2026-08-10 22:08 UTC"
+"price": 78.54,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "UCTT",
-"price": 82.27,
-"asof": "2026-08-10 22:08 UTC"
+"price": 86.07,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "UDR",
-"price": 37.66,
-"asof": "2026-08-10 22:08 UTC"
+"price": 37.3,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "UGI",
-"price": 33.99,
-"asof": "2026-08-10 22:08 UTC"
+"price": 35.16,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "UHS",
-"price": 172.74,
-"asof": "2026-08-10 22:08 UTC"
+"price": 168.72,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "UI",
-"price": 570.47,
-"asof": "2026-08-10 22:08 UTC"
+"price": 573.26,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ULTA",
-"price": 548.66,
-"asof": "2026-08-10 22:08 UTC"
+"price": 541.35,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "UMAC",
-"price": 27.14,
-"asof": "2026-08-10 22:08 UTC"
+"price": 25.97,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "UNH",
-"price": 408.74,
-"asof": "2026-08-10 22:08 UTC"
+"price": 402.19,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "UNM",
-"price": 91.39,
-"asof": "2026-08-10 22:08 UTC"
+"price": 89.85,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "UNP",
-"price": 292.24,
-"asof": "2026-08-10 22:08 UTC"
+"price": 292.87,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "UPS",
-"price": 104.72,
-"asof": "2026-08-10 22:08 UTC"
+"price": 104.43,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "UPXI",
 "price": 0.8,
-"asof": "2026-08-10 22:08 UTC"
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "URI",
-"price": 1137.52,
-"asof": "2026-08-10 22:08 UTC"
+"price": 1143.59,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "UROY",
-"price": 4.13,
-"asof": "2026-08-10 22:08 UTC"
+"price": 4.17,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "USB",
-"price": 64.19,
-"asof": "2026-08-10 22:08 UTC"
+"price": 64.29,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "USFD",
-"price": 108.63,
-"asof": "2026-08-10 22:08 UTC"
+"price": 110.52,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "UTHR",
-"price": 529.66,
-"asof": "2026-08-10 22:08 UTC"
+"price": 515.5,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "UUUU",
-"price": 14.29,
-"asof": "2026-08-10 22:08 UTC"
+"price": 14.78,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "V",
-"price": 361.32,
-"asof": "2026-08-10 22:08 UTC"
+"price": 362.82,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "VALU",
-"price": 36.4,
-"asof": "2026-08-10 22:08 UTC"
+"price": 39.99,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "VECO",
-"price": 49.34,
-"asof": "2026-08-10 22:08 UTC"
+"price": 50.15,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "VEEV",
-"price": 234.69,
-"asof": "2026-08-10 22:08 UTC"
+"price": 236.58,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "VFC",
-"price": 14.9,
-"asof": "2026-08-10 22:08 UTC"
+"price": 14.78,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "VIAV",
-"price": 37.2,
-"asof": "2026-08-10 22:08 UTC"
+"price": 38.4,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "VICI",
-"price": 26.07,
-"asof": "2026-08-10 22:08 UTC"
+"price": 25.98,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "VICR",
-"price": 208.81,
-"asof": "2026-08-10 22:08 UTC"
+"price": 210.88,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "VIK",
-"price": 103.8,
-"asof": "2026-08-10 22:08 UTC"
+"price": 101.55,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "VIRC",
-"price": 5.95,
-"asof": "2026-08-10 22:08 UTC"
+"price": 5.86,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "VIRT",
-"price": 55.67,
-"asof": "2026-08-10 22:08 UTC"
+"price": 55.08,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "VITL",
-"price": 11.26,
-"asof": "2026-08-10 22:08 UTC"
+"price": 11.56,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "VKTX",
-"price": 34.44,
-"asof": "2026-08-10 22:08 UTC"
+"price": 33.8,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "VLO",
-"price": 314.95,
-"asof": "2026-08-10 22:08 UTC"
+"price": 323.92,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "VLTO",
-"price": 97.11,
-"asof": "2026-08-10 22:08 UTC"
+"price": 97.97,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "VMC",
-"price": 285.34,
-"asof": "2026-08-10 22:08 UTC"
+"price": 287.79,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "VMI",
-"price": 492.24,
-"asof": "2026-08-10 22:08 UTC"
+"price": 493.37,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "VNO",
-"price": 38.89,
-"asof": "2026-08-10 22:08 UTC"
+"price": 38.8,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "VNOM",
-"price": 42.37,
-"asof": "2026-08-10 22:08 UTC"
+"price": 42.88,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "VOYA",
-"price": 100.23,
-"asof": "2026-08-10 22:08 UTC"
+"price": 98.22,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "VRA",
-"price": 3.39,
-"asof": "2026-08-10 22:08 UTC"
+"price": 3.34,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "VRSK",
-"price": 181.18,
-"asof": "2026-08-10 22:08 UTC"
+"price": 180.97,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "VRSN",
-"price": 293.34,
-"asof": "2026-08-10 22:08 UTC"
+"price": 287.63,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "VRT",
-"price": 270.1,
-"asof": "2026-08-10 22:08 UTC"
+"price": 281.81,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "VRTX",
-"price": 523.91,
-"asof": "2026-08-10 22:08 UTC"
+"price": 529.65,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "VSNT",
 "price": 36.76,
-"asof": "2026-08-10 22:08 UTC"
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "VST",
-"price": 142.87,
-"asof": "2026-08-10 22:08 UTC"
+"price": 144.92,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "VTR",
-"price": 91.95,
-"asof": "2026-08-10 22:08 UTC"
+"price": 86.96,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "VTRS",
 "price": 16.28,
-"asof": "2026-08-10 22:08 UTC"
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "VVV",
-"price": 33.72,
-"asof": "2026-08-10 22:08 UTC"
+"price": 33.02,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "VVX",
-"price": 82.92,
-"asof": "2026-08-10 22:08 UTC"
+"price": 80.54,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "VZ",
-"price": 47.03,
-"asof": "2026-08-10 22:08 UTC"
+"price": 47.27,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "W",
-"price": 103.26,
-"asof": "2026-08-10 22:08 UTC"
+"price": 103.2,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "WAB",
-"price": 294.16,
-"asof": "2026-08-10 22:08 UTC"
+"price": 298.04,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "WAL",
-"price": 80.48,
-"asof": "2026-08-10 22:08 UTC"
+"price": 81.5,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "WAT",
-"price": 411.77,
-"asof": "2026-08-10 22:08 UTC"
+"price": 415.0,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "WBD",
-"price": 26.87,
-"asof": "2026-08-10 22:08 UTC"
+"price": 27.07,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "WBS",
-"price": 78.7,
-"asof": "2026-08-10 22:08 UTC"
+"price": 78.75,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "WCC",
-"price": 366.55,
-"asof": "2026-08-10 22:08 UTC"
+"price": 366.17,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "WDAY",
-"price": 184.19,
-"asof": "2026-08-10 22:08 UTC"
+"price": 181.27,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "WDC",
-"price": 438.34,
-"asof": "2026-08-10 22:08 UTC"
+"price": 437.93,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "WEC",
-"price": 106.12,
-"asof": "2026-08-10 22:08 UTC"
+"price": 106.68,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "WELL",
-"price": 235.04,
-"asof": "2026-08-10 22:08 UTC"
+"price": 226.01,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "WEN",
-"price": 7.3,
-"asof": "2026-08-10 22:08 UTC"
+"price": 7.55,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "WEX",
-"price": 186.45,
-"asof": "2026-08-10 22:08 UTC"
+"price": 189.06,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "WFC",
-"price": 87.52,
-"asof": "2026-08-10 22:08 UTC"
+"price": 87.45,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "WFRD",
-"price": 92.9,
-"asof": "2026-08-10 22:08 UTC"
+"price": 94.43,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "WH",
-"price": 71.35,
-"asof": "2026-08-10 22:08 UTC"
+"price": 72.47,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "WHR",
-"price": 42.17,
-"asof": "2026-08-10 22:08 UTC"
+"price": 43.59,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "WING",
-"price": 117.52,
-"asof": "2026-08-10 22:08 UTC"
+"price": 111.36,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "WLK",
-"price": 79.09,
-"asof": "2026-08-10 22:08 UTC"
+"price": 80.84,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "WM",
-"price": 226.6,
-"asof": "2026-08-10 22:08 UTC"
+"price": 226.85,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "WMB",
-"price": 71.85,
-"asof": "2026-08-10 22:08 UTC"
+"price": 72.31,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "WMS",
-"price": 141.67,
-"asof": "2026-08-10 22:08 UTC"
+"price": 143.65,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "WMT",
-"price": 112.66,
-"asof": "2026-08-10 22:08 UTC"
+"price": 113.26,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "WPC",
-"price": 70.66,
-"asof": "2026-08-10 22:08 UTC"
+"price": 70.0,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "WPM",
-"price": 133.39,
-"asof": "2026-08-10 22:08 UTC"
+"price": 134.41,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "WRB",
-"price": 70.82,
-"asof": "2026-08-10 22:08 UTC"
+"price": 70.09,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "WSC",
-"price": 23.09,
-"asof": "2026-08-10 22:08 UTC"
+"price": 22.89,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "WSM",
-"price": 250.82,
-"asof": "2026-08-10 22:08 UTC"
+"price": 250.59,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "WSO",
-"price": 326.71,
-"asof": "2026-08-10 22:08 UTC"
+"price": 318.91,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "WST",
-"price": 352.13,
-"asof": "2026-08-10 22:08 UTC"
+"price": 351.37,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "WTFC",
-"price": 159.2,
-"asof": "2026-08-10 22:08 UTC"
+"price": 162.1,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "WTM",
-"price": 2109.68,
-"asof": "2026-08-10 22:08 UTC"
+"price": 2112.01,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "WTRG",
-"price": 39.78,
-"asof": "2026-08-10 22:08 UTC"
+"price": 40.08,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "WTW",
-"price": 343.01,
-"asof": "2026-08-10 22:08 UTC"
+"price": 342.39,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "WU",
-"price": 7.03,
-"asof": "2026-08-10 22:08 UTC"
+"price": 7.05,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "WWD",
-"price": 356.11,
-"asof": "2026-08-10 22:08 UTC"
+"price": 356.58,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "WY",
-"price": 25.29,
-"asof": "2026-08-10 22:08 UTC"
+"price": 25.02,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "WYNN",
-"price": 102.5,
-"asof": "2026-08-10 22:08 UTC"
+"price": 104.79,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "XEL",
-"price": 76.87,
-"asof": "2026-08-10 22:08 UTC"
+"price": 77.66,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "XLB",
-"price": 53.18,
-"asof": "2026-08-10 22:08 UTC"
+"price": 53.24,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "XLC",
-"price": 111.83,
-"asof": "2026-08-10 22:08 UTC"
+"price": 111.27,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "XLE",
-"price": 60.18,
-"asof": "2026-08-10 22:08 UTC"
+"price": 60.93,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "XLF",
-"price": 57.81,
-"asof": "2026-08-10 22:08 UTC"
+"price": 57.8,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "XLI",
-"price": 184.6,
-"asof": "2026-08-10 22:08 UTC"
+"price": 185.7,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "XLK",
-"price": 186.32,
-"asof": "2026-08-10 22:08 UTC"
+"price": 186.09,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "XLP",
-"price": 84.95,
-"asof": "2026-08-10 22:08 UTC"
+"price": 84.69,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "XLRE",
-"price": 44.4,
-"asof": "2026-08-10 22:08 UTC"
+"price": 44.08,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "XLU",
-"price": 43.13,
-"asof": "2026-08-10 22:08 UTC"
+"price": 43.63,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "XLV",
-"price": 168.44,
-"asof": "2026-08-10 22:08 UTC"
+"price": 168.01,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "XLY",
-"price": 119.67,
-"asof": "2026-08-10 22:08 UTC"
+"price": 119.24,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "XOM",
-"price": 159.79,
-"asof": "2026-08-10 22:08 UTC"
+"price": 159.8,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "XP",
-"price": 16.2,
-"asof": "2026-08-10 22:08 UTC"
+"price": 15.51,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "XPO",
-"price": 200.48,
-"asof": "2026-08-10 22:08 UTC"
+"price": 203.4,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "XRAY",
-"price": 11.66,
-"asof": "2026-08-10 22:08 UTC"
+"price": 11.61,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "XYL",
-"price": 121.19,
-"asof": "2026-08-10 22:08 UTC"
+"price": 123.18,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "XYZ",
-"price": 78.98,
-"asof": "2026-08-10 22:08 UTC"
+"price": 79.07,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "YETI",
-"price": 52.68,
-"asof": "2026-08-10 22:08 UTC"
+"price": 50.79,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "YUM",
-"price": 145.33,
-"asof": "2026-08-10 22:08 UTC"
+"price": 144.75,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "Z",
-"price": 33.75,
-"asof": "2026-08-10 22:08 UTC"
+"price": 34.14,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ZBH",
-"price": 97.78,
-"asof": "2026-08-10 22:08 UTC"
+"price": 97.23,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ZBRA",
-"price": 378.08,
-"asof": "2026-08-10 22:08 UTC"
+"price": 383.06,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ZG",
-"price": 34.07,
-"asof": "2026-08-10 22:08 UTC"
+"price": 34.26,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ZION",
-"price": 70.62,
-"asof": "2026-08-10 22:08 UTC"
+"price": 71.0,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ZM",
-"price": 107.2,
-"asof": "2026-08-10 22:08 UTC"
+"price": 106.06,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ZS",
-"price": 176.68,
-"asof": "2026-08-10 22:08 UTC"
+"price": 178.55,
+"asof": "2026-08-11 22:20 UTC"
 },
 {
 "symbol": "ZTS",
-"price": 74.83,
-"asof": "2026-08-10 22:08 UTC"
+"price": 75.35,
+"asof": "2026-08-11 22:20 UTC"
 }
 ]
