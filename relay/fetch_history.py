@@ -41,7 +41,7 @@ RETRIES = 3
 SLEEP = 2.0
 MIN_FRESH_FRAC = 0.60
 WEEKLY_KEEP = 26        # the contract: what the detectors read
-WEEKLY_EXT_KEEP = 160   # backrun-only extended series (~3y)
+WEEKLY_EXT_KEEP = 520   # backrun-only extended series (~10y, raised from 160 on 2026-09-05 per the flows research — comovement clustering + per-name drawdown anchors need full-cycle history)
 MIN_BARS = 30           # a ticker needs at least this many weekly bars to be usable at all
 
 
@@ -103,7 +103,7 @@ def main():
     wvol = {}      # our-ticker -> list[weekly volume] aligned to weekly[t]
     for i in range(0, len(ysyms), BATCH):
         chunk = ysyms[i:i + BATCH]
-        df = _dl(chunk, period="3y", interval="1wk")
+        df = _dl(chunk, period="10y", interval="1wk")
         if df is not None:
             closes = _col(df, "Close", chunk)
             vols = _col(df, "Volume", chunk)
