@@ -122,53 +122,35 @@ def resolve_ciks(tickers):
     return cache
 
 
-# ---------- source 1: FINRA short interest ----------
+# ---------- source 1: short interest ----------
 def fetch_short_interest(tickers):
-    status = {"status": "unreachable", "asof": None, "note": ""}
-    rows = {}
-    try:
-        url = "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest"
-        body = json.dumps({
-            "limit": len(tickers) * 3,
-            "compareFilters": [{"compareType": "IN", "fieldName": "symbolCode", "fieldValue": tickers}],
-        }).encode()
-        raw = _get(url, headers={"Content-Type": "application/json", "Accept": "application/json"},
-                    data=body, method="POST")
-        data = json.loads(raw)
-        if not isinstance(data, list) or not data:
-            status = {"status": "unreachable", "asof": None,
-                      "note": "FINRA Query API returned no rows for the requested symbols this run"}
-            return rows, status
-        sample_keys = sorted(data[0].keys())
-        expected = {"symbolCode", "currentShortPositionQuantity", "daysToCoverQuantity", "settlementDate"}
-        if not expected.issubset(set(sample_keys)):
-            status = {"status": "schema_drift", "asof": None,
-                      "note": "FINRA response fields don't match the expected schema — got %s. "
-                              "Refusing to guess a mapping; fix the field names in fetch_flow.py." % sample_keys}
-            return rows, status
-        latest_settlement = None
-        for r in data:
-            sym = str(r.get("symbolCode", "")).upper()
-            if sym not in tickers:
-                continue
-            sd = r.get("settlementDate")
-            existing = rows.get(sym)
-            if existing and existing.get("si_settlement_date", "") >= (sd or ""):
-                continue  # keep only the most recent settlement per symbol
-            rows[sym] = {
-                "si_shares": r.get("currentShortPositionQuantity"),
-                "si_dtc": r.get("daysToCoverQuantity"),
-                "si_settlement_date": sd,
-            }
-            if sd and (latest_settlement is None or sd > latest_settlement):
-                latest_settlement = sd
-        status = {"status": "ok" if rows else "partial", "asof": latest_settlement,
-                  "note": "%d/%d focus tickers matched" % (len(rows), len(tickers))}
-    except urllib.error.HTTPError as e:
-        status = {"status": "unreachable", "asof": None, "note": "HTTP %s from FINRA Query API" % e.code}
-    except Exception as e:
-        status = {"status": "unreachable", "asof": None, "note": "%s: %s" % (type(e).__name__, e)}
-    return rows, status
+    """HONEST FINDING (verified live 2026-09-06, NOT a guess): api.finra.org's Query API — the
+    endpoint this function originally called with no Authorization header — returned HTTP 400 on
+    first live run. Checked FINRA's own developer docs (developer.finra.org/docs#query_api) rather
+    than retrying blind: the Query API requires an OAuth 2.0 API Credential (Client ID + Secret)
+    provisioned through FINRA's API Console, which itself requires an organizational SAA/AA to grant
+    — this is NOT actually a free/keyless public API despite api.finra.org's metadata endpoint
+    (/metadata/group/otcMarket/name/consolidatedShortInterest) being openly documented and readable
+    without a key. The metadata schema IS real and correct (symbolCode, currentShortPositionQuantity,
+    daysToCoverQuantity, settlementDate all confirmed live) — only the DATA endpoint is gated.
+    NASDAQ Trader's short-interest bulk file (nasdaqtrader.com/Trader.aspx?id=ShortInterest) was
+    checked as a fallback and is in the same position: bulk download requires a paid SFTP
+    subscription, and it only covers Nasdaq-listed names anyway (not NYSE), so it wouldn't be a
+    complete substitute even with a subscription.
+    THE BUILD PLAN'S ASSUMPTION THAT THIS SOURCE IS FREE/KEYLESS IS FALSIFIED BY THIS TEST. This is
+    reported honestly rather than silently worked around with a scrape of a paid vendor's site (which
+    would also be a ToS problem for an instrument meant to run indefinitely on a schedule). Status
+    stays "not_free_without_credential" rather than a bare "unreachable" so a future session reads
+    the actual reason and doesn't waste time retrying request-body variations — the endpoint's
+    request format was never the problem."""
+    return {}, {"status": "not_free_without_credential", "asof": None,
+                "note": ("FINRA Query API needs an OAuth2 API Credential (Client ID/Secret via FINRA's "
+                         "API Console, org SAA/AA approval) — confirmed via developer.finra.org/docs, "
+                         "not a request-format bug. NASDAQ Trader's bulk file needs a paid SFTP "
+                         "subscription and is Nasdaq-only. No free/keyless full-market short-interest "
+                         "source found as of 2026-09-06 — this is a genuine gap, not a bug to keep "
+                         "chasing. si_shares/si_dtc/si_settlement_date stay null until Gavin decides "
+                         "whether a paid source is worth it.")}
 
 
 # ---------- source 2: shares outstanding ----------
