@@ -1,12 +1,12 @@
 {
- "as_of": "2026-09-06 03:47 UTC",
+ "as_of": "2026-09-06 04:50 UTC",
  "n_focus_tickers": 54,
  "n_sources_live": 2,
  "sources": {
   "short_interest": {
-   "status": "unreachable",
+   "status": "not_free_without_credential",
    "asof": null,
-   "note": "HTTP 400 from FINRA Query API"
+   "note": "FINRA Query API needs an OAuth2 API Credential (Client ID/Secret via FINRA's API Console, org SAA/AA approval) \u2014 confirmed via developer.finra.org/docs, not a request-format bug. NASDAQ Trader's bulk file needs a paid SFTP subscription and is Nasdaq-only. No free/keyless full-market short-interest source found as of 2026-09-06 \u2014 this is a genuine gap, not a bug to keep chasing. si_shares/si_dtc/si_settlement_date stay null until Gavin decides whether a paid source is worth it."
   },
   "shares_outstanding": {
    "status": "ok",
