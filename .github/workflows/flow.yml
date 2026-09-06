@@ -1,0 +1,38 @@
+# Weekly flow-structure relay — feeds the Research Monster Flow Engine, Stage 2/3 (2026-09-06).
+# Deployed at .github/workflows/flow.yml in github.com/gavinbarnett2323-cmd/rmdb-prices.
+# Kept as a SEPARATE workflow from prices/history (same doctrine as history.yml): a slow or failed
+# flow run can never break the daily price sweep or the weekly history relay the decision path and
+# emergence scanner depend on. This is an attention-layer instrument only.
+name: flow-relay
+on:
+  schedule:
+    - cron: "0 22 * * 0"       # Sunday 22:00 UTC
+  workflow_dispatch: {}
+  push:
+    paths:                      # re-run when the emitter, its focus list, or this workflow changes
+      - "relay/fetch_flow.py"
+      - "relay/flow_focus_tickers.txt"
+      - ".github/workflows/flow.yml"
+permissions:
+  contents: write
+concurrency:
+  group: flow-relay
+  cancel-in-progress: false
+jobs:
+  flow:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Fetch flow-structure facts (SEC + FINRA, no key, no extra deps)
+        run: |
+          python3 relay/fetch_flow.py
+      - name: Commit flow.json + cik_cache.json
+        run: |
+          git config user.name  "flow-relay-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add relay/flow.json relay/cik_cache.json
+          git diff --staged --quiet || git commit -m "flow $(date -u +%F\ %H:%M)"
+          git push
