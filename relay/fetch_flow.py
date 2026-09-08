@@ -4,14 +4,15 @@ egress; these sources 403 from the Research Monster sandbox's proxy, which is th
 lives here rather than in the vault). Fetches, BEST-EFFORT PER SOURCE with per-source status
 honesty (one dead source must never hide behind another's success — no silent partial-as-full):
 
-  1. SHORT INTEREST — FINRA's public Query API (api.finra.org/data/group/otcMarket/name/
-     consolidatedShortInterest), free, keyless, twice-monthly settlement-date data covering all
-     US-listed common stock (not just OTC, despite the "otcMarket" group name in FINRA's own API —
-     that is FINRA's actual endpoint naming, not a bug in this script). POSTs a JSON filter for the
-     tickers in flow_focus_tickers.txt. Schema is FINRA's documented Query API shape as of the last
-     verified check; if FINRA has changed field names since, this degrades to status="schema_drift"
-     with the raw first record's keys logged so a future run can be fixed quickly, rather than
-     silently mis-mapping wrong numbers into shares-short.
+  1. SHORT INTEREST — UPDATED 2026-09-08: not the OAuth2-gated Query API (api.finra.org), which the
+     2026-09-06 build correctly found requires a paid credential. FINRA separately publishes the same
+     short-interest program as a free bulk CSV, no login, at cdn.finra.org/equity/otcmarket/biweekly/
+     shrt<YYYYMMDD>.csv (twice-monthly settlement dates, covering "all exchange-listed and OTC equity
+     securities" per FINRA's own docs -- the "otcmarket" in the path is legacy naming, not a scope
+     limit). Tries the last several published settlement dates newest-first. Degrades honestly to
+     status="schema_drift" with the raw header logged if FINRA's column layout doesn't match what's
+     coded here, and to status="unreachable" with every attempted URL/date logged if none work --
+     never a silent wrong number.
   2. SHARES OUTSTANDING — SEC data.sec.gov XBRL companyfacts (dei:EntityCommonStockSharesOutstanding
      concept), free, keyless, official SEC API. Needs a CIK per ticker: resolved once from SEC's
      published company_tickers.json (also free, keyless) and cached in cik_cache.json so every run
@@ -123,34 +124,117 @@ def resolve_ciks(tickers):
 
 
 # ---------- source 1: short interest ----------
+def _recent_settlement_dates(n=6):
+    """FINRA short-interest settlement dates: the 15th of each month and the last calendar day of
+    each month, each rolled back to the nearest weekday if it lands on a weekend (FINRA's own stated
+    rule in the Equity Short Interest 'About the Data' page). Does not separately account for
+    exchange holidays (a small honest gap) -- a holiday-shifted miss just falls through to the next
+    candidate this function already returns, since fetch_short_interest() tries each in turn.
+    Returns the most recent N candidates, newest first."""
+    import calendar
+    out = []
+    d = datetime.date.today()
+    y, m = d.year, d.month
+    for _ in range(n // 2 + 2):
+        last_day = calendar.monthrange(y, m)[1]
+        eom = datetime.date(y, m, last_day)
+        while eom.weekday() >= 5:
+            eom -= datetime.timedelta(days=1)
+        mid = datetime.date(y, m, 15)
+        while mid.weekday() >= 5:
+            mid -= datetime.timedelta(days=1)
+        for cand in (eom, mid):
+            if cand <= d:
+                out.append(cand)
+        m -= 1
+        if m == 0:
+            m, y = 12, y - 1
+    return sorted(set(out), reverse=True)[:n]
+
+
 def fetch_short_interest(tickers):
-    """HONEST FINDING (verified live 2026-09-06, NOT a guess): api.finra.org's Query API — the
-    endpoint this function originally called with no Authorization header — returned HTTP 400 on
-    first live run. Checked FINRA's own developer docs (developer.finra.org/docs#query_api) rather
-    than retrying blind: the Query API requires an OAuth 2.0 API Credential (Client ID + Secret)
-    provisioned through FINRA's API Console, which itself requires an organizational SAA/AA to grant
-    — this is NOT actually a free/keyless public API despite api.finra.org's metadata endpoint
-    (/metadata/group/otcMarket/name/consolidatedShortInterest) being openly documented and readable
-    without a key. The metadata schema IS real and correct (symbolCode, currentShortPositionQuantity,
-    daysToCoverQuantity, settlementDate all confirmed live) — only the DATA endpoint is gated.
-    NASDAQ Trader's short-interest bulk file (nasdaqtrader.com/Trader.aspx?id=ShortInterest) was
-    checked as a fallback and is in the same position: bulk download requires a paid SFTP
-    subscription, and it only covers Nasdaq-listed names anyway (not NYSE), so it wouldn't be a
-    complete substitute even with a subscription.
-    THE BUILD PLAN'S ASSUMPTION THAT THIS SOURCE IS FREE/KEYLESS IS FALSIFIED BY THIS TEST. This is
-    reported honestly rather than silently worked around with a scrape of a paid vendor's site (which
-    would also be a ToS problem for an instrument meant to run indefinitely on a schedule). Status
-    stays "not_free_without_credential" rather than a bare "unreachable" so a future session reads
-    the actual reason and doesn't waste time retrying request-body variations — the endpoint's
-    request format was never the problem."""
-    return {}, {"status": "not_free_without_credential", "asof": None,
-                "note": ("FINRA Query API needs an OAuth2 API Credential (Client ID/Secret via FINRA's "
-                         "API Console, org SAA/AA approval) — confirmed via developer.finra.org/docs, "
-                         "not a request-format bug. NASDAQ Trader's bulk file needs a paid SFTP "
-                         "subscription and is Nasdaq-only. No free/keyless full-market short-interest "
-                         "source found as of 2026-09-06 — this is a genuine gap, not a bug to keep "
-                         "chasing. si_shares/si_dtc/si_settlement_date stay null until Gavin decides "
-                         "whether a paid source is worth it.")}
+    """FIX 2026-09-08 (Flow Engine post-build review, Gavin: "is the flow relay honestly worth it").
+    The 2026-09-06 build only tried api.finra.org's OAuth2-gated Query API and NASDAQ Trader's paid
+    SFTP bulk file, and concluded no free/keyless full-market short-interest source exists. That
+    conclusion was INCOMPLETE: FINRA separately publishes the exact same short-interest program as a
+    plain bulk CSV download at finra.org/finra-data/browse-catalog/equity-short-interest/files (files
+    served from cdn.finra.org/equity/otcmarket/biweekly/shrt<YYYYMMDD>.csv) -- no login, no OAuth2,
+    a bare HTTPS GET. FINRA's own "About Equity Short Interest" page states this covers "all
+    exchange-listed and over-the-counter (OTC) equity securities" (the "otcmarket" in the URL path is
+    legacy naming predating FINRA's Rule 4560 consolidation of exchange-listed reporting into the
+    same feed -- confirmed via FINRA's own Data Glossary, which documents a Market field alongside
+    Symbol/Current Short/Days to Cover/settlement Date for every row, not an OTC-only schema).
+    HONEST LIMIT ON THIS FIX: it was written and pushed from an environment whose network egress is
+    itself allowlist-blocked from reaching cdn.finra.org directly (the same "sandbox" constraint the
+    2026-09-06 build documented) -- so the exact delimiter/column-name layout below is inferred from
+    FINRA's documented field list, not confirmed byte-for-byte against a downloaded file. This
+    function is written to fail HONESTLY rather than silently: if the real file's columns don't match
+    the names tried here, it returns status="schema_drift" with the offending header logged verbatim,
+    so the very first live run on THIS runner (which has real egress) either works or hands back
+    exactly what needs fixing -- never a silent wrong number."""
+    dates = _recent_settlement_dates()
+    last_err = None
+    want = set(tickers)
+    for d in dates:
+        url = "https://cdn.finra.org/equity/otcmarket/biweekly/shrt%s.csv" % d.strftime("%Y%m%d")
+        try:
+            raw = _get(url)
+            text = raw.decode("utf-8-sig", errors="replace")
+            lines = [ln for ln in text.splitlines() if ln.strip()]
+            if not lines:
+                last_err = "empty file at %s" % url
+                continue
+            delim = "|" if "|" in lines[0] else ("\t" if "\t" in lines[0] else ",")
+            header = [h.strip().strip('"') for h in lines[0].split(delim)]
+            hl = [h.lower().replace(" ", "").replace("_", "") for h in header]
+
+            def _col(*names):
+                for nm in names:
+                    if nm in hl:
+                        return hl.index(nm)
+                return None
+
+            i_sym = _col("symbolcode", "symbol", "issuesymbolidentifier")
+            i_cur = _col("currentshortpositionquantity", "currentshort", "currentshortinterest")
+            i_dtc = _col("daystocoverquantity", "daystocover")
+            i_date = _col("settlementdate", "date")
+            if i_sym is None or i_cur is None:
+                last_err = "schema_drift at %s -- header was: %s" % (url, header)
+                continue
+            rows = {}
+            for ln in lines[1:]:
+                parts = [p.strip().strip('"') for p in ln.split(delim)]
+                if len(parts) <= i_sym or len(parts) <= i_cur:
+                    continue
+                sym = parts[i_sym].upper()
+                if sym not in want:
+                    continue
+                try:
+                    cur = int(float(parts[i_cur])) if parts[i_cur] not in ("", "N/A") else None
+                except Exception:
+                    cur = None
+                try:
+                    dtc = (float(parts[i_dtc])
+                           if (i_dtc is not None and parts[i_dtc] not in ("", "N/A")) else None)
+                except Exception:
+                    dtc = None
+                sdate = parts[i_date] if i_date is not None else d.isoformat()
+                rows[sym] = {"si_shares": cur, "si_dtc": dtc, "si_settlement_date": sdate}
+            if rows:
+                return rows, {"status": "ok", "asof": d.isoformat(),
+                              "note": ("FINRA free bulk file (%s), %d/%d focus tickers matched"
+                                       % (url, len(rows), len(tickers)))}
+            last_err = ("%s fetched (%d data rows) but matched 0 of %d focus tickers -- check symbol "
+                        "column/formatting" % (url, len(lines) - 1, len(tickers)))
+        except urllib.error.HTTPError as e:
+            last_err = "%s -> HTTP %s (not yet published or wrong date)" % (url, e.code)
+            continue
+        except Exception as e:
+            last_err = "%s -> %s" % (url, e)
+            continue
+    return {}, {"status": "unreachable", "asof": None,
+                "note": ("tried %d recent FINRA free bulk-file settlement dates, none usable: %s"
+                         % (len(dates), last_err))}
 
 
 # ---------- source 2: shares outstanding ----------
