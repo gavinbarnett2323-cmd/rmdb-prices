@@ -6,6 +6,10 @@ on:
   schedule:
     - cron: "30 21 * * 1-5"   # ~21:30 UTC weekdays = shortly after the US cash close (16:30 ET EDT). Adjust for DST if you like.
   workflow_dispatch: {}        # lets you run it on demand from the Actions tab
+  push:
+    paths:                       # verification path, mirroring history.yml (added 2026-09-15 after the
+      - "relay/fetch_prices.py"  # scheduled run silently stopped committing on 2026-09-09)
+      - ".github/workflows/prices.yml"
 permissions:
   contents: write              # allow the workflow to commit prices.json back (uses the built-in GITHUB_TOKEN, no PAT)
 concurrency:

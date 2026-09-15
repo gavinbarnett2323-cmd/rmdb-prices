@@ -160,3 +160,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# touch 2026-09-15: scheduled runs stopped committing after 2026-09-09; this push fires the new verification-path trigger
