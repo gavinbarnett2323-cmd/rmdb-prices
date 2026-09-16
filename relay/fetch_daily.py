@@ -174,13 +174,7 @@ def main():
         print("  wrote %s: %d tickers, %d rows, %.1f MB" % (fn, len(part), len(df), sz / 1e6), flush=True)
     manifest["rows"] = total_rows
 
-    m = fetch_fred()
-    if m is not None:
-        m.to_csv(os.path.join(OUTDIR, "macro.csv"))
-        manifest["macro"] = {"series": list(m.columns), "rows": int(len(m)), "last_date": str(m.index.max().date())}
-    else:
-        manifest["macro"] = None
-        print("  FRED pull failed entirely — macro.csv NOT written (flagged, not faked)", flush=True)
+    manifest["macro"] = "see fetch_fred.py / macro_manifest.json (decoupled 2026-09-16)"
 
     json.dump(manifest, open(os.path.join(OUTDIR, "manifest.json"), "w"), indent=1)
     print("daily: %d/%d tickers, %d rows, gaps=%d" % (len(names), len(tk), total_rows, len(manifest["gaps"])), flush=True)

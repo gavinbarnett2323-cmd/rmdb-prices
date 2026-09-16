@@ -1,0 +1,36 @@
+# FRED regime-series relay — feeds the Research Monster backtest layer + regime backtests (2026-09-16).
+# Separate from daily-relay so a FRED outage never blocks the bar history. Backtest input only.
+name: fred-relay
+on:
+  schedule:
+    - cron: "30 1 * * 6"
+  workflow_dispatch: {}
+  push:
+    paths:
+      - "relay/fetch_fred.py"
+      - ".github/workflows/fred.yml"
+permissions:
+  contents: write
+concurrency:
+  group: fred-relay
+  cancel-in-progress: false
+jobs:
+  fred:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Fetch FRED series (public endpoints, no key)
+        run: |
+          pip install --quiet pandas
+          python3 relay/fetch_fred.py
+      - name: Commit macro.csv
+        run: |
+          git config user.name  "fred-relay-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git pull --rebase --autostash || true
+          git add -A relay/daily/macro.csv relay/daily/macro_manifest.json
+          git diff --staged --quiet || git commit -m "fred $(date -u +%F\ %H:%M)"
+          git push
