@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-16 00:26 UTC",
+ "generated_at": "2026-09-16 02:35 UTC",
  "period": "12y",
  "n_tickers": 1203,
  "gaps": [
@@ -178,10 +178,10 @@
     "BLX",
     "BMRN"
    ],
-   "rows": 387014,
-   "bytes": 7133131,
+   "rows": 387164,
+   "bytes": 7169512,
    "first_date": "2014-09-16",
-   "last_date": "2026-09-14"
+   "last_date": "2026-09-15"
   },
   {
    "file": "bars_01.parquet",
@@ -337,8 +337,8 @@
     "DELL",
     "DFDV"
    ],
-   "rows": 394027,
-   "bytes": 7472703,
+   "rows": 394176,
+   "bytes": 7797327,
    "first_date": "2014-09-16",
    "last_date": "2026-09-16"
   },
@@ -496,8 +496,8 @@
     "GEN",
     "GEV"
    ],
-   "rows": 401319,
-   "bytes": 7679319,
+   "rows": 401468,
+   "bytes": 7730883,
    "first_date": "2014-09-16",
    "last_date": "2026-09-16"
   },
@@ -655,10 +655,10 @@
     "LAD",
     "LAMR"
    ],
-   "rows": 409830,
-   "bytes": 7743544,
+   "rows": 409979,
+   "bytes": 7795464,
    "first_date": "2014-09-16",
-   "last_date": "2026-09-14"
+   "last_date": "2026-09-15"
   },
   {
    "file": "bars_04.parquet",
@@ -814,10 +814,10 @@
     "NVR",
     "NVRI"
    ],
-   "rows": 407724,
-   "bytes": 7962379,
+   "rows": 407874,
+   "bytes": 8015542,
    "first_date": "2014-09-16",
-   "last_date": "2026-09-14"
+   "last_date": "2026-09-15"
   },
   {
    "file": "bars_05.parquet",
@@ -973,10 +973,10 @@
     "RNR",
     "ROCK"
    ],
-   "rows": 386647,
-   "bytes": 6835115,
+   "rows": 386797,
+   "bytes": 6867177,
    "first_date": "2014-09-16",
-   "last_date": "2026-09-14"
+   "last_date": "2026-09-15"
   },
   {
    "file": "bars_06.parquet",
@@ -1132,8 +1132,8 @@
     "TTD",
     "TTEK"
    ],
-   "rows": 386853,
-   "bytes": 7349741,
+   "rows": 387002,
+   "bytes": 7403428,
    "first_date": "2014-09-16",
    "last_date": "2026-09-16"
   },
@@ -1291,8 +1291,8 @@
     "^RUT",
     "^TNX"
    ],
-   "rows": 417012,
-   "bytes": 7728814,
+   "rows": 417154,
+   "bytes": 7778331,
    "first_date": "2014-09-15",
    "last_date": "2026-09-15"
   },
@@ -1320,6 +1320,6 @@
   "volume"
  ],
  "adjustment": "adj_close = dividends+splits adjusted (yfinance auto_adjust=False); open/high/low/close are split-adjusted raw prints",
- "rows": 3199472,
- "macro": null
+ "rows": 3200660,
+ "macro": "see fetch_fred.py / macro_manifest.json (decoupled 2026-09-16)"
 }
