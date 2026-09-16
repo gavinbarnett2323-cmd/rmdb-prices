@@ -1,0 +1,38 @@
+# Daily-bar history relay — feeds the Research Monster full-system backtest layer (2026-09-16).
+# Deployed at .github/workflows/daily.yml in github.com/gavinbarnett2323-cmd/rmdb-prices.
+# SEPARATE workflow from prices/history/flow (same doctrine): a slow or failed daily-history run can never
+# break the daily price sweep or the weekly history relay. Backtest input only — never a decision-path feed.
+name: daily-relay
+on:
+  schedule:
+    - cron: "0 1 * * 6"        # Saturday 01:00 UTC — after Friday's close, before history-relay.
+  workflow_dispatch: {}
+  push:
+    paths:
+      - "relay/fetch_daily.py"
+      - ".github/workflows/daily.yml"
+permissions:
+  contents: write
+concurrency:
+  group: daily-relay
+  cancel-in-progress: false
+jobs:
+  daily:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Fetch daily bars (yfinance, batched, no key) + FRED regime series
+        run: |
+          pip install --quiet yfinance pandas pyarrow
+          python3 relay/fetch_daily.py
+      - name: Commit relay/daily
+        run: |
+          git config user.name  "daily-relay-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git pull --rebase --autostash || true
+          git add -A relay/daily
+          git diff --staged --quiet || git commit -m "daily bars $(date -u +%F\ %H:%M)"
+          git push
