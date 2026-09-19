@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-09-16 02:35 UTC",
+ "generated_at": "2026-09-19 05:35 UTC",
  "period": "12y",
- "n_tickers": 1203,
+ "n_tickers": 1205,
  "gaps": [
   "AVB",
   "BBBY",
@@ -9,7 +9,6 @@
   "BLSM",
   "BRVE",
   "CRNX",
-  "DPC",
   "EA",
   "EDAP",
   "EQR",
@@ -20,8 +19,7 @@
   "PRGO2",
   "SCTX",
   "UHALB",
-  "WBS",
-  "^VIX3M"
+  "WBS"
  ],
  "chunks": [
   {
@@ -178,10 +176,10 @@
     "BLX",
     "BMRN"
    ],
-   "rows": 387164,
-   "bytes": 7169512,
-   "first_date": "2014-09-16",
-   "last_date": "2026-09-15"
+   "rows": 387284,
+   "bytes": 7169817,
+   "first_date": "2014-09-19",
+   "last_date": "2026-09-18"
   },
   {
    "file": "bars_01.parquet",
@@ -337,10 +335,10 @@
     "DELL",
     "DFDV"
    ],
-   "rows": 394176,
-   "bytes": 7797327,
-   "first_date": "2014-09-16",
-   "last_date": "2026-09-16"
+   "rows": 394294,
+   "bytes": 7803098,
+   "first_date": "2014-09-19",
+   "last_date": "2026-09-19"
   },
   {
    "file": "bars_02.parquet",
@@ -367,6 +365,7 @@
     "DOV",
     "DOW",
     "DOX",
+    "DPC",
     "DPZ",
     "DRI",
     "DRS",
@@ -493,17 +492,17 @@
     "GDDY",
     "GE",
     "GEHC",
-    "GEN",
-    "GEV"
+    "GEN"
    ],
-   "rows": 401468,
-   "bytes": 7730883,
-   "first_date": "2014-09-16",
-   "last_date": "2026-09-16"
+   "rows": 401023,
+   "bytes": 7720202,
+   "first_date": "2014-09-19",
+   "last_date": "2026-09-19"
   },
   {
    "file": "bars_03.parquet",
    "tickers": [
+    "GEV",
     "GFS",
     "GGG",
     "GILD",
@@ -652,17 +651,17 @@
     "KTOS",
     "KVUE",
     "L",
-    "LAD",
-    "LAMR"
+    "LAD"
    ],
-   "rows": 409979,
-   "bytes": 7795464,
-   "first_date": "2014-09-16",
-   "last_date": "2026-09-15"
+   "rows": 407687,
+   "bytes": 7770805,
+   "first_date": "2014-09-19",
+   "last_date": "2026-09-18"
   },
   {
    "file": "bars_04.parquet",
    "tickers": [
+    "LAMR",
     "LAW",
     "LAZ",
     "LBGJ",
@@ -811,17 +810,17 @@
     "NUE",
     "NVCR",
     "NVDA",
-    "NVR",
-    "NVRI"
+    "NVR"
    ],
-   "rows": 407874,
-   "bytes": 8015542,
-   "first_date": "2014-09-16",
-   "last_date": "2026-09-15"
+   "rows": 407970,
+   "bytes": 8007611,
+   "first_date": "2014-09-19",
+   "last_date": "2026-09-18"
   },
   {
    "file": "bars_05.parquet",
    "tickers": [
+    "NVRI",
     "NVST",
     "NVT",
     "NWBI",
@@ -970,17 +969,17 @@
     "RLI",
     "RMD",
     "RNG",
-    "RNR",
-    "ROCK"
+    "RNR"
    ],
-   "rows": 386797,
-   "bytes": 6867177,
-   "first_date": "2014-09-16",
-   "last_date": "2026-09-15"
+   "rows": 386938,
+   "bytes": 6864701,
+   "first_date": "2014-09-19",
+   "last_date": "2026-09-18"
   },
   {
    "file": "bars_06.parquet",
    "tickers": [
+    "ROCK",
     "ROIV",
     "ROK",
     "ROKU",
@@ -1129,17 +1128,17 @@
     "TSN",
     "TT",
     "TTC",
-    "TTD",
-    "TTEK"
+    "TTD"
    ],
-   "rows": 387002,
-   "bytes": 7403428,
-   "first_date": "2014-09-16",
-   "last_date": "2026-09-16"
+   "rows": 387119,
+   "bytes": 7370644,
+   "first_date": "2014-09-19",
+   "last_date": "2026-09-19"
   },
   {
    "file": "bars_07.parquet",
    "tickers": [
+    "TTEK",
     "TTI",
     "TTWO",
     "TVTX",
@@ -1288,25 +1287,26 @@
     "^GSPC",
     "^IRX",
     "^NDX",
-    "^RUT",
-    "^TNX"
+    "^RUT"
    ],
-   "rows": 417154,
-   "bytes": 7778331,
-   "first_date": "2014-09-15",
-   "last_date": "2026-09-15"
+   "rows": 417259,
+   "bytes": 7804934,
+   "first_date": "2014-09-18",
+   "last_date": "2026-09-18"
   },
   {
    "file": "bars_08.parquet",
    "tickers": [
+    "^TNX",
     "^TYX",
     "^VIX",
+    "^VIX3M",
     "^VVIX"
    ],
-   "rows": 9046,
-   "bytes": 201101,
-   "first_date": "2014-09-15",
-   "last_date": "2026-09-15"
+   "rows": 15080,
+   "bytes": 280859,
+   "first_date": "2014-09-18",
+   "last_date": "2026-09-18"
   }
  ],
  "fields": [
@@ -1320,6 +1320,6 @@
   "volume"
  ],
  "adjustment": "adj_close = dividends+splits adjusted (yfinance auto_adjust=False); open/high/low/close are split-adjusted raw prints",
- "rows": 3200660,
+ "rows": 3204654,
  "macro": "see fetch_fred.py / macro_manifest.json (decoupled 2026-09-16)"
 }
