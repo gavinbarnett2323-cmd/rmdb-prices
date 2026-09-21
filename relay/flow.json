@@ -1,27 +1,27 @@
 {
- "as_of": "2026-09-20 23:48 UTC",
- "n_focus_tickers": 53,
+ "as_of": "2026-09-21 16:54 UTC",
+ "n_focus_tickers": 54,
  "n_sources_live": 3,
  "sources": {
   "short_interest": {
    "status": "ok",
    "asof": "2026-08-31",
-   "note": "FINRA free bulk file (https://cdn.finra.org/equity/otcmarket/biweekly/shrt20260831.csv), 52/53 focus tickers matched"
+   "note": "FINRA free bulk file (https://cdn.finra.org/equity/otcmarket/biweekly/shrt20260831.csv), 53/54 focus tickers matched"
   },
   "shares_outstanding": {
    "status": "ok",
    "asof": "2026-08-31",
-   "note": "52 ok, 1 failed of 53 focus tickers"
+   "note": "53 ok, 1 failed of 54 focus tickers"
   },
   "filings_8k": {
    "status": "ok",
-   "asof": "2026-09-20",
-   "note": "53 ok, 0 failed of 53 focus tickers"
+   "asof": "2026-09-21",
+   "note": "54 ok, 0 failed of 54 focus tickers"
   },
   "top_holders_13f": {
    "status": "not_implemented_v1",
    "asof": null,
-   "note": "13F top-holder concentration needs a real per-filer INFORMATION TABLE parse (not shipped in v1 \u2014 see this function's docstring). Most recent quarter with 13Fs due: 2026-06-30 (82 days ago, disclosure should be filed)."
+   "note": "13F top-holder concentration needs a real per-filer INFORMATION TABLE parse (not shipped in v1 \u2014 see this function's docstring). Most recent quarter with 13Fs due: 2026-06-30 (83 days ago, disclosure should be filed)."
   }
  },
  "tickers": {
@@ -35,7 +35,7 @@
    "n_8k_3w": 0,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "ADBE": {
    "si_shares": 17369986,
@@ -47,7 +47,7 @@
    "n_8k_3w": 2,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "ADSK": {
    "si_shares": 8406989,
@@ -59,7 +59,7 @@
    "n_8k_3w": 1,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "AEIS": {
    "si_shares": 1736787,
@@ -71,7 +71,7 @@
    "n_8k_3w": 0,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "AII": {
    "si_shares": 169672,
@@ -83,7 +83,7 @@
    "n_8k_3w": 1,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "ALNY": {
    "si_shares": 6340087,
@@ -95,7 +95,7 @@
    "n_8k_3w": 0,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "AVGO": {
    "si_shares": 50451889,
@@ -107,7 +107,7 @@
    "n_8k_3w": 1,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "BEPC": {
    "si_shares": 12398227,
@@ -119,7 +119,7 @@
    "n_8k_3w": 0,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "BFLY": {
    "si_shares": 34062017,
@@ -131,7 +131,7 @@
    "n_8k_3w": 0,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "BKNG": {
    "si_shares": 20152864,
@@ -143,7 +143,7 @@
    "n_8k_3w": 0,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "BRK.B": {
    "si_shares": null,
@@ -155,7 +155,7 @@
    "n_8k_3w": 0,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "BSOL": {
    "si_shares": 1416987,
@@ -167,7 +167,7 @@
    "n_8k_3w": 0,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "BURL": {
    "si_shares": 1983251,
@@ -179,7 +179,7 @@
    "n_8k_3w": 0,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "CCI": {
    "si_shares": 9720564,
@@ -191,7 +191,7 @@
    "n_8k_3w": 1,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "CME": {
    "si_shares": 5629176,
@@ -203,7 +203,7 @@
    "n_8k_3w": 1,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "CMI": {
    "si_shares": 3218495,
@@ -215,7 +215,7 @@
    "n_8k_3w": 0,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "COHR": {
    "si_shares": 10764076,
@@ -227,7 +227,7 @@
    "n_8k_3w": 1,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "CPAY": {
    "si_shares": 2732137,
@@ -239,7 +239,7 @@
    "n_8k_3w": 0,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "CTSH": {
    "si_shares": 35613121,
@@ -251,7 +251,7 @@
    "n_8k_3w": 0,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "DG": {
    "si_shares": 5887587,
@@ -263,7 +263,7 @@
    "n_8k_3w": 0,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "ETHA": {
    "si_shares": 26548287,
@@ -275,7 +275,7 @@
    "n_8k_3w": 0,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "EVRG": {
    "si_shares": 18310274,
@@ -287,7 +287,19 @@
    "n_8k_3w": 1,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
+  },
+  "EVTC": {
+   "si_shares": 2778662,
+   "si_dtc": 7.85,
+   "si_settlement_date": "2026-08-31",
+   "shares_out": 59752542,
+   "shares_out_asof": "2026-07-30",
+   "last_8k": "2026-08-04",
+   "n_8k_3w": 0,
+   "top5_pct": null,
+   "top5_asof_quarter": "2026-06-30",
+   "top5_lag_days": 83
   },
   "EXC": {
    "si_shares": 32033719,
@@ -299,7 +311,7 @@
    "n_8k_3w": 0,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "HBAN": {
    "si_shares": 51518248,
@@ -311,7 +323,7 @@
    "n_8k_3w": 3,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "HCA": {
    "si_shares": 6135558,
@@ -323,7 +335,7 @@
    "n_8k_3w": 0,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "IBIT": {
    "si_shares": 45932593,
@@ -335,7 +347,7 @@
    "n_8k_3w": 0,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "INTU": {
    "si_shares": 7950442,
@@ -347,7 +359,7 @@
    "n_8k_3w": 0,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "KBR": {
    "si_shares": 8747725,
@@ -359,7 +371,7 @@
    "n_8k_3w": 0,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "LHX": {
    "si_shares": 3968472,
@@ -371,7 +383,7 @@
    "n_8k_3w": 0,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "NOW": {
    "si_shares": 30315334,
@@ -383,7 +395,7 @@
    "n_8k_3w": 0,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "NVCR": {
    "si_shares": 10788851,
@@ -395,7 +407,7 @@
    "n_8k_3w": 2,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "NVDA": {
    "si_shares": 298301619,
@@ -407,7 +419,7 @@
    "n_8k_3w": 1,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "PAYX": {
    "si_shares": 20420231,
@@ -419,7 +431,7 @@
    "n_8k_3w": 0,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "PEG": {
    "si_shares": 10392181,
@@ -431,7 +443,7 @@
    "n_8k_3w": 0,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "PPTA": {
    "si_shares": 10989077,
@@ -443,7 +455,7 @@
    "n_8k_3w": 0,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "Q": {
    "si_shares": 4552694,
@@ -455,7 +467,7 @@
    "n_8k_3w": 1,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "REGN": {
    "si_shares": 2552029,
@@ -467,7 +479,7 @@
    "n_8k_3w": 0,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "RMD": {
    "si_shares": 13073165,
@@ -479,7 +491,7 @@
    "n_8k_3w": 1,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "ROCK": {
    "si_shares": 1671883,
@@ -491,7 +503,7 @@
    "n_8k_3w": 0,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "SPOT": {
    "si_shares": 6121444,
@@ -503,7 +515,7 @@
    "n_8k_3w": 0,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "SRE": {
    "si_shares": 10381859,
@@ -515,7 +527,7 @@
    "n_8k_3w": 0,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "T": {
    "si_shares": 125256838,
@@ -527,7 +539,7 @@
    "n_8k_3w": 1,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "TJX": {
    "si_shares": 21724315,
@@ -539,7 +551,7 @@
    "n_8k_3w": 1,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "TMUS": {
    "si_shares": 17093779,
@@ -551,7 +563,7 @@
    "n_8k_3w": 1,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "TPR": {
    "si_shares": 15002149,
@@ -563,7 +575,7 @@
    "n_8k_3w": 0,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "TSLA": {
    "si_shares": 74230933,
@@ -575,7 +587,7 @@
    "n_8k_3w": 0,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "UBER": {
    "si_shares": 45121710,
@@ -587,7 +599,7 @@
    "n_8k_3w": 1,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "URI": {
    "si_shares": 1428713,
@@ -599,7 +611,7 @@
    "n_8k_3w": 1,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "UTHR": {
    "si_shares": 2059685,
@@ -611,7 +623,7 @@
    "n_8k_3w": 1,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "VEEV": {
    "si_shares": 4824012,
@@ -623,7 +635,7 @@
    "n_8k_3w": 0,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "VST": {
    "si_shares": 10778003,
@@ -635,7 +647,7 @@
    "n_8k_3w": 0,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "WTW": {
    "si_shares": 2430162,
@@ -647,7 +659,7 @@
    "n_8k_3w": 0,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   },
   "XYL": {
    "si_shares": 8031075,
@@ -659,7 +671,7 @@
    "n_8k_3w": 1,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 82
+   "top5_lag_days": 83
   }
  }
 }
