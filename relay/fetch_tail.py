@@ -40,9 +40,13 @@ BATCH = 100
 RETRIES = 3
 SLEEP = 2.0
 MIN_FRESH_FRAC = 0.60
-PERIOD = "3y"
-N_CLOSE = 780          # ~3.1 years of sessions (worst_dd_3y / med_mdd252_3y need 756)
+PERIOD = "7y"          # download 7y so the two slow features below have their full look-back (2026-09-22)
+N_CLOSE = 780          # ~3.1 years of sessions kept in the file (grading + the fast features)
 N_LOW = 130            # raw intraday lows kept (fill checks on resting limits over a 63-session GTC)
+# Slow features computed HERE from the full 7y download, exactly as Investing/backtest/features.py defines them
+# (they need 6 years of history: rolling 756 of a rolling 756, and a rolling-756 median of a rolling-252 max drawdown):
+#   worst_dd_3y    = max over the last 756 sessions of (1 - c / rolling-756 max)
+#   med_mdd252_3y  = median over the last 756 sessions of the trailing-252 max drawdown
 
 
 def _dl(syms, **kw):
@@ -102,6 +106,21 @@ def download(tk):
     return got
 
 
+def _slow_features(adj):
+    """worst_dd_3y and med_mdd252_3y from the FULL adjusted-close series (pandas, same code path as features.py)."""
+    c = adj.dropna().astype("float64")
+    if len(c) < 300:
+        return None, None, len(c)
+    rm3 = c.rolling(756, min_periods=250).max()
+    worst = (1 - c / rm3).rolling(756, min_periods=250).max()
+    rm = c.rolling(252, min_periods=126).max()
+    dd = 1 - c / rm
+    mdd252 = dd.rolling(252, min_periods=126).max()
+    med = mdd252.rolling(756, min_periods=250).median()
+    w = worst.iloc[-1]; m = med.iloc[-1]
+    return (float(w) if pd.notna(w) else None), (float(m) if pd.notna(m) else None), len(c)
+
+
 def build(got, tk, now=None):
     """Align every series to SPY's session calendar and produce the JSON document (pure; testable offline)."""
     now = now or datetime.datetime.now(datetime.timezone.utc)
@@ -127,17 +146,22 @@ def build(got, tk, now=None):
         dv = (cl * vo) if (cl is not None and vo is not None) else None
         adv20 = float(dv.dropna().tail(20).mean()) if dv is not None and dv.notna().sum() >= 15 else None
         last_valid = adj.dropna()
+        w3, m3, n_full = _slow_features(_norm(d["adj"]))
         tickers[t] = {
             "last": last_valid.index[-1].strftime("%Y-%m-%d"),
             "last_close": _r(cl.dropna().iloc[-1]) if cl is not None and cl.notna().any() else None,
             "c": [_r(x) for x in adj.values],
             "l": [_r(x) for x in lo.values] if lo is not None else None,
             "adv20_usd": round(adv20) if adv20 else None,
+            "worst_dd_3y": (round(w3, 4) if w3 is not None else None),
+            "med_mdd252_3y": (round(m3, 4) if m3 is not None else None),
+            "n_full": int(n_full),
         }
     return {
         "_doc": "Daily-close tail for the V2 hubs. c = adjusted closes (dividends+splits) aligned to `calendar` (SPY sessions, "
                 "oldest first, null = no print that day); l = RAW intraday lows for the last %d sessions (calendar[-%d:]); "
-                "adv20_usd = 20-session mean of close*volume. Built by relay/fetch_tail.py." % (N_LOW, N_LOW),
+                "adv20_usd = 20-session mean of close*volume; worst_dd_3y / med_mdd252_3y = the two slow backtest features "
+                "computed from the full %s download (n_full sessions). Built by relay/fetch_tail.py." % (N_LOW, N_LOW, PERIOD),
         "generated_at": now.strftime("%Y-%m-%d %H:%M UTC"), "as_of": cal_s[-1], "period": PERIOD, "n_sessions": len(cal_s),
         "n_lows": N_LOW, "n_tickers": len(tickers), "gaps": sorted(t for t in tk if t not in tickers),
         "calendar": cal_s, "tickers": tickers,
