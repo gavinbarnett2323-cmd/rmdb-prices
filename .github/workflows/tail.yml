@@ -1,0 +1,38 @@
+# GitHub Actions daily-close tail relay (2026-09-22) — feeds the V2 hubs' daily features (r20, sigma63, dd252,
+# CORRECTION/DEEP depths, ADV20) so the live engine computes the SAME numbers the full-system backtest graded.
+# Emits relay/daily_tail.json (~7.5 MB JSON, 3y of adjusted closes on one SPY calendar). Runs after the price
+# relay each weekday; the vault's build_v2.py pulls the raw file. Failure here never touches prices.json.
+name: tail-relay
+on:
+  schedule:
+    - cron: "10 22 * * 1-5"   # ~22:10 UTC weekdays, after the 21:30 price relay
+    - cron: "20 0 * * 2-6"    # second try (GitHub drops cron runs under load)
+  workflow_dispatch: {}
+  push:
+    paths:
+      - "relay/fetch_tail.py"
+      - ".github/workflows/tail.yml"
+permissions:
+  contents: write
+concurrency:
+  group: tail-relay
+  cancel-in-progress: false
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Fetch daily tail (yfinance, batched, no key)
+        run: |
+          pip install --quiet yfinance pandas numpy
+          python3 relay/fetch_tail.py
+      - name: Commit daily_tail.json
+        run: |
+          git config user.name  "tail-relay-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add relay/daily_tail.json
+          git diff --staged --quiet && echo "nothing to commit" && exit 0
+          git commit -m "tail $(date -u +%F\ %H:%M)"
+          for i in 1 2 3 4 5; do git pull --rebase --autostash origin main && git push && break || sleep 5; done

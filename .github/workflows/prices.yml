@@ -5,6 +5,11 @@ name: price-relay
 on:
   schedule:
     - cron: "30 21 * * 1-5"   # ~21:30 UTC weekdays = shortly after the US cash close (16:30 ET EDT). Adjust for DST if you like.
+    # Two more tries per trading day (2026-09-22). GitHub drops or delays cron runs under load, and this relay
+    # silently missed 9/10, 9/11, 9/14, 9/17 and 9/21. A repeat run after a success is a no-op commit
+    # ("nothing to commit"); a repeat run after a miss is the day's prices. Same-day close either way.
+    - cron: "45 22 * * 1-5"
+    - cron: "50 23 * * 1-5"
   workflow_dispatch: {}        # lets you run it on demand from the Actions tab
   push:
     paths:                       # verification path, mirroring history.yml (added 2026-09-15 after the
@@ -31,5 +36,9 @@ jobs:
           git config user.name  "price-relay-bot"
           git config user.email "actions@users.noreply.github.com"
           git add relay/prices.json
-          git diff --staged --quiet || git commit -m "prices $(date -u +%F\ %H:%M)"
-          git push
+          git diff --staged --quiet && echo "nothing to commit" && exit 0
+          git commit -m "prices $(date -u +%F\ %H:%M)"
+          # push-race hardening (2026-09-22): the 2026-09-21 run FAILED at this step in 1 second because the
+          # options relay pushed between checkout and push (non-fast-forward). Rebase onto remote and retry,
+          # exactly like options.yml already does. A lost push here is a missing day of prices for every hub.
+          for i in 1 2 3 4 5; do git pull --rebase --autostash origin main && git push && break || sleep 5; done
