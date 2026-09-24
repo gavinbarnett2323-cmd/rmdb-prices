@@ -477,7 +477,7 @@ def _since(mask, last):
 def tvw(sig, dates, raw_close=None, complete_last=True, hist_weeks=26):
     """The per-name block the V2 hubs read, from weekly_signals(). Only COMPLETED weeks count: when the newest weekly
     bar is still forming (complete_last=False) it is dropped, so a Monday-Thursday run speaks of last Friday's bar.
-      wk        the last completed weekly bar (its last session, ISO date)
+      wk        the last completed weekly bar (its last session, ISO date); forming = the dropped partial week's last session
       buy_ago   completed weeks since the latest v20-or-v22 bottom fire (0 = fired on `wk`); buy_wk / buy_px / buy_src
       bot, top  the bottom / top scores (0-12) on `wk`; top_reg / adx_q the top-regime and quiet-ADX gates on `wk`
       top5_ago  completed weeks since the latest week that ENTERED topScore >= 5 with the top regime (the trim read)
@@ -510,7 +510,7 @@ def tvw(sig, dates, raw_close=None, complete_last=True, hist_weeks=26):
     lo = max(0, last - hist_weeks + 1)
     digit = lambda x, k: (format(min(int(x), 15), "x") if ok[k] else "-")
     out = {
-        "wk": wd(last), "complete": bool(complete_last), "n_weeks": int(last + 1),
+        "wk": wd(last), "forming": (None if complete_last else wd(n - 1)), "n_weeks": int(last + 1),
         "buy_ago": b_ago, "buy_wk": (wd(b_i) if b_i is not None else None), "buy_px": (rc(b_i) if b_i is not None else None), "buy_src": src,
         "bot": int(bs[last]), "top": int(ts[last]), "top_reg": bool(treg[last]), "adx_q": bool(np.asarray(sig["v22|adxQuiet"], bool)[last]),
         "top5_ago": t_ago, "top5_wk": (wd(t_i) if t_i is not None else None),

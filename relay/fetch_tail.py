@@ -19,6 +19,12 @@ Honesty rails (same family as fetch_history.py / fetch_daily.py):
   (3) `gaps` list — names we could NOT price are NAMED, never interpolated, never dropped silently.
   (4) No forward-filling. A missing day is null.
 
+WEEKLY TRADINGVIEW BLOCK (2026-09-24, V2.1): every non-benchmark ticker also carries `tvw`, Gavin's v20/v22
+TradingView signals computed on WEEKLY bars (tv_weekly.py: the backtest's weekly port, parity-checked) from the full
+download (12 years, so the 200-week average and the 252-week distZ window are real on the live bar, as on his chart).
+Only COMPLETED weeks count: a Monday-Thursday run speaks of last Friday's bar. `tvw_meta` stamps the week and the
+count. A failure in the weekly layer never blocks the tail (the block is simply absent and `tvw_meta.error` says why).
+
 CANONICAL COPY lives in the vault at Investing/engine/relay/fetch_tail.py; the deployed copy is
 relay/fetch_tail.py in github.com/gavinbarnett2323-cmd/rmdb-prices. Keep them in sync.
 """
@@ -40,7 +46,9 @@ BATCH = 100
 RETRIES = 3
 SLEEP = 2.0
 MIN_FRESH_FRAC = 0.60
-PERIOD = "7y"          # download 7y so the two slow features below have their full look-back (2026-09-22)
+PERIOD = "12y"         # 12y (was 7y, 2026-09-22): the slow features need 6y; the weekly TradingView layer needs 452 weeks
+                       # (200-week average + 252-week distZ window) so the live weekly bar matches his chart (2026-09-24)
+HIST_YEARS = 12
 N_CLOSE = 780          # ~3.1 years of sessions kept in the file (grading + the fast features)
 N_LOW = 130            # raw intraday lows kept (fill checks on resting limits over a 63-session GTC)
 # Slow features computed HERE from the full 7y download, exactly as Investing/backtest/features.py defines them
@@ -91,7 +99,8 @@ def download(tk):
     got = {}
     for i in range(0, len(ysyms), BATCH):
         chunk = ysyms[i:i + BATCH]
-        df = _dl(chunk, period=PERIOD, interval="1d")
+        start = (datetime.date.today() - datetime.timedelta(days=int(365.25 * HIST_YEARS))).isoformat()
+        df = _dl(chunk, start=start, interval="1d")
         if df is not None:
             for ys in chunk:
                 adj = _col(df, "Adj Close", ys)
@@ -100,7 +109,8 @@ def download(tk):
                 adj = adj.dropna()
                 if len(adj) < 60:
                     continue
-                got[back.get(ys, ys)] = {"adj": adj, "close": _col(df, "Close", ys), "low": _col(df, "Low", ys), "vol": _col(df, "Volume", ys)}
+                got[back.get(ys, ys)] = {"adj": adj, "close": _col(df, "Close", ys), "low": _col(df, "Low", ys), "vol": _col(df, "Volume", ys),
+                                         "open": _col(df, "Open", ys), "high": _col(df, "High", ys)}
         print("  tail %d-%d: running %d/%d" % (i, i + len(chunk), len(got), len(tk)), flush=True)
         time.sleep(SLEEP)
     return got
@@ -121,16 +131,79 @@ def _slow_features(adj):
     return (float(w) if pd.notna(w) else None), (float(m) if pd.notna(m) else None), len(c)
 
 
+def _norm(s):
+    s = s.copy()
+    s.index = pd.to_datetime(s.index).tz_localize(None).normalize()
+    return s[~s.index.duplicated(keep="last")].sort_index()
+
+
+_W = {}
+
+
+def _weekly_one(t):
+    import tv_weekly as TW
+    W = _W
+    sig = TW.weekly_signals(W["cal"], W["o"][t].values, W["h"][t].values, W["l"][t].values, W["adj"][t].values, W["v"][t].values, W["ctx"])
+    if sig is None:
+        return t, None
+    complete = TW.week_complete(W["cal"][sig["wpos"][-1]], W["now_et"])
+    return t, TW.tvw(sig, W["cal"], raw_close=W["raw"][t].values, complete_last=complete)
+
+
+def weekly_layer(got, now=None):
+    """{ticker: tvw block} + meta: Gavin's weekly v20/v22 signals on the full download (tv_weekly.py). OHL are put on the
+    adjusted scale by adj/close (the backtest harness's own adjustment); volume raw; the market context (VIX, SPY, RSP,
+    XLU, XLP, sector breadth, universe % above the 200-day) on the SPY calendar, sampled at each week's last session."""
+    import numpy as np
+    import tv_weekly as TW
+    now = now or datetime.datetime.now(datetime.timezone.utc)
+    try:
+        from zoneinfo import ZoneInfo
+        now_et = now.astimezone(ZoneInfo("America/New_York")).replace(tzinfo=None)
+    except Exception:
+        now_et = (now - datetime.timedelta(hours=4)).replace(tzinfo=None)
+    cal = _norm(got["SPY"]["adj"]).dropna().index
+    names = list(got)
+    adj = pd.DataFrame({t: _norm(got[t]["adj"]).reindex(cal) for t in names})
+    raw = pd.DataFrame({t: (_norm(got[t]["close"]).reindex(cal) if got[t].get("close") is not None else pd.Series(np.nan, index=cal)) for t in names})
+    fac = adj / raw
+    fld = lambda k: pd.DataFrame({t: (_norm(got[t][k]).reindex(cal) if got[t].get(k) is not None else pd.Series(np.nan, index=cal)) for t in names})
+    o, h, l, v = fld("open") * fac, fld("high") * fac, fld("low") * fac, fld("vol")
+    ctx = TW.build_ctx(adj)
+    todo = [t for t in names if t not in TW.BENCH]
+    _W.update(cal=cal, o=o, h=h, l=l, adj=adj, v=v, raw=raw, ctx=ctx, now_et=now_et)
+    try:                                         # fork workers share the frames copy-on-write (Linux runner)
+        import multiprocessing as mp
+        with mp.get_context("fork").Pool(max(1, min(4, os.cpu_count() or 1))) as pool:
+            res = pool.map(_weekly_one, todo, chunksize=16)
+    except Exception as e:
+        print("  weekly layer: pool unavailable (%s), running serially" % e, flush=True)
+        res = [_weekly_one(t) for t in todo]
+    out, n_short = {}, 0
+    last_complete = None
+    for t, blk in res:
+        if blk is None:
+            n_short += 1
+            continue
+        out[t] = blk
+        last_complete = max(last_complete or blk["wk"], blk["wk"])
+    meta = {"wk": last_complete, "n": len(out), "n_short_history": n_short, "hist_start": str(cal[0].date()), "n_sessions": int(len(cal)),
+            "distz_warmup": TW.DISTZ_WARMUP, "now_et": now_et.strftime("%Y-%m-%d %H:%M"),
+            "rule": "BUY = v20 or v22 botFire on a completed weekly bar; buy_ago = completed weeks since; top5 = first week of topScore>=5 with the top regime"}
+    return out, meta
+
+
 def build(got, tk, now=None):
     """Align every series to SPY's session calendar and produce the JSON document (pure; testable offline)."""
     now = now or datetime.datetime.now(datetime.timezone.utc)
     if "SPY" not in got:
         raise ValueError("SPY missing: no calendar")
-
-    def _norm(s):
-        s = s.copy()
-        s.index = pd.to_datetime(s.index).tz_localize(None).normalize()
-        return s[~s.index.duplicated(keep="last")].sort_index()
+    try:
+        tvw, tvw_meta = weekly_layer(got, now)
+    except Exception as e:                      # the weekly layer never blocks the tail
+        import traceback
+        traceback.print_exc()
+        tvw, tvw_meta = {}, {"error": "%s: %s" % (type(e).__name__, str(e)[:200])}
 
     cal = _norm(got["SPY"]["adj"]).dropna().index[-N_CLOSE:]
     cal_s = [d.strftime("%Y-%m-%d") for d in cal]
@@ -157,13 +230,16 @@ def build(got, tk, now=None):
             "med_mdd252_3y": (round(m3, 4) if m3 is not None else None),
             "n_full": int(n_full),
         }
+        if t in tvw:
+            tickers[t]["tvw"] = tvw[t]
     return {
         "_doc": "Daily-close tail for the V2 hubs. c = adjusted closes (dividends+splits) aligned to `calendar` (SPY sessions, "
                 "oldest first, null = no print that day); l = RAW intraday lows for the last %d sessions (calendar[-%d:]); "
                 "adv20_usd = 20-session mean of close*volume; worst_dd_3y / med_mdd252_3y = the two slow backtest features "
-                "computed from the full %s download (n_full sessions). Built by relay/fetch_tail.py." % (N_LOW, N_LOW, PERIOD),
+                "computed from the full %s download (n_full sessions); tvw = Gavin's weekly TradingView v20/v22 signals on completed weekly bars "
+                "(relay/tv_weekly.py; see tvw_meta). Built by relay/fetch_tail.py." % (N_LOW, N_LOW, PERIOD),
         "generated_at": now.strftime("%Y-%m-%d %H:%M UTC"), "as_of": cal_s[-1], "period": PERIOD, "n_sessions": len(cal_s),
-        "n_lows": N_LOW, "n_tickers": len(tickers), "gaps": sorted(t for t in tk if t not in tickers),
+        "n_lows": N_LOW, "n_tickers": len(tickers), "gaps": sorted(t for t in tk if t not in tickers), "tvw_meta": tvw_meta,
         "calendar": cal_s, "tickers": tickers,
     }
 
@@ -183,7 +259,7 @@ def main():
     with open(tmp, "w") as f:
         json.dump(out, f, separators=(",", ":"))
     os.replace(tmp, OUT)
-    print("tail: %d/%d tickers, as_of %s, %.1f MB, gaps=%d" % (out["n_tickers"], len(tk), out["as_of"], os.path.getsize(OUT) / 1e6, len(out["gaps"])), flush=True)
+    print("tail: %d/%d tickers, as_of %s, %.1f MB, gaps=%d | weekly TradingView block: %s" % (out["n_tickers"], len(tk), out["as_of"], os.path.getsize(OUT) / 1e6, len(out["gaps"]), out.get("tvw_meta")), flush=True)
 
 
 if __name__ == "__main__":
