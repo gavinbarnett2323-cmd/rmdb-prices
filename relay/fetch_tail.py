@@ -24,6 +24,7 @@ TradingView signals computed on WEEKLY bars (tv_weekly.py: the backtest's weekly
 download (12 years, so the 200-week average and the 252-week distZ window are real on the live bar, as on his chart).
 Only COMPLETED weeks count: a Monday-Thursday run speaks of last Friday's bar. `tvw_meta` stamps the week and the
 count. A failure in the weekly layer never blocks the tail (the block is simply absent and `tvw_meta.error` says why).
+A run during market hours drops today's partial session (`dropped_partial` names it): the tail only holds finished closes.
 
 CANONICAL COPY lives in the vault at Investing/engine/relay/fetch_tail.py; the deployed copy is
 relay/fetch_tail.py in github.com/gavinbarnett2323-cmd/rmdb-prices. Keep them in sync.
@@ -205,7 +206,19 @@ def build(got, tk, now=None):
         traceback.print_exc()
         tvw, tvw_meta = {}, {"error": "%s: %s" % (type(e).__name__, str(e)[:200])}
 
-    cal = _norm(got["SPY"]["adj"]).dropna().index[-N_CLOSE:]
+    cal_all = _norm(got["SPY"]["adj"]).dropna().index
+    # A run while the market is open (a manual dispatch, or a push of this file) would carry a PARTIAL last session.
+    # Drop it: the tail only ever holds finished closes (the scheduled runs are after the close and never hit this).
+    dropped_partial = None
+    try:
+        from zoneinfo import ZoneInfo
+        _et = now.astimezone(ZoneInfo("America/New_York"))
+        if _et.weekday() < 5 and (9, 30) <= (_et.hour, _et.minute) < (16, 20) and len(cal_all) and cal_all[-1].date() == _et.date():
+            dropped_partial = cal_all[-1].strftime("%Y-%m-%d")
+            cal_all = cal_all[:-1]
+    except Exception:
+        pass
+    cal = cal_all[-N_CLOSE:]
     cal_s = [d.strftime("%Y-%m-%d") for d in cal]
     lows_cal = cal[-N_LOW:]
     tickers = {}
@@ -219,7 +232,7 @@ def build(got, tk, now=None):
         dv = (cl * vo) if (cl is not None and vo is not None) else None
         adv20 = float(dv.dropna().tail(20).mean()) if dv is not None and dv.notna().sum() >= 15 else None
         last_valid = adj.dropna()
-        w3, m3, n_full = _slow_features(_norm(d["adj"]))
+        w3, m3, n_full = _slow_features(_norm(d["adj"]).loc[:cal[-1]])
         tickers[t] = {
             "last": last_valid.index[-1].strftime("%Y-%m-%d"),
             "last_close": _r(cl.dropna().iloc[-1]) if cl is not None and cl.notna().any() else None,
@@ -239,7 +252,7 @@ def build(got, tk, now=None):
                 "computed from the full %s download (n_full sessions); tvw = Gavin's weekly TradingView v20/v22 signals on completed weekly bars "
                 "(relay/tv_weekly.py; see tvw_meta). Built by relay/fetch_tail.py." % (N_LOW, N_LOW, PERIOD),
         "generated_at": now.strftime("%Y-%m-%d %H:%M UTC"), "as_of": cal_s[-1], "period": PERIOD, "n_sessions": len(cal_s),
-        "n_lows": N_LOW, "n_tickers": len(tickers), "gaps": sorted(t for t in tk if t not in tickers), "tvw_meta": tvw_meta,
+        "n_lows": N_LOW, "n_tickers": len(tickers), "gaps": sorted(t for t in tk if t not in tickers), "tvw_meta": tvw_meta, "dropped_partial": dropped_partial,
         "calendar": cal_s, "tickers": tickers,
     }
 
