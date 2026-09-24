@@ -1,0 +1,34 @@
+# ONE-OFF research run (2026-09-24): Gavin's weekly TradingView signals with full price history behind every bar
+# (relay/tvw_history.py -> relay/tvw_history.json.gz). Manual or on push of the script; never scheduled.
+name: tvw-history
+on:
+  workflow_dispatch: {}
+  push:
+    paths:
+      - "relay/tvw_history.py"
+      - ".github/workflows/tvw_history.yml"
+permissions:
+  contents: write
+concurrency:
+  group: tvw-history
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Weekly TradingView signals, full history (yfinance, batched, no key)
+        run: |
+          pip install --quiet yfinance pandas numpy
+          python3 relay/tvw_history.py
+      - name: Commit tvw_history.json.gz
+        run: |
+          git config user.name  "tvw-history-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add relay/tvw_history.json.gz
+          git diff --staged --quiet && echo "nothing to commit" && exit 0
+          git commit -m "tvw history $(date -u +%F\ %H:%M)"
+          for i in 1 2 3 4 5; do git pull --rebase --autostash origin main && git push && break || sleep 5; done
