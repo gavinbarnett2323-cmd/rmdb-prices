@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-09-19 05:35 UTC",
+ "generated_at": "2026-09-26 05:59 UTC",
  "period": "12y",
- "n_tickers": 1205,
+ "n_tickers": 1206,
  "gaps": [
   "AVB",
   "BBBY",
@@ -15,7 +15,6 @@
   "GOCO",
   "HEIA",
   "JHG",
-  "MFP",
   "PRGO2",
   "SCTX",
   "UHALB",
@@ -176,10 +175,10 @@
     "BLX",
     "BMRN"
    ],
-   "rows": 387284,
-   "bytes": 7169817,
-   "first_date": "2014-09-19",
-   "last_date": "2026-09-18"
+   "rows": 387484,
+   "bytes": 7174322,
+   "first_date": "2014-09-26",
+   "last_date": "2026-09-25"
   },
   {
    "file": "bars_01.parquet",
@@ -335,10 +334,10 @@
     "DELL",
     "DFDV"
    ],
-   "rows": 394294,
-   "bytes": 7803098,
-   "first_date": "2014-09-19",
-   "last_date": "2026-09-19"
+   "rows": 394483,
+   "bytes": 7805909,
+   "first_date": "2014-09-26",
+   "last_date": "2026-09-26"
   },
   {
    "file": "bars_02.parquet",
@@ -494,10 +493,10 @@
     "GEHC",
     "GEN"
    ],
-   "rows": 401023,
-   "bytes": 7720202,
-   "first_date": "2014-09-19",
-   "last_date": "2026-09-19"
+   "rows": 401220,
+   "bytes": 7721860,
+   "first_date": "2014-09-26",
+   "last_date": "2026-09-26"
   },
   {
    "file": "bars_03.parquet",
@@ -653,10 +652,10 @@
     "L",
     "LAD"
    ],
-   "rows": 407687,
-   "bytes": 7770805,
-   "first_date": "2014-09-19",
-   "last_date": "2026-09-18"
+   "rows": 407861,
+   "bytes": 7770030,
+   "first_date": "2014-09-26",
+   "last_date": "2026-09-25"
   },
   {
    "file": "bars_04.parquet",
@@ -729,6 +728,7 @@
     "MELI",
     "MET",
     "META",
+    "MFP",
     "MGM",
     "MHK",
     "MIDD",
@@ -809,17 +809,17 @@
     "NU",
     "NUE",
     "NVCR",
-    "NVDA",
-    "NVR"
+    "NVDA"
    ],
-   "rows": 407970,
-   "bytes": 8007611,
-   "first_date": "2014-09-19",
-   "last_date": "2026-09-18"
+   "rows": 405177,
+   "bytes": 7927190,
+   "first_date": "2014-09-26",
+   "last_date": "2026-09-25"
   },
   {
    "file": "bars_05.parquet",
    "tickers": [
+    "NVR",
     "NVRI",
     "NVST",
     "NVT",
@@ -968,17 +968,17 @@
     "RL",
     "RLI",
     "RMD",
-    "RNG",
-    "RNR"
+    "RNG"
    ],
-   "rows": 386938,
-   "bytes": 6864701,
-   "first_date": "2014-09-19",
-   "last_date": "2026-09-18"
+   "rows": 387173,
+   "bytes": 6913400,
+   "first_date": "2014-09-26",
+   "last_date": "2026-09-25"
   },
   {
    "file": "bars_06.parquet",
    "tickers": [
+    "RNR",
     "ROCK",
     "ROIV",
     "ROK",
@@ -1127,17 +1127,17 @@
     "TSM",
     "TSN",
     "TT",
-    "TTC",
-    "TTD"
+    "TTC"
    ],
-   "rows": 387119,
-   "bytes": 7370644,
-   "first_date": "2014-09-19",
-   "last_date": "2026-09-19"
+   "rows": 387816,
+   "bytes": 7369350,
+   "first_date": "2014-09-26",
+   "last_date": "2026-09-26"
   },
   {
    "file": "bars_07.parquet",
    "tickers": [
+    "TTD",
     "TTEK",
     "TTI",
     "TTWO",
@@ -1286,27 +1286,27 @@
     "^FVX",
     "^GSPC",
     "^IRX",
-    "^NDX",
-    "^RUT"
+    "^NDX"
    ],
-   "rows": 417259,
-   "bytes": 7804934,
-   "first_date": "2014-09-18",
-   "last_date": "2026-09-18"
+   "rows": 416934,
+   "bytes": 7782089,
+   "first_date": "2014-09-25",
+   "last_date": "2026-09-25"
   },
   {
    "file": "bars_08.parquet",
    "tickers": [
+    "^RUT",
     "^TNX",
     "^TYX",
     "^VIX",
     "^VIX3M",
     "^VVIX"
    ],
-   "rows": 15080,
-   "bytes": 280859,
-   "first_date": "2014-09-18",
-   "last_date": "2026-09-18"
+   "rows": 18097,
+   "bytes": 391038,
+   "first_date": "2014-09-25",
+   "last_date": "2026-09-25"
   }
  ],
  "fields": [
@@ -1320,6 +1320,6 @@
   "volume"
  ],
  "adjustment": "adj_close = dividends+splits adjusted (yfinance auto_adjust=False); open/high/low/close are split-adjusted raw prints",
- "rows": 3204654,
+ "rows": 3206245,
  "macro": "see fetch_fred.py / macro_manifest.json (decoupled 2026-09-16)"
 }
