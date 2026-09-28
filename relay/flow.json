@@ -1,22 +1,22 @@
 {
- "as_of": "2026-09-28 00:16 UTC",
- "n_focus_tickers": 54,
+ "as_of": "2026-09-28 15:08 UTC",
+ "n_focus_tickers": 60,
  "n_sources_live": 3,
  "sources": {
   "short_interest": {
    "status": "ok",
-   "asof": "2026-08-31",
-   "note": "FINRA free bulk file (https://cdn.finra.org/equity/otcmarket/biweekly/shrt20260831.csv), 53/54 focus tickers matched"
+   "asof": "2026-09-15",
+   "note": "FINRA free bulk file (https://cdn.finra.org/equity/otcmarket/biweekly/shrt20260915.csv), 59/60 focus tickers matched"
   },
   "shares_outstanding": {
    "status": "ok",
-   "asof": "2026-09-18",
-   "note": "53 ok, 1 failed of 54 focus tickers"
+   "asof": "2026-08-31",
+   "note": "59 ok, 1 failed of 60 focus tickers"
   },
   "filings_8k": {
    "status": "ok",
    "asof": "2026-09-28",
-   "note": "54 ok, 0 failed of 54 focus tickers"
+   "note": "60 ok, 0 failed of 60 focus tickers"
   },
   "top_holders_13f": {
    "status": "not_implemented_v1",
@@ -26,9 +26,9 @@
  },
  "tickers": {
   "ACN": {
-   "si_shares": 25425891,
-   "si_dtc": 5.02,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 24818048,
+   "si_dtc": 5.54,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 637016143,
    "shares_out_asof": "2010-03-19",
    "last_8k": "2026-07-10",
@@ -37,22 +37,10 @@
    "top5_asof_quarter": "2026-06-30",
    "top5_lag_days": 90
   },
-  "ADBE": {
-   "si_shares": 17369986,
-   "si_dtc": 4.16,
-   "si_settlement_date": "2026-08-31",
-   "shares_out": 389200000,
-   "shares_out_asof": "2026-09-18",
-   "last_8k": "2026-09-10",
-   "n_8k_3w": 2,
-   "top5_pct": null,
-   "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 90
-  },
   "ADSK": {
-   "si_shares": 8406989,
-   "si_dtc": 4.23,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 8341914,
+   "si_dtc": 3.38,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 209000000,
    "shares_out_asof": "2026-08-21",
    "last_8k": "2026-09-10",
@@ -62,9 +50,9 @@
    "top5_lag_days": 90
   },
   "AEIS": {
-   "si_shares": 1736787,
-   "si_dtc": 3.26,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 1818246,
+   "si_dtc": 3.83,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 40050442,
    "shares_out_asof": "2026-07-29",
    "last_8k": "2026-08-03",
@@ -74,9 +62,9 @@
    "top5_lag_days": 90
   },
   "AII": {
-   "si_shares": 169672,
-   "si_dtc": 1.0,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 229025,
+   "si_dtc": 1.07,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 19593427,
    "shares_out_asof": "2026-08-13",
    "last_8k": "2026-09-08",
@@ -85,10 +73,22 @@
    "top5_asof_quarter": "2026-06-30",
    "top5_lag_days": 90
   },
+  "AKAM": {
+   "si_shares": 18794670,
+   "si_dtc": 5.89,
+   "si_settlement_date": "2026-09-15",
+   "shares_out": 143716609,
+   "shares_out_asof": "2026-08-03",
+   "last_8k": "2026-09-25",
+   "n_8k_3w": 2,
+   "top5_pct": null,
+   "top5_asof_quarter": "2026-06-30",
+   "top5_lag_days": 90
+  },
   "ALNY": {
-   "si_shares": 6340087,
-   "si_dtc": 3.9,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 7194097,
+   "si_dtc": 4.13,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 133809118,
    "shares_out_asof": "2026-07-24",
    "last_8k": "2026-07-30",
@@ -97,10 +97,22 @@
    "top5_asof_quarter": "2026-06-30",
    "top5_lag_days": 90
   },
+  "AMCR": {
+   "si_shares": 21542903,
+   "si_dtc": 6.62,
+   "si_settlement_date": "2026-09-15",
+   "shares_out": 462345690,
+   "shares_out_asof": "2026-08-12",
+   "last_8k": "2026-08-14",
+   "n_8k_3w": 0,
+   "top5_pct": null,
+   "top5_asof_quarter": "2026-06-30",
+   "top5_lag_days": 90
+  },
   "AVGO": {
-   "si_shares": 50451889,
-   "si_dtc": 2.42,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 51922175,
+   "si_dtc": 1.7,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 4773629865,
    "shares_out_asof": "2026-08-28",
    "last_8k": "2026-09-02",
@@ -110,9 +122,9 @@
    "top5_lag_days": 90
   },
   "BEPC": {
-   "si_shares": 12398227,
-   "si_dtc": 9.25,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 12859542,
+   "si_dtc": 6.61,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 172218098,
    "shares_out_asof": "2022-12-31",
    "last_8k": null,
@@ -122,9 +134,9 @@
    "top5_lag_days": 90
   },
   "BFLY": {
-   "si_shares": 34062017,
-   "si_dtc": 7.76,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 35727812,
+   "si_dtc": 8.43,
+   "si_settlement_date": "2026-09-15",
    "shares_out": null,
    "shares_out_asof": null,
    "last_8k": "2026-08-11",
@@ -134,9 +146,9 @@
    "top5_lag_days": 90
   },
   "BKNG": {
-   "si_shares": 20152864,
-   "si_dtc": 4.29,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 19629385,
+   "si_dtc": 2.61,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 751380500,
    "shares_out_asof": "2026-07-27",
    "last_8k": "2026-08-04",
@@ -158,9 +170,9 @@
    "top5_lag_days": 90
   },
   "BSOL": {
-   "si_shares": 1416987,
+   "si_shares": 1765192,
    "si_dtc": 1.0,
-   "si_settlement_date": "2026-08-31",
+   "si_settlement_date": "2026-09-15",
    "shares_out": 59010000,
    "shares_out_asof": "2026-08-02",
    "last_8k": null,
@@ -170,9 +182,9 @@
    "top5_lag_days": 90
   },
   "BURL": {
-   "si_shares": 1983251,
-   "si_dtc": 1.11,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 3140030,
+   "si_dtc": 1.97,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 62815195,
    "shares_out_asof": "2026-08-01",
    "last_8k": "2026-08-27",
@@ -182,9 +194,9 @@
    "top5_lag_days": 90
   },
   "CCI": {
-   "si_shares": 9720564,
-   "si_dtc": 4.24,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 9782773,
+   "si_dtc": 3.09,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 425455439,
    "shares_out_asof": "2026-08-03",
    "last_8k": "2026-09-14",
@@ -194,9 +206,9 @@
    "top5_lag_days": 90
   },
   "CME": {
-   "si_shares": 5629176,
-   "si_dtc": 2.83,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 5801564,
+   "si_dtc": 3.34,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 66643583,
    "shares_out_asof": "2010-02-17",
    "last_8k": "2026-09-25",
@@ -206,9 +218,9 @@
    "top5_lag_days": 90
   },
   "CMI": {
-   "si_shares": 3218495,
-   "si_dtc": 3.57,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 3630523,
+   "si_dtc": 3.17,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 137664487,
    "shares_out_asof": "2026-06-30",
    "last_8k": "2026-08-04",
@@ -218,9 +230,9 @@
    "top5_lag_days": 90
   },
   "COHR": {
-   "si_shares": 10764076,
-   "si_dtc": 1.72,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 10178444,
+   "si_dtc": 1.7,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 195832246,
    "shares_out_asof": "2026-08-10",
    "last_8k": "2026-08-31",
@@ -230,9 +242,9 @@
    "top5_lag_days": 90
   },
   "CPAY": {
-   "si_shares": 2732137,
-   "si_dtc": 6.71,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 3121394,
+   "si_dtc": 7.32,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 65659599,
    "shares_out_asof": "2026-07-31",
    "last_8k": "2026-08-05",
@@ -242,9 +254,9 @@
    "top5_lag_days": 90
   },
   "CTSH": {
-   "si_shares": 35613121,
-   "si_dtc": 6.13,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 36035960,
+   "si_dtc": 6.79,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 473869469,
    "shares_out_asof": "2026-04-24",
    "last_8k": "2026-07-29",
@@ -254,9 +266,9 @@
    "top5_lag_days": 90
   },
   "DG": {
-   "si_shares": 5887587,
-   "si_dtc": 2.08,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 6030543,
+   "si_dtc": 2.41,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 220616790,
    "shares_out_asof": "2026-08-25",
    "last_8k": "2026-08-28",
@@ -266,9 +278,9 @@
    "top5_lag_days": 90
   },
   "ETHA": {
-   "si_shares": 26548287,
+   "si_shares": 27734527,
    "si_dtc": 1.0,
-   "si_settlement_date": "2026-08-31",
+   "si_settlement_date": "2026-09-15",
    "shares_out": 385000000,
    "shares_out_asof": "2026-07-31",
    "last_8k": "2026-08-04",
@@ -277,22 +289,10 @@
    "top5_asof_quarter": "2026-06-30",
    "top5_lag_days": 90
   },
-  "EVRG": {
-   "si_shares": 18310274,
-   "si_dtc": 9.22,
-   "si_settlement_date": "2026-08-31",
-   "shares_out": 230513025,
-   "shares_out_asof": "2026-04-30",
-   "last_8k": "2026-09-16",
-   "n_8k_3w": 1,
-   "top5_pct": null,
-   "top5_asof_quarter": "2026-06-30",
-   "top5_lag_days": 90
-  },
   "EVTC": {
-   "si_shares": 2778662,
-   "si_dtc": 7.85,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 2704185,
+   "si_dtc": 6.33,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 59752542,
    "shares_out_asof": "2026-07-30",
    "last_8k": "2026-08-04",
@@ -301,10 +301,22 @@
    "top5_asof_quarter": "2026-06-30",
    "top5_lag_days": 90
   },
+  "EWBC": {
+   "si_shares": 4628319,
+   "si_dtc": 7.24,
+   "si_settlement_date": "2026-09-15",
+   "shares_out": 137011856,
+   "shares_out_asof": "2026-07-31",
+   "last_8k": "2026-07-21",
+   "n_8k_3w": 0,
+   "top5_pct": null,
+   "top5_asof_quarter": "2026-06-30",
+   "top5_lag_days": 90
+  },
   "EXC": {
-   "si_shares": 32033719,
-   "si_dtc": 5.62,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 33608259,
+   "si_dtc": 4.02,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 1023208142,
    "shares_out_asof": "2026-03-31",
    "last_8k": "2026-08-25",
@@ -313,10 +325,22 @@
    "top5_asof_quarter": "2026-06-30",
    "top5_lag_days": 90
   },
+  "FE": {
+   "si_shares": 30103268,
+   "si_dtc": 6.74,
+   "si_settlement_date": "2026-09-15",
+   "shares_out": 578431175,
+   "shares_out_asof": "2026-03-31",
+   "last_8k": "2026-07-28",
+   "n_8k_3w": 0,
+   "top5_pct": null,
+   "top5_asof_quarter": "2026-06-30",
+   "top5_lag_days": 90
+  },
   "HBAN": {
-   "si_shares": 51518248,
-   "si_dtc": 2.5,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 52300271,
+   "si_dtc": 2.41,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 2027130587,
    "shares_out_asof": "2026-03-31",
    "last_8k": "2026-09-24",
@@ -326,9 +350,9 @@
    "top5_lag_days": 90
   },
   "HCA": {
-   "si_shares": 6135558,
-   "si_dtc": 4.92,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 6479985,
+   "si_dtc": 4.52,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 221839800,
    "shares_out_asof": "2026-04-27",
    "last_8k": "2026-07-29",
@@ -338,9 +362,9 @@
    "top5_lag_days": 90
   },
   "IBIT": {
-   "si_shares": 45932593,
+   "si_shares": 38430259,
    "si_dtc": 1.0,
-   "si_settlement_date": "2026-08-31",
+   "si_settlement_date": "2026-09-15",
    "shares_out": 1301360000,
    "shares_out_asof": "2026-07-31",
    "last_8k": "2026-03-31",
@@ -349,10 +373,22 @@
    "top5_asof_quarter": "2026-06-30",
    "top5_lag_days": 90
   },
+  "ICFI": {
+   "si_shares": 612161,
+   "si_dtc": 3.48,
+   "si_settlement_date": "2026-09-15",
+   "shares_out": 17933884,
+   "shares_out_asof": "2026-07-31",
+   "last_8k": "2026-09-24",
+   "n_8k_3w": 1,
+   "top5_pct": null,
+   "top5_asof_quarter": "2026-06-30",
+   "top5_lag_days": 90
+  },
   "INTU": {
-   "si_shares": 7950442,
-   "si_dtc": 1.71,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 7016125,
+   "si_dtc": 2.27,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 267236000,
    "shares_out_asof": "2026-08-31",
    "last_8k": "2026-08-25",
@@ -362,9 +398,9 @@
    "top5_lag_days": 90
   },
   "KBR": {
-   "si_shares": 8747725,
-   "si_dtc": 7.7,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 9199078,
+   "si_dtc": 8.33,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 126067755,
    "shares_out_asof": "2026-07-22",
    "last_8k": "2026-07-30",
@@ -373,22 +409,34 @@
    "top5_asof_quarter": "2026-06-30",
    "top5_lag_days": 90
   },
-  "LHX": {
-   "si_shares": 3968472,
-   "si_dtc": 2.16,
-   "si_settlement_date": "2026-08-31",
-   "shares_out": 186214616,
-   "shares_out_asof": "2026-07-24",
-   "last_8k": "2026-08-17",
+  "L": {
+   "si_shares": 4750834,
+   "si_dtc": 5.56,
+   "si_settlement_date": "2026-09-15",
+   "shares_out": 204427720,
+   "shares_out_asof": "2026-07-31",
+   "last_8k": "2026-08-03",
+   "n_8k_3w": 0,
+   "top5_pct": null,
+   "top5_asof_quarter": "2026-06-30",
+   "top5_lag_days": 90
+  },
+  "LNT": {
+   "si_shares": 25496901,
+   "si_dtc": 12.73,
+   "si_settlement_date": "2026-09-15",
+   "shares_out": 258277037,
+   "shares_out_asof": "2026-03-31",
+   "last_8k": "2026-08-21",
    "n_8k_3w": 0,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
    "top5_lag_days": 90
   },
   "NOW": {
-   "si_shares": 30315334,
-   "si_dtc": 1.61,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 28766356,
+   "si_dtc": 1.99,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 1034000000,
    "shares_out_asof": "2026-06-30",
    "last_8k": "2026-07-22",
@@ -398,9 +446,9 @@
    "top5_lag_days": 90
   },
   "NVCR": {
-   "si_shares": 10788851,
-   "si_dtc": 7.63,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 11796425,
+   "si_dtc": 11.48,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 116445840,
    "shares_out_asof": "2026-07-17",
    "last_8k": "2026-09-09",
@@ -410,9 +458,9 @@
    "top5_lag_days": 90
   },
   "NVDA": {
-   "si_shares": 298301619,
-   "si_dtc": 2.14,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 294225803,
+   "si_dtc": 2.55,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 24100000000,
    "shares_out_asof": "2026-08-21",
    "last_8k": "2026-09-03",
@@ -422,9 +470,9 @@
    "top5_lag_days": 90
   },
   "PAYX": {
-   "si_shares": 20420231,
-   "si_dtc": 9.66,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 19816479,
+   "si_dtc": 8.06,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 355980473,
    "shares_out_asof": "2026-08-31",
    "last_8k": "2026-09-23",
@@ -434,9 +482,9 @@
    "top5_lag_days": 90
   },
   "PEG": {
-   "si_shares": 10392181,
-   "si_dtc": 4.01,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 10744416,
+   "si_dtc": 3.46,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 498420030,
    "shares_out_asof": "2026-07-20",
    "last_8k": "2026-08-04",
@@ -446,21 +494,21 @@
    "top5_lag_days": 90
   },
   "PPTA": {
-   "si_shares": 10989077,
-   "si_dtc": 8.92,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 11786380,
+   "si_dtc": 13.67,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 125095803,
    "shares_out_asof": "2026-08-05",
-   "last_8k": "2026-08-17",
-   "n_8k_3w": 0,
+   "last_8k": "2026-09-28",
+   "n_8k_3w": 1,
    "top5_pct": null,
    "top5_asof_quarter": "2026-06-30",
    "top5_lag_days": 90
   },
   "Q": {
-   "si_shares": 4552694,
-   "si_dtc": 2.54,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 4459546,
+   "si_dtc": 2.62,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 209208543,
    "shares_out_asof": "2026-07-31",
    "last_8k": "2026-09-10",
@@ -470,9 +518,9 @@
    "top5_lag_days": 90
   },
   "REGN": {
-   "si_shares": 2552029,
-   "si_dtc": 3.85,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 2526446,
+   "si_dtc": 4.42,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 93955110,
    "shares_out_asof": "2012-07-13",
    "last_8k": "2026-07-30",
@@ -482,9 +530,9 @@
    "top5_lag_days": 90
   },
   "RMD": {
-   "si_shares": 13073165,
-   "si_dtc": 8.94,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 14203907,
+   "si_dtc": 11.74,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 144252306,
    "shares_out_asof": "2026-08-10",
    "last_8k": "2026-09-01",
@@ -494,9 +542,9 @@
    "top5_lag_days": 90
   },
   "ROCK": {
-   "si_shares": 1671883,
-   "si_dtc": 8.72,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 1931895,
+   "si_dtc": 6.96,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 29683889,
    "shares_out_asof": "2026-08-03",
    "last_8k": "2026-08-05",
@@ -505,10 +553,22 @@
    "top5_asof_quarter": "2026-06-30",
    "top5_lag_days": 90
   },
+  "ROP": {
+   "si_shares": 5208254,
+   "si_dtc": 8.33,
+   "si_settlement_date": "2026-09-15",
+   "shares_out": 98900874,
+   "shares_out_asof": "2026-07-28",
+   "last_8k": "2026-08-10",
+   "n_8k_3w": 0,
+   "top5_pct": null,
+   "top5_asof_quarter": "2026-06-30",
+   "top5_lag_days": 90
+  },
   "SPOT": {
-   "si_shares": 6121444,
-   "si_dtc": 3.49,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 4522956,
+   "si_dtc": 3.22,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 205832527,
    "shares_out_asof": "2025-12-31",
    "last_8k": null,
@@ -518,9 +578,9 @@
    "top5_lag_days": 90
   },
   "SRE": {
-   "si_shares": 10381859,
-   "si_dtc": 2.51,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 10965351,
+   "si_dtc": 2.98,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 653690046,
    "shares_out_asof": "2026-05-04",
    "last_8k": "2026-08-21",
@@ -530,9 +590,9 @@
    "top5_lag_days": 90
   },
   "T": {
-   "si_shares": 125256838,
-   "si_dtc": 4.25,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 130448062,
+   "si_dtc": 3.52,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 6852385650,
    "shares_out_asof": "2026-07-16",
    "last_8k": "2026-09-09",
@@ -542,9 +602,9 @@
    "top5_lag_days": 90
   },
   "TJX": {
-   "si_shares": 21724315,
-   "si_dtc": 2.44,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 18418401,
+   "si_dtc": 2.31,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 1099974061,
    "shares_out_asof": "2026-08-21",
    "last_8k": "2026-09-17",
@@ -553,10 +613,22 @@
    "top5_asof_quarter": "2026-06-30",
    "top5_lag_days": 90
   },
+  "TLN": {
+   "si_shares": 2708803,
+   "si_dtc": 3.58,
+   "si_settlement_date": "2026-09-15",
+   "shares_out": 47914259,
+   "shares_out_asof": "2026-08-05",
+   "last_8k": "2026-08-05",
+   "n_8k_3w": 0,
+   "top5_pct": null,
+   "top5_asof_quarter": "2026-06-30",
+   "top5_lag_days": 90
+  },
   "TMUS": {
-   "si_shares": 17093779,
-   "si_dtc": 4.37,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 18071400,
+   "si_dtc": 4.57,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 1072671613,
    "shares_out_asof": "2026-07-17",
    "last_8k": "2026-09-03",
@@ -566,9 +638,9 @@
    "top5_lag_days": 90
   },
   "TPR": {
-   "si_shares": 15002149,
-   "si_dtc": 3.96,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 15970580,
+   "si_dtc": 5.16,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 199391678,
    "shares_out_asof": "2026-07-31",
    "last_8k": "2026-08-13",
@@ -578,9 +650,9 @@
    "top5_lag_days": 90
   },
   "TSLA": {
-   "si_shares": 74230933,
-   "si_dtc": 2.04,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 68862357,
+   "si_dtc": 1.72,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 3949547394,
    "shares_out_asof": "2026-07-16",
    "last_8k": "2026-07-22",
@@ -590,9 +662,9 @@
    "top5_lag_days": 90
   },
   "UBER": {
-   "si_shares": 45121710,
-   "si_dtc": 2.96,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 45718444,
+   "si_dtc": 2.33,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 2042560121,
    "shares_out_asof": "2026-07-31",
    "last_8k": "2026-09-15",
@@ -602,9 +674,9 @@
    "top5_lag_days": 90
   },
   "URI": {
-   "si_shares": 1428713,
-   "si_dtc": 3.34,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 1546035,
+   "si_dtc": 3.87,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 62646557,
    "shares_out_asof": "2026-04-20",
    "last_8k": "2026-09-08",
@@ -614,9 +686,9 @@
    "top5_lag_days": 90
   },
   "UTHR": {
-   "si_shares": 2059685,
-   "si_dtc": 4.81,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 2800470,
+   "si_dtc": 3.9,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 42890692,
    "shares_out_asof": "2026-07-29",
    "last_8k": "2026-09-08",
@@ -626,9 +698,9 @@
    "top5_lag_days": 90
   },
   "VEEV": {
-   "si_shares": 4824012,
-   "si_dtc": 2.19,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 4964067,
+   "si_dtc": 4.02,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 161908850,
    "shares_out_asof": "2026-08-25",
    "last_8k": "2026-08-26",
@@ -638,9 +710,9 @@
    "top5_lag_days": 90
   },
   "VST": {
-   "si_shares": 10778003,
-   "si_dtc": 2.67,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 9701865,
+   "si_dtc": 2.04,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 335635195,
    "shares_out_asof": "2026-08-03",
    "last_8k": "2026-09-24",
@@ -650,9 +722,9 @@
    "top5_lag_days": 90
   },
   "WTW": {
-   "si_shares": 2430162,
-   "si_dtc": 5.36,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 2453318,
+   "si_dtc": 6.17,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 92871937,
    "shares_out_asof": "2026-07-27",
    "last_8k": "2026-07-30",
@@ -662,9 +734,9 @@
    "top5_lag_days": 90
   },
   "XYL": {
-   "si_shares": 8031075,
-   "si_dtc": 4.65,
-   "si_settlement_date": "2026-08-31",
+   "si_shares": 10897240,
+   "si_dtc": 3.76,
+   "si_settlement_date": "2026-09-15",
    "shares_out": 233486812,
    "shares_out_asof": "2026-07-24",
    "last_8k": "2026-09-09",
