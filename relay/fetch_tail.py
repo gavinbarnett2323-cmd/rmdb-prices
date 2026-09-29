@@ -281,6 +281,10 @@ BH_PX = ["SPY", "RSP", "IWM", "HYG", "LQD", "SHY", "^VIX", "^VIX3M",
 BH_EXTRA = ["^MOVE", "DX-Y.NYB"]
 BH_FRED = ["DFII10", "BAMLH0A0HYM2", "ICSA", "NFCI"]
 BH_BUDGET_S = 150
+# 2026-09-29: a source whose newest print is older than this (days before the tail's as_of) is STALE: noted, the next source
+# is tried, and when every source is stale the freshest rows ship with src '<name> (stale)' and the reason in errors. The
+# first live run found chicagofed.org's NFCI file ending 2026-04-24 while the Chicago Fed publishes weekly.
+BH_STALE_DAYS = {"DFII10": 10, "BAMLH0A0HYM2": 10, "ICSA": 21, "NFCI": 21}
 BH_TIMEOUT_S = 12
 _BH_HDR = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
            "Accept": "text/csv,application/json,text/plain,*/*;q=0.8", "Accept-Language": "en-US,en;q=0.9"}
@@ -405,6 +409,7 @@ def bh_block(got, last, n=BH_N, now=None):
         if sid in BH_ALT:
             tries.append(BH_ALT[sid])
         notes = []
+        stale = None
         for name, fn in tries:
             if time.time() > t_end:
                 notes.append("%s: skipped (time budget)" % name)
@@ -415,11 +420,20 @@ def bh_block(got, last, n=BH_N, now=None):
                 notes.append("%s: %s: %s" % (name, type(e).__name__, str(e)[:120]))
                 continue
             if len(rows) >= 5:
+                age = (lim - pd.Timestamp(rows[-1][0])).days
+                if age > BH_STALE_DAYS.get(sid, 21):
+                    notes.append("%s: newest print %s, %d days before %s (stale)" % (name, rows[-1][0], age, last))
+                    if stale is None or rows[-1][0] > stale[1][-1][0]:
+                        stale = (name, rows)
+                    continue
                 out["fred"][sid] = rows[-n:]
                 out["src"][sid] = name
                 break
             notes.append("%s: %d rows" % (name, len(rows)))
         if sid not in out["fred"]:
+            if stale:
+                out["fred"][sid] = stale[1][-n:]
+                out["src"][sid] = stale[0] + " (stale)"
             out["errors"][sid] = scrub("; ".join(notes))
     return out
 
