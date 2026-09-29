@@ -25,6 +25,10 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - name: Fetch daily tail (yfinance, batched, no key)
+        env:
+          # optional (2026-09-26): a free FRED API key as repo secret FRED_API_KEY lets the Bottom Hunter block read HY OAS
+          # and jobless claims (FRED's public site hangs from GitHub runners). Unset = empty = the keyless fallbacks only.
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
         run: |
           pip install --quiet yfinance pandas numpy
           python3 relay/fetch_tail.py

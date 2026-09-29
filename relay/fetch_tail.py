@@ -26,6 +26,10 @@ Only COMPLETED weeks count: a Monday-Thursday run speaks of last Friday's bar. `
 count. A failure in the weekly layer never blocks the tail (the block is simply absent and `tvw_meta.error` says why).
 A run during market hours drops today's partial session (`dropped_partial` names it): the tail only holds finished closes.
 
+BOTTOM HUNTER BLOCK (2026-09-26): `bh` carries the raw inputs of Gavin's Liquidity Bottom Hunter (the vault's
+engine/v2/bottom_hunter.py): the last 40 raw closes of the script's ETFs, ^VIX, ^VIX3M, ^MOVE, DX-Y.NYB, and the FRED series
+it reads (DFII10, HY OAS, jobless claims, NFCI). See bh_block(). Its failure never blocks the tail.
+
 CANONICAL COPY lives in the vault at Investing/engine/relay/fetch_tail.py; the deployed copy is
 relay/fetch_tail.py in github.com/gavinbarnett2323-cmd/rmdb-prices. Keep them in sync.
 """
@@ -257,6 +261,169 @@ def build(got, tk, now=None):
     }
 
 
+# ------------------------------------------------------------------------------------------------ Bottom Hunter block
+# 2026-09-26: the raw inputs of Gavin's Liquidity Bottom Hunter (vault engine/v2/bottom_hunter.py), last BH_N sessions of
+# each, through the tail's last FINISHED session. The vault appends them to its TradingView history every build, so the
+# script keeps computing on the same prints his chart uses. Kept OUT of `tickers` on purpose: adding ^MOVE / DX-Y.NYB there
+# would change the universe median r20 (daily.py) and the weekly layer's breadth context.
+#   px    RAW closes (auto_adjust off: split-adjusted, NOT dividend-adjusted, as his chart with ADJ off; adjusted ETF closes
+#         move 28 triangles since 2010, measured). The ETFs, ^VIX and ^VIX3M come from the download above (no extra
+#         call); ^MOVE and DX-Y.NYB are one small extra download (Yahoo's print of the index TradingView shows as TVC:).
+#   fred  DFII10 (10y real yield), BAMLH0A0HYM2 (HY OAS), ICSA (jobless claims), NFCI (Chicago Fed). FRED's public site
+#         hangs from GitHub runners (every fred-relay run since 2026-09-16 was cancelled at its 20-minute timeout), so:
+#         the FRED API when the repo secret FRED_API_KEY is set (free key), then one short fredgraph try, then the
+#         publisher's own file for the two series that have one (DFII10 = Treasury's 10-year par real yield, NFCI =
+#         chicagofed.org). One short try per source inside BH_BUDGET_S; a miss is NAMED in bh.errors, never filled.
+# A failure here never blocks the tail (main() catches it and writes bh.errors).
+BH_N = 40
+BH_PX = ["SPY", "RSP", "IWM", "HYG", "LQD", "SHY", "^VIX", "^VIX3M",
+         "XLK", "XLY", "XLF", "XLI", "XLB", "XLE", "XLP", "XLU", "XLV", "XLC"]
+BH_EXTRA = ["^MOVE", "DX-Y.NYB"]
+BH_FRED = ["DFII10", "BAMLH0A0HYM2", "ICSA", "NFCI"]
+BH_BUDGET_S = 150
+BH_TIMEOUT_S = 12
+_BH_HDR = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+           "Accept": "text/csv,application/json,text/plain,*/*;q=0.8", "Accept-Language": "en-US,en;q=0.9"}
+
+
+def _bh_get(url):
+    import urllib.request
+    return urllib.request.urlopen(urllib.request.Request(url, headers=_BH_HDR), timeout=BH_TIMEOUT_S).read().decode("utf-8", "replace")
+
+
+def _bh_csv(raw):
+    import csv, io
+    return [r for r in csv.reader(io.StringIO(raw.lstrip("﻿"))) if r]
+
+
+def _bh_day(x):
+    x = str(x).strip().strip('"')[:10]
+    for fmt in ("%Y-%m-%d", "%m/%d/%Y", "%m/%d/%y"):
+        try:
+            return datetime.datetime.strptime(x, fmt).date().isoformat()
+        except ValueError:
+            pass
+    return None
+
+
+def _bh_num(x):
+    try:
+        v = float(str(x).strip().strip('"'))
+    except (TypeError, ValueError):
+        return None
+    return v if math.isfinite(v) else None
+
+
+def _bh_rows(pairs):
+    """[[YYYY-MM-DD, float]] sorted, one per date, bad rows dropped."""
+    d = {}
+    for a, b in pairs:
+        a, b = _bh_day(a), _bh_num(b)
+        if a and b is not None:
+            d[a] = b
+    return [[k, d[k]] for k in sorted(d)]
+
+
+def _fred_api(sid, key):
+    start = (datetime.date.today() - datetime.timedelta(days=400)).isoformat()
+    j = json.loads(_bh_get("https://api.stlouisfed.org/fred/series/observations?series_id=%s&api_key=%s&file_type=json"
+                           "&observation_start=%s" % (sid, key, start)))
+    return _bh_rows((o.get("date"), o.get("value")) for o in (j.get("observations") or []))
+
+
+def _fredgraph(sid):
+    start = (datetime.date.today() - datetime.timedelta(days=400)).isoformat()
+    rows = _bh_csv(_bh_get("https://fred.stlouisfed.org/graph/fredgraph.csv?id=%s&cosd=%s" % (sid, start)))
+    return _bh_rows((r[0], r[1]) for r in rows[1:] if len(r) >= 2)
+
+
+def _treasury_real10():
+    """DFII10 = the Treasury's 10-year par real yield (the H.15 republishes it): home.treasury.gov daily real yield curve."""
+    y = datetime.date.today().year
+    pairs = []
+    for yr in (y - 1, y):
+        rows = _bh_csv(_bh_get("https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/"
+                               "%d/all?type=daily_treasury_real_yield_curve&field_tdr_date_value=%d&page&_format=csv" % (yr, yr)))
+        if not rows:
+            continue
+        h = [c.strip().upper() for c in rows[0]]
+        j = h.index("10 YR")
+        pairs += [(r[0], r[j]) for r in rows[1:] if len(r) > j]
+    return _bh_rows(pairs)
+
+
+def _chicagofed_nfci():
+    rows = _bh_csv(_bh_get("https://www.chicagofed.org/-/media/publications/nfci/nfci-data-series-csv.csv"))
+    h = [c.strip().upper() for c in rows[0]]
+    j = h.index("NFCI")
+    return _bh_rows((r[0], r[j]) for r in rows[1:] if len(r) > j)
+
+
+BH_ALT = {"DFII10": ("treasury.gov", _treasury_real10), "NFCI": ("chicagofed.org", _chicagofed_nfci)}
+
+
+def bh_block(got, last, n=BH_N, now=None):
+    """{px: {ticker: [[date, raw close]]}, fred: {id: [[date, value]]}, src, errors}; px dated after `last` (the tail's last
+    finished session) is dropped, so a run during the session never ships a partial bar."""
+    t_end = time.time() + BH_BUDGET_S
+    key = (os.environ.get("FRED_API_KEY") or "").strip()
+    lim = pd.Timestamp(last)
+    out = {"as_of": last, "n": n, "px": {}, "fred": {}, "src": {}, "errors": {},
+           "rule": "px = RAW daily closes (split-adjusted, not dividend-adjusted) through as_of; fred = FRED observations "
+                   "(FRED API, fredgraph, or the publisher's own file, named in src); last n of each; a miss is named in errors"}
+
+    def scrub(m):
+        return m.replace(key, "***") if key else m
+
+    def px_rows(s):
+        s = _norm(s.dropna())
+        s = s[s.index <= lim].tail(n)
+        # 4 decimals: yfinance hands float32-derived values (661.8200073242188); the exchange print is 661.82
+        return [[d.strftime("%Y-%m-%d"), round(float(v), 4)] for d, v in s.items() if math.isfinite(float(v))]
+
+    for t in BH_PX:
+        d = got.get(t)
+        if not d or d.get("close") is None:
+            out["errors"][t] = "not in the download"
+            continue
+        out["px"][t] = px_rows(d["close"])
+        out["src"][t] = "tail download"
+    start = (datetime.date.today() - datetime.timedelta(days=150)).isoformat()
+    for s in BH_EXTRA:
+        try:
+            df = _dl([s], start=start, interval="1d")
+            c = _col(df, "Close", s) if df is not None else None
+            if c is None or c.dropna().empty:
+                out["errors"][s] = "no data"
+                continue
+            out["px"][s] = px_rows(c)
+            out["src"][s] = "yfinance"
+        except Exception as e:
+            out["errors"][s] = "%s: %s" % (type(e).__name__, str(e)[:160])
+    for sid in BH_FRED:
+        tries = ([("FRED API", lambda sid=sid: _fred_api(sid, key))] if key else []) + [("fredgraph", lambda sid=sid: _fredgraph(sid))]
+        if sid in BH_ALT:
+            tries.append(BH_ALT[sid])
+        notes = []
+        for name, fn in tries:
+            if time.time() > t_end:
+                notes.append("%s: skipped (time budget)" % name)
+                continue
+            try:
+                rows = fn()
+            except Exception as e:
+                notes.append("%s: %s: %s" % (name, type(e).__name__, str(e)[:120]))
+                continue
+            if len(rows) >= 5:
+                out["fred"][sid] = rows[-n:]
+                out["src"][sid] = name
+                break
+            notes.append("%s: %d rows" % (name, len(rows)))
+        if sid not in out["fred"]:
+            out["errors"][sid] = scrub("; ".join(notes))
+    return out
+
+
 def main():
     tk = [l.strip().upper() for l in open(os.path.join(HERE, "tickers.txt")) if l.strip() and not l.startswith("#")]
     tk = sorted(set(tk) | set(EXTRA))
@@ -268,11 +435,18 @@ def main():
               % (len(got), len(tk), 100 * frac, "ok" if "SPY" in got else "MISSING", 100 * MIN_FRESH_FRAC), flush=True)
         sys.exit(1)
     out = build(got, tk)
+    try:                                         # 2026-09-26: the Bottom Hunter's raw inputs; never blocks the tail
+        out["bh"] = bh_block(got, out["as_of"])
+    except Exception as e:
+        out["bh"] = {"errors": {"bh_block": "%s: %s" % (type(e).__name__, str(e)[:200])}}
     tmp = OUT + ".tmp"
     with open(tmp, "w") as f:
         json.dump(out, f, separators=(",", ":"))
     os.replace(tmp, OUT)
     print("tail: %d/%d tickers, as_of %s, %.1f MB, gaps=%d | weekly TradingView block: %s" % (out["n_tickers"], len(tk), out["as_of"], os.path.getsize(OUT) / 1e6, len(out["gaps"]), out.get("tvw_meta")), flush=True)
+    b = out.get("bh") or {}
+    print("bottom hunter block: px %d, fred %d (%s), errors %s" % (len(b.get("px") or {}), len(b.get("fred") or {}),
+          ", ".join("%s via %s" % (k, v) for k, v in (b.get("src") or {}).items() if k in BH_FRED), b.get("errors") or "none"), flush=True)
 
 
 if __name__ == "__main__":
