@@ -45,7 +45,10 @@ def ymap(t): return YMAP.get(t, t)
 EXTRA = ["SPY", "QQQ", "IWM", "DIA", "VOO", "RSP", "MDY", "VTI", "TLT", "IEF", "SHY", "HYG", "LQD", "GLD", "SLV", "USO",
          "XLK", "XLC", "XLE", "XLB", "XLV", "XLP", "XLU", "XLRE", "XLF", "XLI", "XLY",
          "SMH", "SOXX", "XBI", "IBB", "KRE", "XHB", "ITB", "XRT", "XOP", "OIH", "ARKK",
-         "BTC-USD", "ETH-USD", "SOL-USD", "^VIX", "^VIX3M", "^VVIX", "^TNX", "^IRX", "^GSPC", "^NDX", "^RUT"]
+         "BTC-USD", "ETH-USD", "SOL-USD", "^VIX", "^VIX3M", "^VVIX", "^TNX", "^IRX", "^GSPC", "^NDX", "^RUT",
+         # 2026-10-01 (Gavin's yes): the 15 international / REIT ETFs of the WHAT x WHEN tranche universe (vault
+         # engine/v2/system_book.json), so the monthly tranche ranks all 35 ETFs of its backtest
+         "EFA", "EEM", "EWJ", "EWG", "EWU", "EWC", "EWA", "EWW", "EWZ", "EWY", "EWT", "FXI", "INDA", "VNQ", "IYR"]
 
 BATCH = 100
 RETRIES = 3
