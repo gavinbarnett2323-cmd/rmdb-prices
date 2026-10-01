@@ -1,0 +1,34 @@
+# One-off research data job (2026-09-30): cross-asset price history for the Bottom Hunter study. Runs when
+# relay/research_assets.py changes or by hand. Never scheduled. Writes relay/research/assets_history.json.gz.
+name: research-assets
+on:
+  workflow_dispatch: {}
+  push:
+    paths:
+      - "relay/research_assets.py"
+      - ".github/workflows/research_assets.yml"
+permissions:
+  contents: write
+concurrency:
+  group: research-assets
+  cancel-in-progress: false
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Fetch research history (yfinance, no key)
+        run: |
+          pip install --quiet yfinance pandas numpy
+          python3 relay/research_assets.py
+      - name: Commit the history
+        run: |
+          git config user.name  "research-assets-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add relay/research/assets_history.json.gz
+          git diff --staged --quiet && echo "nothing to commit" && exit 0
+          git commit -m "research assets $(date -u +%F\ %H:%M)"
+          for i in 1 2 3 4 5; do git pull --rebase --autostash origin main && git push && break || sleep 5; done
