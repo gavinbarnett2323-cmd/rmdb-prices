@@ -441,6 +441,105 @@ def bh_block(got, last, n=BH_N, now=None):
     return out
 
 
+# ------------------------------------------------------------------------------------------------ chart block
+# 2026-10-12 (Gavin: "make it so my charts html updates on a daily basis"): the vault's chart page
+# (Investing/Charts/Charts.html, build_chart.py --daily) appends new daily candles to each ticker's stored history and
+# draws v20 on them. It needs, for the last CHART_N finished sessions: full OHLCV per ticker (dividend + split adjusted the
+# way TradingView's chart is, i.e. raw OHLC times Adj Close / Close, so the newest bar is the raw print), and the closes of
+# the eight feeds v20 reads (CBOE:VIX, VIX9D, SKEW, INDEX:MMTH, AMEX:XLU, XLP, SPY, INDEX:CPC). MMTH and CPC exist only on
+# TradingView, so they are read from TradingView's public quote scanner after the close and accumulated in `tv_hist` (this
+# file keeps its own history: each run reads the previous file and adds today). A value is stamped with the tail's as_of
+# ONLY when the scanner's VIX agrees with Yahoo's ^VIX close for that session (proves the quote is that session's close);
+# otherwise it is left out and named in `tv_errors`, never guessed. Written to relay/chart_tail.json, separate from
+# daily_tail.json so nothing that reads the tail changes. A failure here never blocks the tail.
+CHART_OUT = os.path.join(HERE, "chart_tail.json")
+CHART_N = 40
+CHART_YF = ["^VIX9D", "^SKEW"]          # ^VIX, XLU, XLP, SPY are already in the main download
+TV_SCAN_URL = "https://scanner.tradingview.com/global/scan"
+TV_SCAN = ["INDEX:MMTH", "INDEX:CPC", "CBOE:VIX", "CBOE:SKEW", "CBOE:VIX9D"]
+TV_HIST_KEEP = 600
+
+
+def _tv_scan():
+    import urllib.request
+    body = json.dumps({"symbols": {"tickers": TV_SCAN, "query": {"types": []}}, "columns": ["close", "open", "high", "low"]}).encode()
+    req = urllib.request.Request(TV_SCAN_URL, data=body, headers={"Content-Type": "application/json", "User-Agent": "Mozilla/5.0 rmdb-relay"})
+    raw = json.loads(urllib.request.urlopen(req, timeout=30).read().decode("utf-8"))
+    out = {}
+    for row in raw.get("data") or []:
+        d = row.get("d") or []
+        if d and d[0] is not None:
+            out[row.get("s")] = float(d[0])
+    return out
+
+
+def chart_block(got, out, now=None):
+    now = now or datetime.datetime.now(datetime.timezone.utc)
+    cal = pd.DatetimeIndex(pd.to_datetime(out["calendar"][-CHART_N:]))
+    cal_s = [d.strftime("%Y-%m-%d") for d in cal]
+    as_of = cal_s[-1]
+    tick, errs = {}, {}
+    for t, d in got.items():
+        try:
+            adj = _norm(d["adj"]).reindex(cal); cl = _norm(d["close"]).reindex(cal)
+            if adj.notna().sum() < 1:
+                continue
+            f = adj / cl
+            o = _norm(d["open"]).reindex(cal) * f; h = _norm(d["high"]).reindex(cal) * f; l = _norm(d["low"]).reindex(cal) * f
+            v = _norm(d["vol"]).reindex(cal)
+            tick[t] = {"o": [_r(x) for x in o.values], "h": [_r(x) for x in h.values], "l": [_r(x) for x in l.values],
+                       "c": [_r(x) for x in adj.values], "v": [None if not (x == x) else int(x) for x in v.values],
+                       "raw_c": [_r(x) for x in cl.values]}
+        except Exception as e:
+            errs[t] = "%s: %s" % (type(e).__name__, str(e)[:120])
+    feeds, fsrc = {}, {}
+    for key, t in (("CBOE:VIX", "^VIX"), ("AMEX:XLU", "XLU"), ("AMEX:XLP", "XLP"), ("AMEX:SPY", "SPY")):
+        if t in got:
+            s = _norm(got[t]["close"]).reindex(cal)
+            feeds[key] = [_r(x) for x in s.values]; fsrc[key] = "yahoo %s raw close (TradingView's feed is the split-adjusted close)" % t
+    try:
+        start = (cal[0] - pd.Timedelta(days=10)).strftime("%Y-%m-%d")
+        df = _dl(CHART_YF, start=start, interval="1d")
+        for key, t in (("CBOE:VIX9D", "^VIX9D"), ("CBOE:SKEW", "^SKEW")):
+            c = _col(df, "Close", t) if df is not None else None
+            if c is not None:
+                feeds[key] = [_r(x) for x in _norm(c).reindex(cal).values]; fsrc[key] = "yahoo %s close" % t
+            else:
+                errs[key] = "not in the yahoo download"
+    except Exception as e:
+        errs["yahoo_feeds"] = "%s: %s" % (type(e).__name__, str(e)[:160])
+    prev = {}
+    try:
+        prev = (json.load(open(CHART_OUT)) or {}).get("tv_hist") or {}
+    except Exception:
+        prev = {}
+    tv_hist = {k: dict(v) for k, v in prev.items() if isinstance(v, dict)}
+    tv_errors, tv_now = {}, {}
+    try:
+        tv_now = _tv_scan()
+        yv = feeds.get("CBOE:VIX", [None])[-1]
+        sv = tv_now.get("CBOE:VIX")
+        if yv and sv and abs(sv / yv - 1) <= 0.005:
+            for k in ("INDEX:MMTH", "INDEX:CPC"):
+                if k in tv_now:
+                    tv_hist.setdefault(k, {})[as_of] = round(tv_now[k], 4)
+                else:
+                    tv_errors[k] = "not in the scanner reply"
+        else:
+            tv_errors["session_check"] = "scanner VIX %s vs yahoo ^VIX close %s for %s: quote is not that session's close, nothing stamped" % (sv, yv, as_of)
+    except Exception as e:
+        tv_errors["scanner"] = "%s: %s" % (type(e).__name__, str(e)[:160])
+    for k in list(tv_hist):
+        tv_hist[k] = dict(sorted(tv_hist[k].items())[-TV_HIST_KEEP:])
+    return {"_doc": "Chart tail for the vault's Investing/Charts (build_chart.py --daily). o/h/l/c = Yahoo OHLC adjusted for dividends and "
+                    "splits (raw x Adj Close / Close, the newest bar = the raw print); raw_c = the raw close; v = shares. feeds = v20's "
+                    "request.security inputs on the same calendar. tv_hist = INDEX:MMTH and INDEX:CPC closes read from TradingView's quote "
+                    "scanner after each close, accumulated run over run, stamped only when the scanner's VIX matched Yahoo's close. "
+                    "Built by relay/fetch_tail.py chart_block().",
+            "generated_at": now.strftime("%Y-%m-%d %H:%M UTC"), "as_of": as_of, "calendar": cal_s, "n_tickers": len(tick),
+            "tickers": tick, "feeds": feeds, "feed_src": fsrc, "tv_hist": tv_hist, "tv_now": tv_now, "tv_errors": tv_errors, "errors": errs}
+
+
 def main():
     tk = [l.strip().upper() for l in open(os.path.join(HERE, "tickers.txt")) if l.strip() and not l.startswith("#")]
     tk = sorted(set(tk) | set(EXTRA))
@@ -460,6 +559,17 @@ def main():
     with open(tmp, "w") as f:
         json.dump(out, f, separators=(",", ":"))
     os.replace(tmp, OUT)
+    try:                                         # 2026-10-12: the chart page's daily candles; never blocks the tail
+        ch = chart_block(got, out)
+        with open(CHART_OUT + ".tmp", "w") as f:
+            json.dump(ch, f, separators=(",", ":"))
+        os.replace(CHART_OUT + ".tmp", CHART_OUT)
+        print("chart tail: %d tickers, as_of %s, feeds %s, tv_hist %s, tv_errors %s" % (ch["n_tickers"], ch["as_of"], sorted(ch["feeds"]),
+              {k: len(v) for k, v in ch["tv_hist"].items()}, ch["tv_errors"] or "none"), flush=True)
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        print("chart tail FAILED (the daily tail is fine):", e, flush=True)
     print("tail: %d/%d tickers, as_of %s, %.1f MB, gaps=%d | weekly TradingView block: %s" % (out["n_tickers"], len(tk), out["as_of"], os.path.getsize(OUT) / 1e6, len(out["gaps"]), out.get("tvw_meta")), flush=True)
     b = out.get("bh") or {}
     print("bottom hunter block: px %d, fred %d (%s), errors %s" % (len(b.get("px") or {}), len(b.get("fred") or {}),

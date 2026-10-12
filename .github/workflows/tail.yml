@@ -32,11 +32,12 @@ jobs:
         run: |
           pip install --quiet yfinance pandas numpy
           python3 relay/fetch_tail.py
-      - name: Commit daily_tail.json
+      - name: Commit daily_tail.json (+ chart_tail.json, 2026-10-12)
         run: |
           git config user.name  "tail-relay-bot"
           git config user.email "actions@users.noreply.github.com"
           git add relay/daily_tail.json
+          [ -f relay/chart_tail.json ] && git add relay/chart_tail.json
           git diff --staged --quiet && echo "nothing to commit" && exit 0
           git commit -m "tail $(date -u +%F\ %H:%M)"
           for i in 1 2 3 4 5; do git pull --rebase --autostash origin main && git push && break || sleep 5; done
