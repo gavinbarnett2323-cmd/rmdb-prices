@@ -484,6 +484,42 @@ def _tv_scan():
     return out
 
 
+CBOE_DAILY = "https://cdn.cboe.com/data/us/options/market_statistics/daily/%s_daily_options"
+
+
+def _cboe_total_pc(day):
+    """CBOE's own daily market statistics for one session: the TOTAL PUT/CALL RATIO (what TradingView shows as INDEX:CPC).
+    Returns (value or None, note)."""
+    import urllib.request
+    raw = urllib.request.urlopen(urllib.request.Request(CBOE_DAILY % day, headers={"User-Agent": "Mozilla/5.0 rmdb-relay"}), timeout=30).read().decode("utf-8", "replace")
+    try:
+        doc = json.loads(raw)
+    except Exception:
+        return None, "not JSON: " + raw[:200]
+    hits = []
+
+    def walk(x):
+        if isinstance(x, dict):
+            nm = str(x.get("name") or x.get("label") or "")
+            if "TOTAL PUT/CALL RATIO" in nm.upper():
+                hits.append(x.get("value"))
+            for k, v in x.items():
+                if "TOTAL PUT/CALL RATIO" in str(k).upper() and not isinstance(v, (dict, list)):
+                    hits.append(v)
+                walk(v)
+        elif isinstance(x, list):
+            for v in x: walk(v)
+    walk(doc)
+    for h in hits:
+        try:
+            v = float(h)
+            if 0.2 < v < 3.0:
+                return v, "cboe daily market statistics"
+        except Exception:
+            pass
+    return None, "no TOTAL PUT/CALL RATIO in: " + raw[:300]
+
+
 def chart_block(got, out, now=None):
     now = now or datetime.datetime.now(datetime.timezone.utc)
     cal = pd.DatetimeIndex(pd.to_datetime(out["calendar"][-CHART_N:]))
@@ -525,7 +561,7 @@ def chart_block(got, out, now=None):
     except Exception:
         prev = {}
     tv_hist = {k: dict(v) for k, v in prev.items() if isinstance(v, dict)}
-    tv_errors, tv_now = {}, {}
+    tv_errors, tv_now = {}, {"_src": {}}
     try:
         tv_now = _tv_scan()
         tv_src = tv_now.pop("_src", {}); tv_scan_err = tv_now.pop("_errors", {})
@@ -543,6 +579,16 @@ def chart_block(got, out, now=None):
             tv_errors["session_check"] = "scanner VIX %s vs yahoo ^VIX close %s for %s: quote is not that session's close, nothing stamped" % (sv, yv, as_of)
     except Exception as e:
         tv_errors["scanner"] = "%s: %s" % (type(e).__name__, str(e)[:160])
+    if as_of not in (tv_hist.get("INDEX:CPC") or {}):       # CBOE's own number when the scanner does not carry INDEX:CPC
+        try:
+            v, why = _cboe_total_pc(as_of)
+            if v is not None:
+                tv_hist.setdefault("INDEX:CPC", {})[as_of] = round(v, 4); tv_errors.pop("INDEX:CPC", None)
+                tv_now["_src"]["INDEX:CPC"] = why
+            else:
+                tv_errors["INDEX:CPC_cboe"] = why
+        except Exception as e:
+            tv_errors["INDEX:CPC_cboe"] = "%s: %s" % (type(e).__name__, str(e)[:160])
     for k in list(tv_hist):
         tv_hist[k] = dict(sorted(tv_hist[k].items())[-TV_HIST_KEEP:])
     return {"_doc": "Chart tail for the vault's Investing/Charts (build_chart.py --daily). o/h/l/c = Yahoo OHLC adjusted for dividends and "
