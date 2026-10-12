@@ -460,16 +460,27 @@ TV_SCAN = ["INDEX:MMTH", "INDEX:CPC", "CBOE:VIX", "CBOE:SKEW", "CBOE:VIX9D"]
 TV_HIST_KEEP = 600
 
 
+TV_SCAN_MARKETS = ["global", "america", "cfd", "index"]
+TV_SCAN_ALT = ["USI:PCC", "USI:MMTH", "TVC:MMTH"]   # recorded for diagnosis only; never stamped into tv_hist
+
+
 def _tv_scan():
+    """{symbol: close} merged over a few scanner markets (indices are not in every one), plus {symbol: market} it came from."""
     import urllib.request
-    body = json.dumps({"symbols": {"tickers": TV_SCAN, "query": {"types": []}}, "columns": ["close", "open", "high", "low"]}).encode()
-    req = urllib.request.Request(TV_SCAN_URL, data=body, headers={"Content-Type": "application/json", "User-Agent": "Mozilla/5.0 rmdb-relay"})
-    raw = json.loads(urllib.request.urlopen(req, timeout=30).read().decode("utf-8"))
-    out = {}
-    for row in raw.get("data") or []:
-        d = row.get("d") or []
-        if d and d[0] is not None:
-            out[row.get("s")] = float(d[0])
+    out, src, errs = {}, {}, {}
+    for mkt in TV_SCAN_MARKETS:
+        try:
+            body = json.dumps({"symbols": {"tickers": TV_SCAN + TV_SCAN_ALT, "query": {"types": []}}, "columns": ["close"]}).encode()
+            req = urllib.request.Request(TV_SCAN_URL.replace("/global/", "/%s/" % mkt), data=body,
+                                         headers={"Content-Type": "application/json", "User-Agent": "Mozilla/5.0 rmdb-relay"})
+            raw = json.loads(urllib.request.urlopen(req, timeout=30).read().decode("utf-8"))
+            for row in raw.get("data") or []:
+                d = row.get("d") or []
+                if d and d[0] is not None and row.get("s") not in out:
+                    out[row.get("s")] = float(d[0]); src[row.get("s")] = mkt
+        except Exception as e:
+            errs[mkt] = "%s: %s" % (type(e).__name__, str(e)[:100])
+    out["_src"] = src; out["_errors"] = errs
     return out
 
 
@@ -517,6 +528,9 @@ def chart_block(got, out, now=None):
     tv_errors, tv_now = {}, {}
     try:
         tv_now = _tv_scan()
+        tv_src = tv_now.pop("_src", {}); tv_scan_err = tv_now.pop("_errors", {})
+        if tv_scan_err: tv_errors["scanner_markets"] = tv_scan_err
+        tv_now = {k: v for k, v in tv_now.items()}; tv_now["_src"] = tv_src
         yv = feeds.get("CBOE:VIX", [None])[-1]
         sv = tv_now.get("CBOE:VIX")
         if yv and sv and abs(sv / yv - 1) <= 0.005:
