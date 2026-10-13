@@ -1,0 +1,44 @@
+# Intraday live-price relay (2026-10-13) for the vault's Charts page. Every 15 minutes on weekdays across both
+# daylight-saving offsets; fetch_live.py itself gates on New York market hours and writes nothing outside them.
+# Output goes to the orphan branch `live` (force-pushed, one commit) so main's history and the other relays'
+# pull-rebase loops are never touched. Page reads raw.githubusercontent.com/.../live/live.json.
+name: live-relay
+on:
+  schedule:
+    - cron: "*/15 13-21 * * 1-5"
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths:
+      - "relay/fetch_live.py"
+      - ".github/workflows/live.yml"
+permissions:
+  contents: write
+concurrency:
+  group: live-relay
+  cancel-in-progress: true
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Fetch live session prices (yfinance, batched, no key)
+        run: |
+          pip install --quiet yfinance pandas
+          # a push or a manual run is a verification run: write even after hours
+          if [ "${{ github.event_name }}" = "schedule" ]; then python3 relay/fetch_live.py; else python3 relay/fetch_live.py --force; fi
+      - name: Publish live.json to the orphan `live` branch
+        run: |
+          [ -f live_out/live.json ] || { echo "nothing to publish (market closed or holiday)"; exit 0; }
+          cd live_out
+          git init -q -b live
+          git config user.name  "live-relay-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add live.json
+          git commit -q -m "live $(date -u +%F\ %H:%M)"
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" live
+          echo "published"
