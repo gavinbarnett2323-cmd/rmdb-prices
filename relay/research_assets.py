@@ -57,6 +57,81 @@ def num(x, nd=6):
     return round(x, nd) if math.isfinite(x) else None
 
 
+# 2026-10-14 strength-rework Round 4: Ken French's 49 industry portfolios (daily, value weighted) and the daily market
+# and T-bill from his factor file, as an untouched 1926 to 2000 confirmation set. Public data, no key.
+FRENCH = {
+    "FF49": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/49_Industry_Portfolios_daily_CSV.zip",
+    "FF3": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Research_Data_Factors_daily_CSV.zip",
+}
+
+
+def french_block(url):
+    """first table of a French daily CSV zip: (header names, rows of strings)."""
+    import io, urllib.request, zipfile
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (research-assets)"})
+    raw = urllib.request.urlopen(req, timeout=120).read()
+    z = zipfile.ZipFile(io.BytesIO(raw))
+    txt = z.read(z.namelist()[0]).decode("latin-1")
+    hdr, rows = None, []
+    for ln in txt.splitlines():
+        s = ln.strip()
+        if hdr is None:
+            if s.startswith(",") and len(s.split(",")) > 2:
+                hdr = [h.strip() for h in s.split(",")[1:]]
+            continue
+        parts = [x.strip() for x in s.split(",")]
+        if not parts or not parts[0].isdigit() or len(parts[0]) != 8:
+            if rows:
+                break
+            continue
+        rows.append(parts)
+    return hdr, rows
+
+
+def french_series(dates, rets):
+    """daily returns in percent -> total-return index; -99.99 / -999 are missing."""
+    idx, out_d, level, started = [], [], 1.0, False
+    for d, r in zip(dates, rets):
+        try:
+            x = float(r)
+        except Exception:
+            x = None
+        if x is None or x <= -99.0:
+            if started:
+                out_d.append(d); idx.append(None)
+            continue
+        started = True
+        level *= 1 + x / 100.0
+        out_d.append(d); idx.append(num(level, 8))
+    return out_d, idx
+
+
+def add_french(out):
+    try:
+        hdr, rows = french_block(FRENCH["FF49"])
+        dates = ["%s-%s-%s" % (r[0][:4], r[0][4:6], r[0][6:]) for r in rows]
+        for k, name in enumerate(hdr):
+            d, ix = french_series(dates, [r[k + 1] if k + 1 < len(r) else None for r in rows])
+            if d:
+                out["symbols"]["FF49:" + name] = {"name": "French 49 industries (VW): " + name, "first": d[0], "last": d[-1],
+                                                 "n": len(d), "d": d, "o": None, "h": None, "l": None, "c": ix, "ac": ix, "v": None}
+        print("FF49: %d industries, %s .. %s" % (len(hdr), dates[0], dates[-1]), flush=True)
+    except Exception as e:
+        out["errors"]["FF49"] = "%s: %s" % (type(e).__name__, str(e)[:160])
+    try:
+        hdr, rows = french_block(FRENCH["FF3"])
+        dates = ["%s-%s-%s" % (r[0][:4], r[0][4:6], r[0][6:]) for r in rows]
+        mi, ri = hdr.index("Mkt-RF"), hdr.index("RF")
+        mkt = ["%.6f" % (float(r[mi + 1]) + float(r[ri + 1])) for r in rows]
+        for sym, vals in (("FF:MKT", mkt), ("FF:RF", [r[ri + 1] for r in rows])):
+            d, ix = french_series(dates, vals)
+            out["symbols"][sym] = {"name": "French " + sym, "first": d[0], "last": d[-1], "n": len(d), "d": d,
+                                   "o": None, "h": None, "l": None, "c": ix, "ac": ix, "v": None}
+        print("FF3: %s .. %s" % (dates[0], dates[-1]), flush=True)
+    except Exception as e:
+        out["errors"]["FF3"] = "%s: %s" % (type(e).__name__, str(e)[:160])
+
+
 def main():
     out = {"built": datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%MZ"), "source": "yfinance (Yahoo) on GitHub Actions",
            "symbols": {}, "errors": {}}
@@ -81,6 +156,7 @@ def main():
         out["symbols"][sym] = rec
         out["errors"].pop(sym, None)
         print("%-10s %5d bars %s .. %s" % (sym, len(idx), idx[0], idx[-1]), flush=True)
+    add_french(out)
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with gzip.open(OUT, "wt", encoding="utf-8") as f:
         json.dump(out, f, separators=(",", ":"))
