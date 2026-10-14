@@ -8,7 +8,7 @@ runner (the vault and Claude's sandbox cannot reach Yahoo). Writes relay/researc
   {"built": iso, "symbols": {sym: {"name", "first", "last", "n", "d": [YYYY-MM-DD...], "o","h","l","c","ac","v": [...]}},
    "errors": {sym: msg}}
 c = raw close (split-adjusted only), ac = dividend-adjusted close (total return). Public prices only: nothing about the
-script, the book or any account. Triggered by a push of this file or by hand (workflow research-assets); never scheduled."""
+script, the book or any account. 2026-10-14: symbols extended for the ETF strength-rework study (Gavin: "completely rework it"). Triggered by a push of this file or by hand (workflow research-assets); never scheduled."""
 import datetime, gzip, json, math, os, sys, time
 
 import pandas as pd
@@ -35,6 +35,14 @@ SYMBOLS = {
     "UUP": "US dollar bullish", "FXE": "Euro", "FXY": "Yen",
     # crypto
     "BTC-USD": "Bitcoin", "ETH-USD": "Ether", "GBTC": "Grayscale Bitcoin Trust",
+    # 2026-10-14 strength-rework study: the rest of the V3 35-ETF universe + cross-asset signal series
+    "MDY": "S&P 400 midcap", "DIA": "Dow 30", "RSP": "S&P 500 equal weight", "XLK": "Tech", "XLY": "Discretionary",
+    "XLC": "Comm services", "XLI": "Industrials", "XLB": "Materials", "XLE": "Energy", "XLF": "Financials",
+    "XLV": "Health care", "XLP": "Staples", "XLU": "Utilities", "XLRE": "Real estate sector", "SMH": "Semiconductors",
+    "XBI": "Biotech", "KRE": "Regional banks", "SOXX": "Semiconductors (iShares)", "IGV": "Software", "ITA": "Defense",
+    "^VIX": "VIX", "^TNX": "10y yield", "^IRX": "13w T-bill yield", "^TYX": "30y yield", "^FVX": "5y yield",
+    "HG=F": "Copper futures", "GC=F": "Gold futures", "CL=F": "Crude futures", "DX-Y.NYB": "Dollar index",
+    "XHB": "Homebuilders", "IYT": "Transports", "XRT": "Retail", "MTUM": "Momentum factor", "USMV": "Min vol factor",
     # reference
     "SPY": "S&P 500 ETF", "QQQ": "Nasdaq 100 ETF", "IWM": "Russell 2000 ETF",
 }
