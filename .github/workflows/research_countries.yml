@@ -1,0 +1,34 @@
+# One-off research data job (2026-10-15): single-country ETF history for the ETF strength study's fresh-universe check.
+# Runs when relay/research_countries.py changes or by hand. Never scheduled. Writes relay/research/countries_history.json.gz.
+name: research-countries
+on:
+  workflow_dispatch: {}
+  push:
+    paths:
+      - "relay/research_countries.py"
+      - ".github/workflows/research_countries.yml"
+permissions:
+  contents: write
+concurrency:
+  group: research-countries
+  cancel-in-progress: false
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Fetch research history (yfinance, no key)
+        run: |
+          pip install --quiet yfinance pandas numpy
+          python3 relay/research_countries.py
+      - name: Commit the history
+        run: |
+          git config user.name  "research-countries-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add relay/research/countries_history.json.gz
+          git diff --staged --quiet && echo "nothing to commit" && exit 0
+          git commit -m "research countries $(date -u +%F\ %H:%M)"
+          for i in 1 2 3 4 5; do git pull --rebase --autostash origin main && git push && break || sleep 5; done
