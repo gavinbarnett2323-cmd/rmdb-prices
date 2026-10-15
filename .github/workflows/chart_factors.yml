@@ -1,0 +1,37 @@
+# Dividend factors for the Charts page (2026-10-14). Runs when relay/chart_factors.py or the ticker list changes, by hand,
+# and Sundays (new ex-dividend dates). Writes relay/chart_factors.json.gz.
+name: chart-factors
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: "17 14 * * 0"
+  push:
+    paths:
+      - "relay/chart_factors.py"
+      - "relay/chart_tickers.txt"
+      - ".github/workflows/chart_factors.yml"
+permissions:
+  contents: write
+concurrency:
+  group: chart-factors
+  cancel-in-progress: false
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Fetch dividend factors (yfinance, no key)
+        run: |
+          pip install --quiet yfinance pandas
+          python3 relay/chart_factors.py
+      - name: Commit the factors
+        run: |
+          git config user.name  "chart-factors-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add relay/chart_factors.json.gz
+          git diff --staged --quiet && echo "nothing to commit" && exit 0
+          git commit -m "chart factors $(date -u +%F\ %H:%M)"
+          for i in 1 2 3 4 5; do git pull --rebase --autostash origin main && git push && break || sleep 5; done
