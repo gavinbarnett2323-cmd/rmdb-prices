@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-10 06:50 UTC",
+ "generated_at": "2026-10-17 05:25 UTC",
  "period": "12y",
  "n_tickers": 1208,
  "gaps": [
@@ -176,10 +176,10 @@
     "BLK",
     "BLX"
    ],
-   "rows": 384927,
-   "bytes": 7134872,
-   "first_date": "2014-10-10",
-   "last_date": "2026-10-09"
+   "rows": 385132,
+   "bytes": 7137168,
+   "first_date": "2014-10-17",
+   "last_date": "2026-10-16"
   },
   {
    "file": "bars_01.parquet",
@@ -335,10 +335,10 @@
     "DE",
     "DECK"
    ],
-   "rows": 396941,
-   "bytes": 7833461,
-   "first_date": "2014-10-10",
-   "last_date": "2026-10-10"
+   "rows": 397119,
+   "bytes": 7793436,
+   "first_date": "2014-10-17",
+   "last_date": "2026-10-17"
   },
   {
    "file": "bars_02.parquet",
@@ -494,10 +494,10 @@
     "GDDY",
     "GE"
    ],
-   "rows": 400998,
-   "bytes": 7746951,
-   "first_date": "2014-10-10",
-   "last_date": "2026-10-10"
+   "rows": 401200,
+   "bytes": 7751084,
+   "first_date": "2014-10-17",
+   "last_date": "2026-10-17"
   },
   {
    "file": "bars_03.parquet",
@@ -653,10 +653,10 @@
     "KRMN",
     "KTOS"
    ],
-   "rows": 407067,
-   "bytes": 7755289,
-   "first_date": "2014-10-10",
-   "last_date": "2026-10-09"
+   "rows": 407242,
+   "bytes": 7755977,
+   "first_date": "2014-10-17",
+   "last_date": "2026-10-16"
   },
   {
    "file": "bars_04.parquet",
@@ -812,10 +812,10 @@
     "NTRS",
     "NU"
    ],
-   "rows": 403597,
-   "bytes": 7861374,
-   "first_date": "2014-10-10",
-   "last_date": "2026-10-09"
+   "rows": 403762,
+   "bytes": 7859743,
+   "first_date": "2014-10-17",
+   "last_date": "2026-10-16"
   },
   {
    "file": "bars_05.parquet",
@@ -971,10 +971,10 @@
     "RKT",
     "RL"
    ],
-   "rows": 387244,
-   "bytes": 6986063,
-   "first_date": "2014-10-10",
-   "last_date": "2026-10-09"
+   "rows": 387484,
+   "bytes": 6987821,
+   "first_date": "2014-10-17",
+   "last_date": "2026-10-16"
   },
   {
    "file": "bars_06.parquet",
@@ -1130,10 +1130,10 @@
     "TSLA",
     "TSM"
    ],
-   "rows": 388200,
-   "bytes": 7361128,
-   "first_date": "2014-10-10",
-   "last_date": "2026-10-10"
+   "rows": 388392,
+   "bytes": 7369025,
+   "first_date": "2014-10-17",
+   "last_date": "2026-10-17"
   },
   {
    "file": "bars_07.parquet",
@@ -1289,10 +1289,10 @@
     "^FVX",
     "^GSPC"
    ],
-   "rows": 417288,
-   "bytes": 7779574,
-   "first_date": "2014-10-09",
-   "last_date": "2026-10-09"
+   "rows": 417463,
+   "bytes": 7781231,
+   "first_date": "2014-10-16",
+   "last_date": "2026-10-16"
   },
   {
    "file": "bars_08.parquet",
@@ -1307,9 +1307,9 @@
     "^VVIX"
    ],
    "rows": 24131,
-   "bytes": 536429,
-   "first_date": "2014-10-09",
-   "last_date": "2026-10-09"
+   "bytes": 536506,
+   "first_date": "2014-10-16",
+   "last_date": "2026-10-16"
   }
  ],
  "fields": [
@@ -1323,6 +1323,6 @@
   "volume"
  ],
  "adjustment": "adj_close = dividends+splits adjusted (yfinance auto_adjust=False); open/high/low/close are split-adjusted raw prints",
- "rows": 3210393,
+ "rows": 3211925,
  "macro": "see fetch_fred.py / macro_manifest.json (decoupled 2026-09-16)"
 }
