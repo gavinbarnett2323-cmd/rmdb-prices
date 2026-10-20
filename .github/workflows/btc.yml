@@ -1,0 +1,40 @@
+# BTC daily relay (2026-10-20) for the Stock System dashboard's Bitcoin chart. Runs every day at 00:20 UTC, just
+# after Bitcoin's UTC day closes, with a second try at 01:50 UTC because GitHub drops or delays cron runs under
+# load. Both land before the dashboard's weekday refresh. A push to the script or this file is a verification run.
+# Writes relay/btc_daily.json. Display only.
+name: btc-relay
+on:
+  schedule:
+    - cron: "20 0 * * *"
+    - cron: "50 1 * * *"
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths:
+      - "relay/fetch_btc.py"
+      - ".github/workflows/btc.yml"
+permissions:
+  contents: write
+concurrency:
+  group: btc-relay
+  cancel-in-progress: false
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Fetch BTC-USD daily history (yfinance, no key)
+        run: |
+          pip install --quiet yfinance pandas
+          python3 relay/fetch_btc.py
+      - name: Commit btc_daily.json
+        run: |
+          git config user.name  "btc-relay-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add relay/btc_daily.json
+          git diff --staged --quiet && echo "nothing to commit" && exit 0
+          git commit -m "btc $(date -u +%F\ %H:%M)"
+          for i in 1 2 3 4 5; do git pull --rebase --autostash origin main && git push && break || sleep 5; done
