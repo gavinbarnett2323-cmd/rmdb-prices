@@ -5,7 +5,8 @@ every weekday from this repo. This job gives it Bitcoin's whole daily close hist
 which starts 2014-09-17), every calendar day, because Bitcoin trades on weekends and the equity relays
 only keep stock-market sessions.
 
-Writes relay/btc_daily.json: {_doc, generated_at, source, first, last, n, rows: [[date, close], ...]}.
+Writes relay/btc_daily.json: {_doc, generated_at, source, first, last, n, rows: [[date, close], ...],
+ohlc: [[date, open, high, low, close, volume], ...]} (ohlc added 2026-10-21 for the Charts.html BTC candles).
 Rails: today's UTC bar is still forming, so it is dropped. Under 4,000 days, or a newest bar more than
 4 days old, it writes nothing and exits non-zero so the Action goes red. Display only: nothing on the
 decision path reads this file.
@@ -42,11 +43,14 @@ def main():
     if idx.tz is not None:
         idx = idx.tz_convert("UTC").tz_localize(None)
     today = datetime.datetime.utcnow().strftime("%Y-%m-%d")
-    by_day = {}
-    for d, c in zip(idx, df["Close"]):
+    by_day, ohlc = {}, {}
+    vol = df["Volume"] if "Volume" in df.columns else [0] * len(df)
+    for d, o, h, l, c, v in zip(idx, df["Open"], df["High"], df["Low"], df["Close"], vol):
         day = d.strftime("%Y-%m-%d")
         if day < today:
             by_day[day] = round(float(c), 2)
+            if o == o and h == h and l == l:       # 2026-10-21: full daily bars for the Charts.html BTC candles + v20
+                ohlc[day] = [round(float(o), 2), round(float(h), 2), round(float(l), 2), round(float(c), 2), int(v) if v == v else 0]
     rows = [[d, by_day[d]] for d in sorted(by_day)]
     if len(rows) < 4000:
         raise SystemExit("btc relay: refusing to write %d rows" % len(rows))
@@ -58,6 +62,7 @@ def main():
         "generated_at": datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC"),
         "source": "Yahoo BTC-USD daily close via yfinance %s on GitHub Actions" % getattr(yf, "__version__", "?"),
         "first": rows[0][0], "last": rows[-1][0], "n": len(rows), "rows": rows,
+        "ohlc_cols": ["date", "open", "high", "low", "close", "volume"], "ohlc": [[k] + ohlc[k] for k in sorted(ohlc)],
     }
     tmp = OUT + ".tmp"
     with open(tmp, "w") as f:
