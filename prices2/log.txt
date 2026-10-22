@@ -1,0 +1,49 @@
+symbols 272
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: AKTSQ"}}}
+$AKTSQ: possibly delisted; no timezone found
+$ATIP: possibly delisted; no timezone found
+$BLFY: possibly delisted; no timezone found
+
+3 Failed downloads:
+['AKTSQ', 'ATIP', 'BLFY']: possibly delisted; no timezone found
+prices 60 of 272 errors 3
+$FRGE: possibly delisted; no timezone found
+$GDEN: possibly delisted; no timezone found
+$CMA: possibly delisted; no timezone found
+$FSFG: possibly delisted; no timezone found
+$EWCZ: possibly delisted; no timezone found
+$CTRA: possibly delisted; no timezone found
+$DMTKQ: possibly delisted; no timezone found
+
+7 Failed downloads:
+['FRGE', 'GDEN', 'CMA', 'FSFG', 'EWCZ', 'CTRA', 'DMTKQ']: possibly delisted; no timezone found
+prices 120 of 272 errors 10
+$LNKB: possibly delisted; no timezone found
+$MBCN: possibly delisted; no timezone found
+$MOFG: possibly delisted; no timezone found
+$KLG: possibly delisted; no timezone found
+$GLDD: possibly delisted; no timezone found
+
+5 Failed downloads:
+['LNKB', 'MBCN', 'MOFG', 'KLG', 'GLDD']: possibly delisted; no timezone found
+prices 180 of 272 errors 15
+$PLYM: possibly delisted; no timezone found
+$SNCY: possibly delisted; no timezone found
+$STKL: possibly delisted; no timezone found
+$PCH: possibly delisted; no timezone found
+$PKST: possibly delisted; no timezone found
+
+5 Failed downloads:
+['PLYM', 'SNCY', 'STKL', 'PCH', 'PKST']: possibly delisted; no timezone found
+prices 240 of 272 errors 20
+$UBFO: possibly delisted; no timezone found
+$TGNA: possibly delisted; no timezone found
+$ZEUS: possibly delisted; no timezone found
+$ZYXIQ: possibly delisted; no timezone found
+$TTCFQ: possibly delisted; no timezone found
+$UHG: possibly delisted; no timezone found
+
+6 Failed downloads:
+['UBFO', 'TGNA', 'ZEUS', 'ZYXIQ', 'TTCFQ', 'UHG']: possibly delisted; no timezone found
+prices 272 of 272 errors 26
+exit=0
