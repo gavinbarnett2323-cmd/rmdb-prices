@@ -1,0 +1,49 @@
+# Research data jobs for the quality look-through study (2026-10-21). Never scheduled.
+# Runs the stage named in relay/research_lt/STAGE when anything under relay/research_lt/ or this file changes.
+# Output goes to the ORPHAN branch research-lt (one folder per stage), never to main, so the daily relays' checkouts stay small.
+# Nothing on the decision path reads it.
+name: research-lt
+on:
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths:
+      - "relay/research_lt/**"
+      - ".github/workflows/research_lt.yml"
+permissions:
+  contents: write
+concurrency:
+  group: research-lt
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Install
+        run: pip install --quiet yfinance pandas numpy requests openpyxl lxml pyarrow
+      - name: Run the stage
+        continue-on-error: true
+        run: |
+          set -o pipefail
+          STAGE=$(head -1 relay/research_lt/STAGE | tr -d '[:space:]')
+          mkdir -p "$RUNNER_TEMP/out"
+          python3 -u relay/research_lt/run.py "$STAGE" "$RUNNER_TEMP/out" 2>&1 | tee "$RUNNER_TEMP/out/log.txt"
+          echo "exit=$?" >> "$RUNNER_TEMP/out/log.txt"
+      - name: Publish to the research-lt branch
+        if: always()
+        run: |
+          STAGE=$(head -1 relay/research_lt/STAGE | tr -d '[:space:]')
+          cd "$RUNNER_TEMP"
+          git config --global user.name "research-lt-bot"
+          git config --global user.email "actions@users.noreply.github.com"
+          REPO="https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+          if git clone -q --depth 1 --branch research-lt "$REPO" rl 2>/dev/null; then echo "branch exists"; else
+            mkdir rl && cd rl && git init -q && git checkout -q -b research-lt && git remote add origin "$REPO" && cd ..; fi
+          rm -rf "rl/$STAGE" && mkdir -p "rl/$STAGE" && cp -r out/. "rl/$STAGE/"
+          date -u +%FT%TZ > "rl/$STAGE/DONE"
+          cd rl && git add -A && (git diff --staged --quiet || git commit -q -m "research-lt $STAGE $(date -u +%F' '%H:%M)")
+          for i in 1 2 3 4 5; do git push -q origin research-lt && break || (git pull -q --rebase origin research-lt; sleep 5); done
