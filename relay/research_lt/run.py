@@ -295,10 +295,81 @@ def stage_probe(OUT):
     return 0
 
 
+# ---------------------------------------------------------------------------------------------------------------- probe2
+ISH = {"IVV": 239726, "IJH": 239763, "IJR": 239774, "IWM": 239710, "IWB": 239707, "IWV": 239714, "ITOT": 239724,
+       "SOXX": 239705, "IBB": 239699, "IYR": 239520, "IYW": 239522, "IYF": 239508, "IYE": 239507, "IYH": 239511,
+       "IAT": 239521, "IGV": 239771, "OEF": 239723, "QUAL": 256101}
+
+
+def ishares_url(sym, pid, asof=None):
+    u = ("https://www.ishares.com/us/products/%d/fund/1467271812596.ajax?fileType=csv&fileName=%s_holdings&dataType=fund"
+         % (pid, sym))
+    return u + ("&asOfDate=%s" % asof if asof else "")
+
+
+def stage_probe2(OUT):
+    rep = {"built": datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%MZ"), "sec": {}, "ishares": {}, "wayback": {}}
+    uas = {"plain": "RMDB Research rmdb-prices@users.noreply.github.com",
+           "browser": UA_WEB, "curl": "curl/8.5.0", "none": None}
+    urls = ["https://www.sec.gov/files/company_tickers_mf.json", "https://data.sec.gov/submissions/CIK0001064641.json",
+            "https://efts.sec.gov/LATEST/search-index?q=%22Select%20Sector%22&forms=NPORT-P",
+            "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001064641&type=NPORT-P&count=10&output=atom"]
+    for nm, ua in uas.items():
+        for u in urls:
+            h = {"Accept-Encoding": "gzip, deflate"}
+            if ua:
+                h["User-Agent"] = ua
+            try:
+                r = requests.get(u, headers=h, timeout=30)
+                rep["sec"]["%s %s" % (nm, u[:70])] = {"status": r.status_code, "head": r.text[:240]}
+            except Exception as e:
+                rep["sec"]["%s %s" % (nm, u[:70])] = {"error": str(e)[:200]}
+            time.sleep(0.5)
+    for sym, pid in ISH.items():
+        for asof in (None, "20191231", "20150630", "20100630", "20061229"):
+            try:
+                r = web(ishares_url(sym, pid, asof), timeout=60)
+                t = r.text
+                lines = t.splitlines()
+                rep["ishares"]["%s %s" % (sym, asof)] = {"status": r.status_code, "bytes": len(t), "head": lines[:9],
+                                                        "n_lines": len(lines)}
+                if r.status_code == 200 and asof == "20191231" and len(lines) > 12:
+                    open(os.path.join(OUT, "ishares_%s_%s.csv" % (sym, asof)), "w").write(t)
+            except Exception as e:
+                rep["ishares"]["%s %s" % (sym, asof)] = {"error": str(e)[:200]}
+            time.sleep(0.4)
+        print("ishares", sym, rep["ishares"].get("%s 20191231" % sym, {}).get("status"), flush=True)
+    cdx = "https://web.archive.org/cdx/search/cdx?output=json&fl=timestamp,original,statuscode,length&limit=400&url="
+    pats = ["spdrs.com/site-content/xls/XBI_All_Holdings.xls", "www.spdrs.com/site-content/xls/XBI_All_Holdings.xls",
+            "www.spdrs.com/site-content/xls/KRE_All_Holdings.xls", "www.spdrs.com/site-content/xls/XLK_All_Holdings.xls",
+            "www.spdrs.com/site-content/xls/&matchType=prefix&collapse=urlkey",
+            "www.ssga.com/us/en/intermediary/etfs/library-content/products/fund-data/etfs/us/&matchType=prefix&collapse=urlkey",
+            "www.ssga.com/us/en/individual/etfs/library-content/products/fund-data/etfs/us/&matchType=prefix&collapse=urlkey",
+            "www.ssga.com/library-content/products/fund-data/etfs/us/&matchType=prefix&collapse=urlkey",
+            "www.sectorspdr.com/sectorspdr/IDCO.Client.Spdrs.Holdings/Export/ExportExcel&matchType=prefix",
+            "www.sectorspdr.com/sectorspdr/IDCO.Client.Spdrs.Holdings/Export/ExportCsv&matchType=prefix",
+            "www.vaneck.com/us/en/investments/semiconductor-etf-smh/holdings/&matchType=prefix",
+            "www.vaneck.com/etf/equity/smh/holdings/&matchType=prefix",
+            "www.invesco.com/us/financial-products/etfs/holdings/main/holdings/0&matchType=prefix",
+            "www.ishares.com/us/products/239710/&matchType=prefix&filter=original:.*ajax.*&collapse=urlkey"]
+    for pat in pats:
+        try:
+            r = web(cdx + pat, timeout=90)
+            js = r.json() if r.status_code == 200 and r.text.strip().startswith("[") else None
+            rep["wayback"][pat] = {"status": r.status_code, "n": (len(js) - 1) if js else 0,
+                                   "sample": (js[1:6] + js[-5:]) if js and len(js) > 1 else r.text[:300]}
+        except Exception as e:
+            rep["wayback"][pat] = {"error": str(e)[:200]}
+        time.sleep(1)
+    json.dump(rep, open(os.path.join(OUT, "probe2.json"), "w"), indent=1)
+    print("probe2 done")
+    return 0
+
+
 def main():
     stage, OUT = sys.argv[1], sys.argv[2]
     os.makedirs(OUT, exist_ok=True)
-    fn = {"probe": stage_probe}.get(stage)
+    fn = {"probe": stage_probe, "probe2": stage_probe2}.get(stage)
     if fn is None:
         print("unknown stage", stage)
         return 2
