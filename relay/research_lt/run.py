@@ -366,10 +366,99 @@ def stage_probe2(OUT):
     return 0
 
 
+# --------------------------------------------------------------------------------------------------------------- master
+def figi_map(ids, OUT, tag):
+    """OpenFIGI v3 mapping without a key (25 requests a minute, 10 jobs each). ids: list of (idType, value)."""
+    res = {}
+    jobs = [{"idType": t, "idValue": v} for t, v in ids]
+    i = 0; t0 = time.time(); calls = 0
+    while i < len(jobs):
+        chunk = jobs[i:i + 10]
+        try:
+            r = S.post("https://api.openfigi.com/v3/mapping", json=chunk, headers={"Content-Type": "application/json"}, timeout=60)
+        except Exception as e:
+            print("figi error", e, flush=True); time.sleep(10); continue
+        calls += 1
+        if r.status_code == 429:
+            time.sleep(15); continue
+        if r.status_code != 200:
+            print("figi status", r.status_code, r.text[:200], flush=True); time.sleep(10); continue
+        for job, out in zip(chunk, r.json()):
+            res[job["idType"] + ":" + job["idValue"]] = out.get("data") or {"error": out.get("error") or out.get("warning")}
+        i += 10
+        if calls % 25 == 0:
+            el = time.time() - t0
+            if el < 61:
+                time.sleep(61 - el)
+            t0 = time.time()
+            print("figi", i, "of", len(jobs), flush=True)
+    with gzip.open(os.path.join(OUT, "figi_%s.json.gz" % tag), "wt") as f:
+        json.dump(res, f)
+    return res
+
+
+def stage_master(OUT):
+    """Map every identifier in relay/research_lt/ids.txt (lines 'ID_CUSIP 037833100' / 'ID_ISIN US...' / 'TICKER AAPL')."""
+    here = os.path.dirname(os.path.abspath(__file__))
+    ids = [tuple(l.split()[:2]) for l in open(os.path.join(here, "ids.txt")) if len(l.split()) >= 2]
+    print("ids", len(ids), flush=True)
+    figi_map(ids, OUT, "master")
+    return 0
+
+
+# --------------------------------------------------------------------------------------------------------------- prices
+def stage_prices(OUT):
+    """Daily bars from 2017-06-01 for every symbol in relay/research_lt/tickers.txt: dividend-adjusted close (ac), raw close
+    (c, split-adjusted only) and the split history; written in 8 shards."""
+    import pandas as pd
+    import yfinance as yf
+    here = os.path.dirname(os.path.abspath(__file__))
+    syms = sorted({l.strip() for l in open(os.path.join(here, "tickers.txt")) if l.strip() and not l.startswith("#")})
+    print("symbols", len(syms), flush=True)
+    shards = [dict() for _ in range(8)]; errs = {}
+    B = 60
+    for k in range(0, len(syms), B):
+        batch = syms[k:k + B]
+        df = None
+        for attempt in range(3):
+            try:
+                df = yf.download(batch, start="2017-06-01", interval="1d", auto_adjust=False, actions=True, group_by="ticker",
+                                 threads=True, progress=False)
+                break
+            except Exception as e:
+                print("batch error", e, flush=True); time.sleep(5 + 5 * attempt)
+        if df is None or not len(df):
+            for s_ in batch:
+                errs[s_] = "batch failed"
+            continue
+        for s_ in batch:
+            try:
+                x = df[s_] if isinstance(df.columns, pd.MultiIndex) else df
+                x = x.dropna(subset=["Close"])
+                if not len(x):
+                    errs[s_] = "no data"; continue
+                idx = [d.strftime("%Y-%m-%d") for d in pd.DatetimeIndex(x.index).tz_localize(None)]
+                rec = {"d": idx, "c": [num(v) for v in x["Close"]], "ac": [num(v) for v in x["Adj Close"]],
+                       "o": [num(v) for v in x["Open"]]}
+                if "Stock Splits" in x.columns:
+                    sp = x["Stock Splits"]; sp = sp[sp.fillna(0) != 0]
+                    rec["splits"] = [[d.strftime("%Y-%m-%d"), float(v)] for d, v in sp.items()]
+                shards[hash(s_) % 8 if False else (sum(map(ord, s_)) % 8)][s_] = rec
+            except Exception as e:
+                errs[s_] = "%s: %s" % (type(e).__name__, str(e)[:120])
+        print("prices", min(k + B, len(syms)), "of", len(syms), "errors", len(errs), flush=True)
+        time.sleep(1)
+    for i, sh in enumerate(shards):
+        with gzip.open(os.path.join(OUT, "prices_%d.json.gz" % i), "wt") as f:
+            json.dump(sh, f, separators=(",", ":"))
+    json.dump({"n": len(syms), "ok": sum(len(s_) for s_ in shards), "errors": errs}, open(os.path.join(OUT, "prices_report.json"), "w"), indent=0)
+    return 0
+
+
 def main():
     stage, OUT = sys.argv[1], sys.argv[2]
     os.makedirs(OUT, exist_ok=True)
-    fn = {"probe": stage_probe, "probe2": stage_probe2}.get(stage)
+    fn = {"probe": stage_probe, "probe2": stage_probe2, "master": stage_master, "prices": stage_prices}.get(stage)
     if fn is None:
         print("unknown stage", stage)
         return 2
