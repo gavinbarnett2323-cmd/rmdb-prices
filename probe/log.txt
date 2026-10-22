@@ -1,0 +1,183 @@
+/home/runner/work/rmdb-prices/rmdb-prices/relay/research_lt/run.py:103: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  rep = {"built": datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%MZ"), "checks": {}}
+check sec_company_tickers_mf       JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+check sec_company_tickers          JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+check sec_submissions              ok
+check sec_browse_by_series         ok
+check sec_nport_primary_doc        ok
+check sec_xbrl                     JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+check sec_nport_datasets           ok
+check sec_cik_lookup               ok
+check openfigi                     ok
+$ATVI: possibly delisted; no timezone found
+$ATVI: possibly delisted; no timezone found
+$ATVI: possibly delisted; no timezone found
+$TWTR: possibly delisted; no timezone found
+$TWTR: possibly delisted; no timezone found
+$TWTR: possibly delisted; no timezone found
+$SIVB: possibly delisted; no timezone found
+$SIVB: possibly delisted; no timezone found
+$SIVB: possibly delisted; no timezone found
+$SIVBQ: possibly delisted; no timezone found
+$SIVBQ: possibly delisted; no timezone found
+$SIVBQ: possibly delisted; no timezone found
+$FRC: possibly delisted; no timezone found
+$FRC: possibly delisted; no timezone found
+$FRC: possibly delisted; no timezone found
+delisted FRCB      3990 bars 2010-12-09 .. 2026-10-21
+delisted SBNY       548 bars 2024-08-15 .. 2026-10-21
+$XLNX: possibly delisted; no timezone found
+$XLNX: possibly delisted; no timezone found
+$XLNX: possibly delisted; no timezone found
+$MXIM: possibly delisted; no timezone found
+$MXIM: possibly delisted; no timezone found
+$MXIM: possibly delisted; no timezone found
+$CELG: possibly delisted; no timezone found
+$CELG: possibly delisted; no timezone found
+$CELG: possibly delisted; no timezone found
+$SGEN: possibly delisted; no timezone found
+$SGEN: possibly delisted; no timezone found
+$SGEN: possibly delisted; no timezone found
+$HZNP: possibly delisted; no timezone found
+$HZNP: possibly delisted; no timezone found
+$HZNP: possibly delisted; no timezone found
+$CTXS: possibly delisted; no timezone found
+$CTXS: possibly delisted; no timezone found
+$CTXS: possibly delisted; no timezone found
+$PXD: possibly delisted; no timezone found
+$PXD: possibly delisted; no timezone found
+$PXD: possibly delisted; no timezone found
+$ANSS: possibly delisted; no timezone found
+$ANSS: possibly delisted; no timezone found
+$ANSS: possibly delisted; no timezone found
+$JNPR: possibly delisted; no timezone found
+$JNPR: possibly delisted; no timezone found
+$JNPR: possibly delisted; no timezone found
+$SPLK: possibly delisted; no timezone found
+$SPLK: possibly delisted; no timezone found
+$SPLK: possibly delisted; no timezone found
+$DFS: possibly delisted; no timezone found
+$DFS: possibly delisted; no timezone found
+$DFS: possibly delisted; no timezone found
+$MRO: possibly delisted; no timezone found
+$MRO: possibly delisted; no timezone found
+$MRO: possibly delisted; no timezone found
+$CTLT: possibly delisted; no timezone found
+$CTLT: possibly delisted; no timezone found
+$CTLT: possibly delisted; no timezone found
+$WRK: possibly delisted; no timezone found
+$WRK: possibly delisted; no timezone found
+$WRK: possibly delisted; no timezone found
+$ALXN: possibly delisted; no timezone found
+$ALXN: possibly delisted; no timezone found
+$ALXN: possibly delisted; no timezone found
+$CERN: possibly delisted; no timezone found
+$CERN: possibly delisted; no timezone found
+$CERN: possibly delisted; no timezone found
+$DISCA: possibly delisted; no timezone found
+$DISCA: possibly delisted; no timezone found
+$DISCA: possibly delisted; no timezone found
+$PBCT: possibly delisted; no timezone found
+$PBCT: possibly delisted; no timezone found
+$PBCT: possibly delisted; no timezone found
+$ABMD: possibly delisted; no timezone found
+$ABMD: possibly delisted; no timezone found
+$ABMD: possibly delisted; no timezone found
+$NLSN: possibly delisted; no timezone found
+$NLSN: possibly delisted; no timezone found
+$NLSN: possibly delisted; no timezone found
+$DRE: possibly delisted; no timezone found
+$DRE: possibly delisted; no timezone found
+$DRE: possibly delisted; no timezone found
+$VMW: possibly delisted; no timezone found
+$VMW: possibly delisted; no timezone found
+$VMW: possibly delisted; no timezone found
+$SAVE: possibly delisted; no timezone found
+$SAVE: possibly delisted; no timezone found
+$SAVE: possibly delisted; no timezone found
+delisted BBBY        68 bars 2026-07-17 .. 2026-10-21
+$WBA: possibly delisted; no timezone found
+$WBA: possibly delisted; no timezone found
+$WBA: possibly delisted; no timezone found
+check yahoo_delisted               ok
+check french                       ok
+check aqr                          ok
+check wayback                      ok
+check issuer_holdings              ok
+nat IJR       6640 bars 2000-05-26 .. 2026-10-21
+nat IWM       6640 bars 2000-05-26 .. 2026-10-21
+nat IJH       6640 bars 2000-05-26 .. 2026-10-21
+nat IWR       6325 bars 2001-08-27 .. 2026-10-21
+nat IVV       6645 bars 2000-05-19 .. 2026-10-21
+nat IWB       6645 bars 2000-05-19 .. 2026-10-21
+nat VTI       6375 bars 2001-06-15 .. 2026-10-21
+nat ITOT      5723 bars 2004-01-23 .. 2026-10-21
+nat QUAL      3336 bars 2013-07-18 .. 2026-10-21
+nat SPHQ      5251 bars 2005-12-06 .. 2026-10-21
+nat XMHQ      5002 bars 2006-12-01 .. 2026-10-21
+nat XSHQ      2396 bars 2017-04-11 .. 2026-10-21
+nat JQUA      2248 bars 2017-11-09 .. 2026-10-21
+nat DGRW      3375 bars 2013-05-22 .. 2026-10-21
+nat BBH       6768 bars 1999-11-23 .. 2026-10-21
+nat IBB       6461 bars 2001-02-12 .. 2026-10-21
+nat XBI       5210 bars 2006-02-06 .. 2026-10-21
+nat SOXX      6356 bars 2001-07-13 .. 2026-10-21
+nat XSD       5210 bars 2006-02-06 .. 2026-10-21
+nat SMH       6635 bars 2000-06-05 .. 2026-10-21
+$KBWR: possibly delisted; no timezone found
+$KBWR: possibly delisted; no timezone found
+$KBWR: possibly delisted; no timezone found
+nat QABA      4354 bars 2009-07-01 .. 2026-10-21
+nat KRE       5115 bars 2006-06-22 .. 2026-10-21
+nat KBE       5265 bars 2005-11-15 .. 2026-10-21
+nat VGT       5718 bars 2004-01-30 .. 2026-10-21
+nat VDE       5551 bars 2004-09-29 .. 2026-10-21
+nat VFH       5718 bars 2004-01-30 .. 2026-10-21
+nat VHT       5718 bars 2004-01-30 .. 2026-10-21
+nat VCR       5718 bars 2004-01-30 .. 2026-10-21
+nat VDC       5718 bars 2004-01-30 .. 2026-10-21
+nat VIS       5551 bars 2004-09-29 .. 2026-10-21
+nat VAW       5718 bars 2004-01-30 .. 2026-10-21
+nat VPU       5718 bars 2004-01-30 .. 2026-10-21
+nat VOX       5551 bars 2004-09-29 .. 2026-10-21
+nat VNQ       5551 bars 2004-09-29 .. 2026-10-21
+nat XLK       7000 bars 1998-12-22 .. 2026-10-21
+nat XLE       7000 bars 1998-12-22 .. 2026-10-21
+nat XLF       7000 bars 1998-12-22 .. 2026-10-21
+nat XLV       7000 bars 1998-12-22 .. 2026-10-21
+nat XLY       7000 bars 1998-12-22 .. 2026-10-21
+nat XLP       7000 bars 1998-12-22 .. 2026-10-21
+nat XLI       7000 bars 1998-12-22 .. 2026-10-21
+nat XLB       7000 bars 1998-12-22 .. 2026-10-21
+nat XLU       7000 bars 1998-12-22 .. 2026-10-21
+nat XLC       2097 bars 2018-06-19 .. 2026-10-21
+nat XLRE      2775 bars 2015-10-08 .. 2026-10-21
+nat SPY       8490 bars 1993-01-29 .. 2026-10-21
+nat RSP       5907 bars 2003-05-01 .. 2026-10-21
+nat QQQ       6948 bars 1999-03-10 .. 2026-10-21
+nat QQQE      3668 bars 2012-03-21 .. 2026-10-21
+nat QQQM      1513 bars 2020-10-13 .. 2026-10-21
+nat MDY       7919 bars 1995-05-04 .. 2026-10-21
+nat IWO       6597 bars 2000-07-28 .. 2026-10-21
+nat IWN       6597 bars 2000-07-28 .. 2026-10-21
+nat IJT       6597 bars 2000-07-28 .. 2026-10-21
+nat IJS       6597 bars 2000-07-28 .. 2026-10-21
+$SLY: possibly delisted; no timezone found
+$SLY: possibly delisted; no timezone found
+$SLY: possibly delisted; no timezone found
+nat VB        5718 bars 2004-01-30 .. 2026-10-21
+nat IWC       5329 bars 2005-08-16 .. 2026-10-21
+nat OEF       6533 bars 2000-10-27 .. 2026-10-21
+nat SPLV      3889 bars 2011-05-05 .. 2026-10-21
+nat USMV      3772 bars 2011-10-20 .. 2026-10-21
+nat MTUM      3399 bars 2013-04-18 .. 2026-10-21
+nat VLUE      3399 bars 2013-04-18 .. 2026-10-21
+nat SIZE      3399 bars 2013-04-18 .. 2026-10-21
+nat ^RUT      9853 bars 1987-09-10 .. 2026-10-21
+nat ^SP600    9521 bars 1989-01-03 .. 2026-10-21
+nat ^SP400   11544 bars 1981-01-02 .. 2026-10-21
+nat ^GSPC    24819 bars 1927-12-30 .. 2026-10-21
+nat ^IRX     16686 bars 1960-01-04 .. 2026-10-21
+check natural_experiment_etfs      ok
+probe done 12 of 15 checks ok
+exit=0

@@ -1,0 +1,2006 @@
+{
+ "built": "2026-10-22T02:47Z",
+ "sec": {
+  "plain https://www.sec.gov/files/company_tickers_mf.json": {
+   "status": 403,
+   "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" "
+  },
+  "plain https://data.sec.gov/submissions/CIK0001064641.json": {
+   "status": 403,
+   "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" "
+  },
+  "plain https://efts.sec.gov/LATEST/search-index?q=%22Select%20Sector%22&forms": {
+   "status": 403,
+   "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" "
+  },
+  "plain https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001064": {
+   "status": 403,
+   "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" "
+  },
+  "browser https://www.sec.gov/files/company_tickers_mf.json": {
+   "status": 403,
+   "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" "
+  },
+  "browser https://data.sec.gov/submissions/CIK0001064641.json": {
+   "status": 200,
+   "head": "{\"cik\":\"0001064641\",\"entityType\":\"investment\",\"sic\":\"\",\"sicDescription\":\"\",\"ownerOrg\":\"\",\"insiderTransactionForOwnerExists\":0,\"insiderTransactionForIssuerExists\":0,\"name\":\"SELECT SECTOR SPDR TRUST\",\"tickers\":[],\"exchanges\":[],\"ein\":\"0000000"
+  },
+  "browser https://efts.sec.gov/LATEST/search-index?q=%22Select%20Sector%22&forms": {
+   "status": 200,
+   "head": "{\"took\":118,\"timed_out\":false,\"_shards\":{\"total\":50,\"successful\":50,\"skipped\":0,\"failed\":0},\"hits\":{\"total\":{\"value\":10000,\"relation\":\"gte\"},\"max_score\":11.23636,\"hits\":[{\"_index\":\"edgar_file\",\"_id\":\"0000910472-26-000419:peakshares_nport.ht"
+  },
+  "browser https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001064": {
+   "status": 403,
+   "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" "
+  },
+  "curl https://www.sec.gov/files/company_tickers_mf.json": {
+   "status": 403,
+   "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" "
+  },
+  "curl https://data.sec.gov/submissions/CIK0001064641.json": {
+   "status": 403,
+   "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" "
+  },
+  "curl https://efts.sec.gov/LATEST/search-index?q=%22Select%20Sector%22&forms": {
+   "status": 403,
+   "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" "
+  },
+  "curl https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001064": {
+   "status": 403,
+   "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" "
+  },
+  "none https://www.sec.gov/files/company_tickers_mf.json": {
+   "status": 403,
+   "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" "
+  },
+  "none https://data.sec.gov/submissions/CIK0001064641.json": {
+   "status": 403,
+   "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" "
+  },
+  "none https://efts.sec.gov/LATEST/search-index?q=%22Select%20Sector%22&forms": {
+   "status": 403,
+   "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" "
+  },
+  "none https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001064": {
+   "status": 403,
+   "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" "
+  }
+ },
+ "ishares": {
+  "IVV None": {
+   "status": 200,
+   "bytes": 2304090,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IVV 20191231": {
+   "status": 200,
+   "bytes": 2304108,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IVV 20150630": {
+   "status": 200,
+   "bytes": 2304108,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IVV 20100630": {
+   "status": 200,
+   "bytes": 2304108,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IVV 20061229": {
+   "status": 200,
+   "bytes": 2304108,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IJH None": {
+   "status": 200,
+   "bytes": 1513440,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IJH 20191231": {
+   "status": 200,
+   "bytes": 1513458,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IJH 20150630": {
+   "status": 200,
+   "bytes": 1513458,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IJH 20100630": {
+   "status": 200,
+   "bytes": 1513458,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IJH 20061229": {
+   "status": 200,
+   "bytes": 1513458,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IJR None": {
+   "status": 200,
+   "bytes": 1514691,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IJR 20191231": {
+   "status": 200,
+   "bytes": 1514709,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IJR 20150630": {
+   "status": 200,
+   "bytes": 1514709,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IJR 20100630": {
+   "status": 200,
+   "bytes": 1514709,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IJR 20061229": {
+   "status": 200,
+   "bytes": 1514709,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IWM None": {
+   "status": 200,
+   "bytes": 1513276,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IWM 20191231": {
+   "status": 200,
+   "bytes": 1513294,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IWM 20150630": {
+   "status": 200,
+   "bytes": 1513294,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IWM 20100630": {
+   "status": 200,
+   "bytes": 1513294,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IWM 20061229": {
+   "status": 200,
+   "bytes": 1513294,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IWB None": {
+   "status": 200,
+   "bytes": 1504333,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IWB 20191231": {
+   "status": 200,
+   "bytes": 1504351,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IWB 20150630": {
+   "status": 200,
+   "bytes": 1504351,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IWB 20100630": {
+   "status": 200,
+   "bytes": 1504351,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IWB 20061229": {
+   "status": 200,
+   "bytes": 1504351,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IWV None": {
+   "status": 200,
+   "bytes": 1504734,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IWV 20191231": {
+   "status": 200,
+   "bytes": 1504752,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IWV 20150630": {
+   "status": 200,
+   "bytes": 1504752,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IWV 20100630": {
+   "status": 200,
+   "bytes": 1504752,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IWV 20061229": {
+   "status": 200,
+   "bytes": 1504752,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "ITOT None": {
+   "status": 200,
+   "bytes": 1507876,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1656
+  },
+  "ITOT 20191231": {
+   "status": 200,
+   "bytes": 1507894,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1656
+  },
+  "ITOT 20150630": {
+   "status": 200,
+   "bytes": 1507894,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1656
+  },
+  "ITOT 20100630": {
+   "status": 200,
+   "bytes": 1507894,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1656
+  },
+  "ITOT 20061229": {
+   "status": 200,
+   "bytes": 1507894,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1656
+  },
+  "SOXX None": {
+   "status": 200,
+   "bytes": 1481522,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "SOXX 20191231": {
+   "status": 200,
+   "bytes": 1481540,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "SOXX 20150630": {
+   "status": 200,
+   "bytes": 1481540,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "SOXX 20100630": {
+   "status": 200,
+   "bytes": 1481540,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "SOXX 20061229": {
+   "status": 200,
+   "bytes": 1481540,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IBB None": {
+   "status": 200,
+   "bytes": 1507755,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IBB 20191231": {
+   "status": 200,
+   "bytes": 1507773,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IBB 20150630": {
+   "status": 200,
+   "bytes": 1507773,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IBB 20100630": {
+   "status": 200,
+   "bytes": 1507773,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IBB 20061229": {
+   "status": 200,
+   "bytes": 1507773,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IYR None": {
+   "status": 200,
+   "bytes": 1488687,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IYR 20191231": {
+   "status": 200,
+   "bytes": 1488705,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IYR 20150630": {
+   "status": 200,
+   "bytes": 1488705,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IYR 20100630": {
+   "status": 200,
+   "bytes": 1488705,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IYR 20061229": {
+   "status": 200,
+   "bytes": 1488705,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IYW None": {
+   "status": 200,
+   "bytes": 1518098,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IYW 20191231": {
+   "status": 200,
+   "bytes": 1518116,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IYW 20150630": {
+   "status": 200,
+   "bytes": 1518116,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IYW 20100630": {
+   "status": 200,
+   "bytes": 1518116,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IYW 20061229": {
+   "status": 200,
+   "bytes": 1518116,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IYF None": {
+   "status": 200,
+   "bytes": 1514275,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IYF 20191231": {
+   "status": 200,
+   "bytes": 1514293,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IYF 20150630": {
+   "status": 200,
+   "bytes": 1514293,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IYF 20100630": {
+   "status": 200,
+   "bytes": 1514293,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IYF 20061229": {
+   "status": 200,
+   "bytes": 1514293,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IYE None": {
+   "status": 200,
+   "bytes": 1513894,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IYE 20191231": {
+   "status": 200,
+   "bytes": 1513912,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IYE 20150630": {
+   "status": 200,
+   "bytes": 1513912,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IYE 20100630": {
+   "status": 200,
+   "bytes": 1513912,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IYE 20061229": {
+   "status": 200,
+   "bytes": 1513912,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IYH None": {
+   "status": 200,
+   "bytes": 1516866,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IYH 20191231": {
+   "status": 200,
+   "bytes": 1516884,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IYH 20150630": {
+   "status": 200,
+   "bytes": 1516884,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IYH 20100630": {
+   "status": 200,
+   "bytes": 1516884,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IYH 20061229": {
+   "status": 200,
+   "bytes": 1516884,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IAT None": {
+   "status": 200,
+   "bytes": 1442695,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IAT 20191231": {
+   "status": 200,
+   "bytes": 1442713,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IAT 20150630": {
+   "status": 200,
+   "bytes": 1442713,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IAT 20100630": {
+   "status": 200,
+   "bytes": 1442713,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IAT 20061229": {
+   "status": 200,
+   "bytes": 1442713,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IGV None": {
+   "status": 200,
+   "bytes": 1477465,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IGV 20191231": {
+   "status": 200,
+   "bytes": 1477483,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IGV 20150630": {
+   "status": 200,
+   "bytes": 1477483,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IGV 20100630": {
+   "status": 200,
+   "bytes": 1477483,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "IGV 20061229": {
+   "status": 200,
+   "bytes": 1477483,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "OEF None": {
+   "status": 200,
+   "bytes": 1515049,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "OEF 20191231": {
+   "status": 200,
+   "bytes": 1515067,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "OEF 20150630": {
+   "status": 200,
+   "bytes": 1515067,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "OEF 20100630": {
+   "status": 200,
+   "bytes": 1515067,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "OEF 20061229": {
+   "status": 200,
+   "bytes": 1515067,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "QUAL None": {
+   "status": 200,
+   "bytes": 1490469,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "QUAL 20191231": {
+   "status": 200,
+   "bytes": 1490487,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "QUAL 20150630": {
+   "status": 200,
+   "bytes": 1490487,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "QUAL 20100630": {
+   "status": 200,
+   "bytes": 1490487,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  },
+  "QUAL 20061229": {
+   "status": 200,
+   "bytes": 1490487,
+   "head": [
+    "<!DOCTYPE html>",
+    "<html xmlns=\"http://www.w3.org/1999/xhtml\" prefix=\"og: http://ogp.me/ns#\" lang=\"en-US\" xml:lang=\"en-US\">",
+    "<head>",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-5b9fb124fde47901b87423ed48184673.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-463c2fcc242a9e5a71cc8388ad3b34d5.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-eb1937a2b02b9427f0b7e1231000778c.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-fefef83dea0aed96a9147381126acf31.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-3a821813d7982b9a9bd815cf373a41b4.css\" as=\"style\" />",
+    "<link rel=\"preload\" href=\"/blk-one02-c-assets/include/bundles/minified-7f2c6bea75be9db6fb590aa1459334f3.css\" as=\"style\" />"
+   ],
+   "n_lines": 1654
+  }
+ },
+ "wayback": {
+  "spdrs.com/site-content/xls/XBI_All_Holdings.xls": {
+   "status": 200,
+   "n": 1,
+   "sample": [
+    [
+     "20241227114625",
+     "https://www.spdrs.com/site-content/xls/XBI_All_Holdings.xls",
+     "404",
+     "438"
+    ],
+    [
+     "timestamp",
+     "original",
+     "statuscode",
+     "length"
+    ],
+    [
+     "20241227114625",
+     "https://www.spdrs.com/site-content/xls/XBI_All_Holdings.xls",
+     "404",
+     "438"
+    ]
+   ]
+  },
+  "www.spdrs.com/site-content/xls/XBI_All_Holdings.xls": {
+   "status": 200,
+   "n": 1,
+   "sample": [
+    [
+     "20241227114625",
+     "https://www.spdrs.com/site-content/xls/XBI_All_Holdings.xls",
+     "404",
+     "438"
+    ],
+    [
+     "timestamp",
+     "original",
+     "statuscode",
+     "length"
+    ],
+    [
+     "20241227114625",
+     "https://www.spdrs.com/site-content/xls/XBI_All_Holdings.xls",
+     "404",
+     "438"
+    ]
+   ]
+  },
+  "www.spdrs.com/site-content/xls/KRE_All_Holdings.xls": {
+   "status": 200,
+   "n": 0,
+   "sample": "[]\n"
+  },
+  "www.spdrs.com/site-content/xls/XLK_All_Holdings.xls": {
+   "status": 200,
+   "n": 1,
+   "sample": [
+    [
+     "20170116100020",
+     "https://www.spdrs.com/site-content/xls/XLK_All_Holdings.xls",
+     "200",
+     "7573"
+    ],
+    [
+     "timestamp",
+     "original",
+     "statuscode",
+     "length"
+    ],
+    [
+     "20170116100020",
+     "https://www.spdrs.com/site-content/xls/XLK_All_Holdings.xls",
+     "200",
+     "7573"
+    ]
+   ]
+  },
+  "www.spdrs.com/site-content/xls/&matchType=prefix&collapse=urlkey": {
+   "status": 200,
+   "n": 400,
+   "sample": [
+    [
+     "20140719120732",
+     "https://www.spdrs.com/site-content/xls/ACIM_All_Holdings.xls?fund=ACIM&docname=All+Holdings&onyx_code1=1286&onyx_code2=",
+     "200",
+     "37590"
+    ],
+    [
+     "20140719103211",
+     "https://www.spdrs.com/site-content/xls/ACIM_DiscountToNav.xls?fund=ACIM&docname=Premium+Discount+to+Nav+Chart&onyx_code1=1286&onyx_code2=",
+     "200",
+     "17200"
+    ],
+    [
+     "20121017013826",
+     "https://www.spdrs.com/site-content/xls/ACIM_HistoricalNav.xls?fund=ACIM&docname=Most+Recent+NAV+%2F+NAV+History&onyx_code1=1286&onyx_code2=",
+     "200",
+     "9993"
+    ],
+    [
+     "20140719191501",
+     "https://www.spdrs.com/site-content/xls/BABS_All_Holdings.xls?fund=BABS&docname=All+Holdings&onyx_code1=1286&onyx_code2=1477",
+     "200",
+     "20539"
+    ],
+    [
+     "20140719221606",
+     "https://www.spdrs.com/site-content/xls/BABS_DiscountToNav.xls?fund=BABS&docname=Premium+Discount+to+Nav+Chart&onyx_code1=1286&onyx_code2=1479",
+     "200",
+     "23969"
+    ],
+    [
+     "20140720014253",
+     "https://www.spdrs.com/site-content/xls/WDIV_DiscountToNav.xls?fund=WDIV&docname=Premium+Discount+to+Nav+Chart&onyx_code1=1286&onyx_code2=",
+     "200",
+     "11662"
+    ],
+    [
+     "20130913141744",
+     "https://www.spdrs.com/site-content/xls/WDIV_HistoricalNav.xls?fund=WDIV&docname=Most+Recent+NAV+%2F+NAV+History&onyx_code1=1286&onyx_code2=",
+     "200",
+     "9449"
+    ],
+    [
+     "20150321035107",
+     "https://www.spdrs.com/site-content/xls/WIP_All_Holdings.xls?fund=WIP&docname=All+Holdings",
+     "200",
+     "9943"
+    ],
+    [
+     "20140719214704",
+     "https://www.spdrs.com/site-content/xls/WIP_All_Holdings.xls?fund=WIP&docname=All+Holdings&onyx_code1=1286&onyx_code2=1715",
+     "200",
+     "14351"
+    ],
+    [
+     "20140719205506",
+     "https://www.spdrs.com/site-content/xls/WIP_DiscountToNav.xls?fund=WIP&docname=Premium+Discount+to+Nav+Chart&onyx_code1=1286&onyx_code2=1717",
+     "200",
+     "31536"
+    ]
+   ]
+  },
+  "www.ssga.com/us/en/intermediary/etfs/library-content/products/fund-data/etfs/us/&matchType=prefix&collapse=urlkey": {
+   "status": 503,
+   "n": 0,
+   "sample": "<html><head><meta charset=\"UTF-8\"><title>Internet Archive: Temporarily Offline</title><style>p{font-size:24px;}img{margin-bottom:2rem;}</style></head>\n<body style=\"padding:30px 0;\">\n<div style=\"float:left;width:260px;text-align:center;\">\n<img xsrc=\"logo_ia.jpg\" src=\"data:image/jpeg;base64,iVBORw0KGg"
+  },
+  "www.ssga.com/us/en/individual/etfs/library-content/products/fund-data/etfs/us/&matchType=prefix&collapse=urlkey": {
+   "status": 504,
+   "n": 0,
+   "sample": "<html>\r\n<head><title>504 Gateway Time-out</title></head>\r\n<body>\r\n<center><h1>504 Gateway Time-out</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a"
+  },
+  "www.ssga.com/library-content/products/fund-data/etfs/us/&matchType=prefix&collapse=urlkey": {
+   "status": 503,
+   "n": 0,
+   "sample": "<html><head><meta charset=\"UTF-8\"><title>Internet Archive: Temporarily Offline</title><style>p{font-size:24px;}img{margin-bottom:2rem;}</style></head>\n<body style=\"padding:30px 0;\">\n<div style=\"float:left;width:260px;text-align:center;\">\n<img xsrc=\"logo_ia.jpg\" src=\"data:image/jpeg;base64,iVBORw0KGg"
+  },
+  "www.sectorspdr.com/sectorspdr/IDCO.Client.Spdrs.Holdings/Export/ExportExcel&matchType=prefix": {
+   "status": 200,
+   "n": 75,
+   "sample": [
+    [
+     "20140419135726",
+     "http://www.sectorspdr.com/sectorspdr/IDCO.Client.Spdrs.Holdings/Export/ExportExcel?symbol=xlb",
+     "200",
+     "4773"
+    ],
+    [
+     "20150806071754",
+     "http://www.sectorspdr.com:80/sectorspdr/IDCO.Client.Spdrs.Holdings/Export/ExportExcel?symbol=xlb",
+     "200",
+     "4602"
+    ],
+    [
+     "20160404192459",
+     "http://www.sectorspdr.com:80/sectorspdr/IDCO.Client.Spdrs.Holdings/Export/ExportExcel?symbol=xlb",
+     "200",
+     "4519"
+    ],
+    [
+     "20160728233904",
+     "http://www.sectorspdr.com:80/sectorspdr/IDCO.Client.Spdrs.Holdings/Export/ExportExcel?symbol=xlb",
+     "200",
+     "4424"
+    ],
+    [
+     "20161016084456",
+     "http://www.sectorspdr.com:80/sectorspdr/IDCO.Client.Spdrs.Holdings/Export/ExportExcel?symbol=xlb",
+     "200",
+     "4515"
+    ],
+    [
+     "20161125095828",
+     "http://www.sectorspdr.com/sectorspdr/IDCO.Client.Spdrs.Holdings/Export/ExportExcel?symbol=xly",
+     "200",
+     "9330"
+    ],
+    [
+     "20170519011122",
+     "http://www.sectorspdr.com:80/sectorspdr/IDCO.Client.Spdrs.Holdings/Export/ExportExcel?symbol=xly",
+     "200",
+     "8981"
+    ],
+    [
+     "20170815055305",
+     "http://www.sectorspdr.com:80/sectorspdr/IDCO.Client.Spdrs.Holdings/Export/ExportExcel?symbol=xlY",
+     "200",
+     "8989"
+    ],
+    [
+     "20170930211019",
+     "http://www.sectorspdr.com:80/sectorspdr/IDCO.Client.Spdrs.Holdings/Export/ExportExcel?symbol=xly",
+     "200",
+     "9000"
+    ],
+    [
+     "20171009194638",
+     "http://www.sectorspdr.com/sectorspdr/IDCO.Client.Spdrs.Holdings/Export/ExportExcel?symbol=xly",
+     "200",
+     "9194"
+    ]
+   ]
+  },
+  "www.sectorspdr.com/sectorspdr/IDCO.Client.Spdrs.Holdings/Export/ExportCsv&matchType=prefix": {
+   "status": 200,
+   "n": 94,
+   "sample": [
+    [
+     "20150417035625",
+     "http://www.sectorspdr.com:80/sectorspdr/IDCO.Client.Spdrs.Holdings/Export/ExportCsv?",
+     "404",
+     "926"
+    ],
+    [
+     "20240326111548",
+     "http://www.sectorspdr.com/sectorspdr/IDCO.Client.Spdrs.Holdings/Export/ExportCsv",
+     "302",
+     "280"
+    ],
+    [
+     "20240326111548",
+     "https://www.sectorspdr.com/sectorspdr/IDCO.Client.Spdrs.Holdings/Export/ExportCsv",
+     "301",
+     "430"
+    ],
+    [
+     "20240626104022",
+     "http://www.sectorspdr.com/sectorspdr/IDCO.Client.Spdrs.Holdings/Export/ExportCsv?s",
+     "302",
+     "261"
+    ],
+    [
+     "20240326111607",
+     "https://www.sectorspdr.com/sectorspdr/IDCO.Client.Spdrs.Holdings/Export/ExportCsv?symbol=&SYM%E2%80%9D",
+     "301",
+     "444"
+    ],
+    [
+     "20171009191216",
+     "http://www.sectorspdr.com/sectorspdr/IDCO.Client.Spdrs.Holdings/Export/ExportCsv?symbol=xly",
+     "200",
+     "4555"
+    ],
+    [
+     "20240326111457",
+     "https://www.sectorspdr.com/sectorspdr/IDCO.Client.Spdrs.Holdings/Export/ExportCsv?symbol=XLY",
+     "301",
+     "437"
+    ],
+    [
+     "20240326111747",
+     "http://www.sectorspdr.com/sectorspdr/IDCO.Client.Spdrs.Holdings/Export/ExportCsv?symbol=XLY",
+     "302",
+     "286"
+    ],
+    [
+     "20240627001734",
+     "http://www.sectorspdr.com/sectorspdr/IDCO.Client.Spdrs.Holdings/Export/ExportCsv?symbol=xly",
+     "302",
+     "276"
+    ],
+    [
+     "20240627015900",
+     "https://www.sectorspdr.com/sectorspdr/IDCO.Client.Spdrs.Holdings/Export/ExportCsv?symbol=xly",
+     "301",
+     "330"
+    ]
+   ]
+  },
+  "www.vaneck.com/us/en/investments/semiconductor-etf-smh/holdings/&matchType=prefix": {
+   "status": 200,
+   "n": 63,
+   "sample": [
+    [
+     "20210404051211",
+     "https://www.vaneck.com/us/en/investments/semiconductor-etf-smh/holdings",
+     "302",
+     "1150"
+    ],
+    [
+     "20210511000902",
+     "https://www.vaneck.com/us/en/investments/semiconductor-etf-smh/holdings/",
+     "200",
+     "59906"
+    ],
+    [
+     "20210614083914",
+     "https://www.vaneck.com/us/en/investments/semiconductor-etf-smh/holdings/",
+     "200",
+     "60120"
+    ],
+    [
+     "20210614083914",
+     "https://www.vaneck.com/us/en/investments/semiconductor-etf-smh/holdings/",
+     "200",
+     "60120"
+    ],
+    [
+     "20210625005308",
+     "https://www.vaneck.com/us/en/investments/semiconductor-etf-smh/holdings/",
+     "200",
+     "60133"
+    ],
+    [
+     "20260602175228",
+     "https://www.vaneck.com/us/en/investments/semiconductor-etf-smh/holdings/?cken=true",
+     "302",
+     "773"
+    ],
+    [
+     "20250827223416",
+     "https://www.vaneck.com/us/en/investments/semiconductor-etf-smh/holdings/?country=US&cken=true",
+     "302",
+     "407"
+    ],
+    [
+     "20250827223416",
+     "https://www.vaneck.com/us/en/investments/semiconductor-etf-smh/holdings/?country=US",
+     "200",
+     "32505"
+    ],
+    [
+     "20260519230316",
+     "https://www.vaneck.com/us/en/investments/semiconductor-etf-smh/holdings?defaultaudience=default",
+     "200",
+     "55409"
+    ],
+    [
+     "20251013053703",
+     "https://www.vaneck.com/us/en/investments/semiconductor-etf-smh/holdings?vecs=true",
+     "200",
+     "43796"
+    ]
+   ]
+  },
+  "www.vaneck.com/etf/equity/smh/holdings/&matchType=prefix": {
+   "status": 200,
+   "n": 11,
+   "sample": [
+    [
+     "20181117010900",
+     "https://www.vaneck.com/etf/equity/smh/holdings/",
+     "200",
+     "59461"
+    ],
+    [
+     "20191119234436",
+     "https://www.vaneck.com/etf/equity/smh/holdings/",
+     "200",
+     "21621"
+    ],
+    [
+     "20200602184842",
+     "https://www.vaneck.com/etf/equity/smh/holdings/",
+     "200",
+     "29450"
+    ],
+    [
+     "20200813203234",
+     "https://www.vaneck.com/etf/equity/smh/holdings/",
+     "200",
+     "29812"
+    ],
+    [
+     "20221205112036",
+     "https://www.vaneck.com/etf/equity/smh/holdings/",
+     "301",
+     "380"
+    ],
+    [
+     "20240114094014",
+     "https://www.vaneck.com/etf/equity/smh/holdings/?defaultaudience=default",
+     "301",
+     "781"
+    ],
+    [
+     "20260519230315",
+     "https://www.vaneck.com/etf/equity/smh/holdings/?defaultaudience=default",
+     "301",
+     "902"
+    ],
+    [
+     "20191013205539",
+     "https://www.vaneck.com/etf/equity/smh/holdings/?vecs=true",
+     "200",
+     "28378"
+    ],
+    [
+     "20191211214705",
+     "https://www.vaneck.com/etf/equity/smh/holdings/?vecs=true",
+     "200",
+     "21634"
+    ],
+    [
+     "20200810110411",
+     "https://www.vaneck.com/etf/equity/smh/holdings/?vecs=true",
+     "200",
+     "29819"
+    ]
+   ]
+  },
+  "www.invesco.com/us/financial-products/etfs/holdings/main/holdings/0&matchType=prefix": {
+   "status": 503,
+   "n": 0,
+   "sample": "<html><head><meta charset=\"UTF-8\"><title>Internet Archive: Temporarily Offline</title><style>p{font-size:24px;}img{margin-bottom:2rem;}</style></head>\n<body style=\"padding:30px 0;\">\n<div style=\"float:left;width:260px;text-align:center;\">\n<img xsrc=\"logo_ia.jpg\" src=\"data:image/jpeg;base64,iVBORw0KGg"
+  },
+  "www.ishares.com/us/products/239710/&matchType=prefix&filter=original:.*ajax.*&collapse=urlkey": {
+   "status": 200,
+   "n": 400,
+   "sample": [
+    [
+     "20260517100456",
+     "https://www.ishares.com/us/products/239710/fund/1467271812596.ajax?fileType=csv&fileName=IWM_holdings&dataType=fund",
+     "200",
+     "1753902"
+    ],
+    [
+     "20150524030515",
+     "http://www.ishares.com/us/products/239710/ishares-russell-2000-etf/1395165510754.ajax?fileType=csv&fileName=IWM_holdings&dataType=fund",
+     "200",
+     "99762"
+    ],
+    [
+     "20140711032327",
+     "http://www.ishares.com/us/products/239710/ishares-russell-2000-etf/1395165510754.ajax?fileType=csv&fileName=IWM_holdings",
+     "200",
+     "84217"
+    ],
+    [
+     "20201115235125",
+     "http://www.ishares.com/us/products/239710/ishares-russell-2000-etf/1395165510754.ajax?tab=all&fileType=json",
+     "301",
+     "435"
+    ],
+    [
+     "20150524054259",
+     "http://www.ishares.com/us/products/239710/ishares-russell-2000-etf/1395165510757.ajax?materialType=Fact+Sheet&fileType=pdf",
+     "302",
+     "632"
+    ],
+    [
+     "20240122204405",
+     "https://www.ishares.com/us/products/239710/ishares-russell-2000-etf/1467271812596.ajax?tab=all&fileType=json&asOfDate=20230630&_=1690562312513",
+     "200",
+     "144142"
+    ],
+    [
+     "20240122204444",
+     "https://www.ishares.com/us/products/239710/ishares-russell-2000-etf/1467271812596.ajax?tab=all&fileType=json&asOfDate=20230727&_=1690562312514",
+     "200",
+     "143779"
+    ],
+    [
+     "20240122224100",
+     "https://www.ishares.com/us/products/239710/ishares-russell-2000-etf/1467271812596.ajax?tab=all&fileType=json&asOfDate=20230630&_=1690562314069",
+     "200",
+     "144374"
+    ],
+    [
+     "20240122224116",
+     "https://www.ishares.com/us/products/239710/ishares-russell-2000-etf/1467271812596.ajax?tab=all&fileType=json&asOfDate=20230727&_=1690562314070",
+     "200",
+     "143761"
+    ],
+    [
+     "20240122224140",
+     "https://www.ishares.com/us/products/239710/ishares-russell-2000-etf/1467271812596.ajax?tab=all&fileType=json&asOfDate=20230630&_=1690562314071",
+     "200",
+     "144289"
+    ]
+   ]
+  }
+ }
+}

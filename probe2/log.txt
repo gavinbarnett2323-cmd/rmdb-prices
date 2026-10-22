@@ -1,0 +1,22 @@
+/home/runner/work/rmdb-prices/rmdb-prices/relay/research_lt/run.py:311: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  rep = {"built": datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%MZ"), "sec": {}, "ishares": {}, "wayback": {}}
+ishares IVV 200
+ishares IJH 200
+ishares IJR 200
+ishares IWM 200
+ishares IWB 200
+ishares IWV 200
+ishares ITOT 200
+ishares SOXX 200
+ishares IBB 200
+ishares IYR 200
+ishares IYW 200
+ishares IYF 200
+ishares IYE 200
+ishares IYH 200
+ishares IAT 200
+ishares IGV 200
+ishares OEF 200
+ishares QUAL 200
+probe2 done
+exit=0

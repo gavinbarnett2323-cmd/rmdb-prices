@@ -1,0 +1,220 @@
+{
+ "built": "2026-10-22T02:36Z",
+ "checks": {
+  "sec_company_tickers_mf": {
+   "ok": false,
+   "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+   "tb": "  raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/home/runner/work/rmdb-prices/rmdb-prices/relay/research_lt/run.py\", line 109, in check\n    C[name] = {\"ok\": True, **(fn() or {})}\n                              ^^^^\n  File \"/home/runner/work/rmdb-prices/rmdb-prices/relay/research_lt/run.py\", line 119, in sec_mf\n    d = r.json()\n        ^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/requests/models.py\", line 1120, in json\n    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)\nrequests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n",
+   "secs": 0.6
+  },
+  "sec_company_tickers": {
+   "ok": false,
+   "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+   "tb": "se JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/home/runner/work/rmdb-prices/rmdb-prices/relay/research_lt/run.py\", line 109, in check\n    C[name] = {\"ok\": True, **(fn() or {})}\n                              ^^^^\n  File \"/home/runner/work/rmdb-prices/rmdb-prices/relay/research_lt/run.py\", line 131, in sec_tickers\n    d = r.json()\n        ^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/requests/models.py\", line 1120, in json\n    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)\nrequests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n",
+   "secs": 0.5
+  },
+  "sec_submissions": {
+   "ok": true,
+   "trusts": {},
+   "secs": 0.0
+  },
+  "sec_browse_by_series": {
+   "ok": true,
+   "series": {
+    "XLK": "not in mf list",
+    "SMH": "not in mf list",
+    "XBI": "not in mf list",
+    "QQQ": "not in mf list",
+    "SPY": "not in mf list",
+    "IVV": "not in mf list",
+    "QQQM": "not in mf list"
+   },
+   "secs": 0.0
+  },
+  "sec_nport_primary_doc": {
+   "ok": true,
+   "secs": 0.0
+  },
+  "sec_xbrl": {
+   "ok": false,
+   "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+   "tb": "raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/home/runner/work/rmdb-prices/rmdb-prices/relay/research_lt/run.py\", line 109, in check\n    C[name] = {\"ok\": True, **(fn() or {})}\n                              ^^^^\n  File \"/home/runner/work/rmdb-prices/rmdb-prices/relay/research_lt/run.py\", line 204, in sec_xbrl\n    d = r.json()\n        ^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/requests/models.py\", line 1120, in json\n    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)\nrequests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n",
+   "secs": 0.2
+  },
+  "sec_nport_datasets": {
+   "ok": true,
+   "https://www.sec.gov/data-research/sec-markets-data/form-n-port-data-sets": {
+    "status": 403,
+    "n_zip": 0,
+    "links": []
+   },
+   "https://www.sec.gov/dera/data/form-n-port-data-sets": {
+    "status": 403,
+    "n_zip": 0,
+    "links": []
+   },
+   "secs": 1.3
+  },
+  "sec_cik_lookup": {
+   "ok": true,
+   "status": 403,
+   "bytes": "2148",
+   "secs": 0.0
+  },
+  "openfigi": {
+   "ok": true,
+   "status": 200,
+   "body": "[{\"data\":[{\"figi\":\"BBG000B9XRY4\",\"name\":\"APPLE INC\",\"ticker\":\"AAPL\",\"exchCode\":\"US\",\"compositeFIGI\":\"BBG000B9XRY4\",\"securityType\":\"Common Stock\",\"marketSector\":\"Equity\",\"shareClassFIGI\":\"BBG001S5N8V8\",\"securityType2\":\"Common Stock\",\"securityDescription\":\"AAPL\"},{\"figi\":\"BBG000B9XSK7\",\"name\":\"APPLE INC\",\"ticker\":\"AAPL\",\"exchCode\":\"UA\",\"compositeFIGI\":\"BBG000B9XRY4\",\"securityType\":\"Common Stock\",\"marketSector\":\"Equity\",\"shareClassFIGI\":\"BBG001S5N8V8\",\"securityType2\":\"Common Stock\",\"securityDescription\":\"AAPL\"},{\"figi\":\"BBG000B9XT70\",\"name\":\"APPLE INC\",\"ticker\":\"AAPL\",\"exchCode\":\"UC\",\"compositeFIGI\":\"BBG000B9XRY4\",\"securityType\":\"Common Stock\",\"marketSector\":\"Equity\",\"shareClassFIGI\":\"BBG001S5N8V8\",\"securityType2\":\"Common Stock\",\"securityDescription\":\"AAPL\"},{\"figi\":\"BBG000B9XVV8\",\"name\":\"APPLE INC\",\"ticker\":\"AAPL\",\"exchCode\":\"UN\",\"compositeFIGI\":\"BBG000B9XRY4\",\"securityType\":\"Common Stock\",\"marketSector\":\"Equity\",\"shareClassFIGI\":\"BBG001S5N8V8\",\"securityType2\":\"Common Stock\",\"securityDescription\":\"AAPL\"},{\"figi\":\"BBG000B9XWM6\",\"name\":\"APPLE INC\",\"ticker\":\"AAPL\",\"exchCode\":\"UP\",\"compositeFIGI\":\"BBG000B9XRY4\",\"securityType\":\"Common Stock\",\"marketSector\":\"Equity\",\"shareClassFIGI\":\"BBG001S5N8V8\",\"securityType2\":\"Common Stock\",\"securityDescription\":\"AAPL\"},{\"figi\":\"BBG000B9XXW3\",\"name\":\"APPLE INC\",\"ticker\":\"AAPL\",\"exchCode\":\"UB\",\"compositeFIGI\":\"BBG000B9XRY4\",\"securityType\":\"Common Stock\",\"marketSector\":\"Equity\",\"shareClassFIGI\":\"BBG001S5N8V8\",\"securityType2\":\"Common Stock\",\"securityDescription\":\"AAPL\"},{\"figi\":\"BBG000B9XYZ8\",\"name\":\"APPLE INC\",\"ticker\":\"AAPL\",\"exchCode\":\"UM\",\"compositeFIGI\":\"BBG000B9XRY4\",\"securityType\":\"Common Stock\",\"marketSector\":\"Equity\",\"shareClassFIGI\":\"BBG001S5N8V8\",\"securityType2\":\"Common Stock\",\"securityDescription\":\"AAPL\"},{\"figi\":\"BBG000B9XZT2\",\"name\":\"APPLE INC\",\"ticker\":\"AAPL\",\"exchCode\":\"UX\",\"compositeFIGI\":\"BBG000B9XRY4\",\"securityType\":\"Common Stock\",\"marketSector\":\"Equity\",\"shareClassFIGI\":\"BBG001S5N8V8\",\"securityType2\":\"Common Stock\",\"securityDescription\":\"AAPL\"},{\"figi\":\"BBG000B9Y2J5\",\"name\":\"APPLE INC\",\"ticker\":\"AAPL\",\"exchCode\":\"UD\",\"compositeFIGI\":\"BBG000B9XRY4\",\"securityType\":\"Common Stock\",\"marketSector\":\"Equity\",\"shareClassFIGI\":\"BBG001S5N8V8\",\"securityType2\":\"Common Stock\",\"securityDescription\":\"AAPL\"},{\"figi\":\"BBG000B9Y5X2\",\"name\":\"APPLE INC\",\"ticker\":\"AAPL\",\"exchCode\":\"UW\",\"compositeFIGI\":\"BBG000B9XRY4\",\"securityType\":\"Common Stock\",\"marketSector\":\"Equity\",\"shareClassFIGI\":\"BBG001S5N8V8\",\"securityType2\":\"Common Stock\",",
+   "ratelimit": {
+    "ratelimit-policy": "25;w=60",
+    "ratelimit-limit": "25",
+    "ratelimit-remaining": "24",
+    "ratelimit-reset": "60"
+   },
+   "secs": 0.4
+  },
+  "yahoo_delisted": {
+   "ok": true,
+   "served": {
+    "FRCB": [
+     "2010-12-09",
+     "2026-10-21",
+     3990
+    ],
+    "SBNY": [
+     "2024-08-15",
+     "2026-10-21",
+     548
+    ],
+    "BBBY": [
+     "2026-07-17",
+     "2026-10-21",
+     68
+    ]
+   },
+   "not_served": [
+    "ABMD",
+    "ALXN",
+    "ANSS",
+    "ATVI",
+    "CELG",
+    "CERN",
+    "CTLT",
+    "CTXS",
+    "DFS",
+    "DISCA",
+    "DRE",
+    "FRC",
+    "HZNP",
+    "JNPR",
+    "MRO",
+    "MXIM",
+    "NLSN",
+    "PBCT",
+    "PXD",
+    "SAVE",
+    "SGEN",
+    "SIVB",
+    "SIVBQ",
+    "SPLK",
+    "TWTR",
+    "VMW",
+    "WBA",
+    "WRK",
+    "XLNX"
+   ],
+   "secs": 272.8
+  },
+  "french": {
+   "ok": true,
+   "F-F_Research_Data_5_Factors_2x3_daily_CSV.zip": {
+    "status": 200,
+    "bytes": 150292
+   },
+   "F-F_Research_Data_5_Factors_2x3_CSV.zip": {
+    "status": 200,
+    "bytes": 11964
+   },
+   "Portfolios_Formed_on_OP_CSV.zip": {
+    "status": 200,
+    "bytes": 135190
+   },
+   "Portfolios_Formed_on_OP_Daily_CSV.zip": {
+    "status": 200,
+    "bytes": 905214
+   },
+   "F-F_Momentum_Factor_daily_CSV.zip": {
+    "status": 200,
+    "bytes": 85269
+   },
+   "49_Industry_Portfolios_daily_CSV.zip": {
+    "status": 200,
+    "bytes": 4173817
+   },
+   "secs": 1.0
+  },
+  "aqr": {
+   "ok": true,
+   "qmj_monthly": {
+    "status": 200,
+    "bytes": 2265582,
+    "ctype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+   },
+   "qmj_daily": {
+    "status": 200,
+    "bytes": 31929624,
+    "ctype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+   },
+   "bab_monthly": {
+    "status": 200,
+    "bytes": 2504680,
+    "ctype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+   },
+   "secs": 14.4
+  },
+  "wayback": {
+   "ok": true,
+   "ssga.com/us/en/intermediary/etfs/library-content/products/fu": {
+    "status": 200,
+    "body": "{\"url\": \"ssga.com/us/en/intermediary/etfs/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xbi.xlsx\", \"archived_snapshots\": {}, \"timestamp\": \"20160101\"}"
+   },
+   "www.ishares.com/us/products/239710/ishares-russell-2000-etf/": {
+    "status": 200,
+    "body": "{\"url\": \"www.ishares.com/us/products/239710/ishares-russell-2000-etf/1467271812596.ajax?fileType=csv\", \"archived_snapshots\": {}, \"timestamp\": \"20160101\"}"
+   },
+   "cdx_xbi": {
+    "status": 200,
+    "body": "[]\n"
+   },
+   "secs": 49.7
+  },
+  "issuer_holdings": {
+   "ok": true,
+   "ssga_xbi": {
+    "status": 200,
+    "bytes": 29674,
+    "ctype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+   },
+   "ishares_iwm": {
+    "status": 200,
+    "bytes": 1515390,
+    "ctype": "text/csv;charset=UTF-8"
+   },
+   "vaneck_smh": {
+    "status": 200,
+    "bytes": 284191,
+    "ctype": "text/html; charset=utf-8"
+   },
+   "secs": 2.2
+  },
+  "natural_experiment_etfs": {
+   "ok": true,
+   "n": 68,
+   "errors": {
+    "KBWR": "no data",
+    "SLY": "no data"
+   },
+   "secs": 54.4
+  }
+ }
+}
