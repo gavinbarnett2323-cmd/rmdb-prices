@@ -458,7 +458,7 @@ def stage_prices(OUT):
 def main():
     stage, OUT = sys.argv[1], sys.argv[2]
     os.makedirs(OUT, exist_ok=True)
-    fn = {"probe": stage_probe, "probe2": stage_probe2, "master": stage_master, "prices": stage_prices}.get(stage)
+    fn = {"probe": stage_probe, "probe2": stage_probe2, "master": stage_master, "prices": stage_prices, "prices2": stage_prices}.get(stage)
     if fn is None:
         print("unknown stage", stage)
         return 2
