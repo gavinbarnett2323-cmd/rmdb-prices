@@ -1,0 +1,21 @@
+ids 4930
+figi 250 of 4930
+figi 500 of 4930
+figi 750 of 4930
+figi 1000 of 4930
+figi 1250 of 4930
+figi 1500 of 4930
+figi 1750 of 4930
+figi 2000 of 4930
+figi 2250 of 4930
+figi 2500 of 4930
+figi 2750 of 4930
+figi 3000 of 4930
+figi 3250 of 4930
+figi 3500 of 4930
+figi 3750 of 4930
+figi 4000 of 4930
+figi 4250 of 4930
+figi 4500 of 4930
+figi 4750 of 4930
+exit=0
