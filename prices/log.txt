@@ -1,0 +1,263 @@
+symbols 3433
+prices 60 of 3433 errors 0
+prices 120 of 3433 errors 0
+$ALTM: possibly delisted; no timezone found
+$AIRC: possibly delisted; no timezone found
+$ALE: possibly delisted; no timezone found
+$ALTR: possibly delisted; no timezone found
+
+4 Failed downloads:
+['ALTM', 'AIRC', 'ALE', 'ALTR']: possibly delisted; no timezone found
+prices 180 of 3433 errors 4
+$AMED: possibly delisted; no timezone found
+
+1 Failed download:
+['AMED']: possibly delisted; no timezone found
+prices 240 of 3433 errors 5
+$ASGN: possibly delisted; no timezone found
+
+1 Failed download:
+['ASGN']: possibly delisted; no timezone found
+prices 300 of 3433 errors 6
+prices 360 of 3433 errors 6
+$AZPN: possibly delisted; no timezone found
+
+1 Failed download:
+['AZPN']: possibly delisted; no timezone found
+prices 420 of 3433 errors 7
+$BERY: possibly delisted; no timezone found
+$BLD: possibly delisted; no timezone found
+
+2 Failed downloads:
+['BERY', 'BLD']: possibly delisted; no timezone found
+prices 480 of 3433 errors 9
+prices 540 of 3433 errors 9
+$CADE: possibly delisted; no timezone found
+
+1 Failed download:
+['CADE']: possibly delisted; no timezone found
+prices 600 of 3433 errors 10
+prices 660 of 3433 errors 10
+$CHX: possibly delisted; no timezone found
+$CHK: possibly delisted; no timezone found
+$CIVI: possibly delisted; no timezone found
+$CMA: possibly delisted; no timezone found
+
+4 Failed downloads:
+['CHX', 'CHK', 'CIVI', 'CMA']: possibly delisted; no timezone found
+prices 720 of 3433 errors 14
+$CMLS: possibly delisted; no timezone found
+
+1 Failed download:
+['CMLS']: possibly delisted; no timezone found
+prices 780 of 3433 errors 15
+prices 840 of 3433 errors 15
+prices 900 of 3433 errors 15
+prices 960 of 3433 errors 15
+prices 1020 of 3433 errors 15
+$ENV: possibly delisted; no timezone found
+
+1 Failed download:
+['ENV']: possibly delisted; no timezone found
+prices 1080 of 3433 errors 16
+$ETRN: possibly delisted; no timezone found
+
+1 Failed download:
+['ETRN']: possibly delisted; no timezone found
+prices 1140 of 3433 errors 17
+$FIISP: possibly delisted; no timezone found
+
+1 Failed download:
+['FIISP']: possibly delisted; no timezone found
+prices 1200 of 3433 errors 18
+$FL: possibly delisted; no timezone found
+
+1 Failed download:
+['FL']: possibly delisted; no timezone found
+prices 1260 of 3433 errors 19
+$FYBR: possibly delisted; no timezone found
+
+1 Failed download:
+['FYBR']: possibly delisted; no timezone found
+prices 1320 of 3433 errors 20
+$GPS: possibly delisted; no timezone found
+
+1 Failed download:
+['GPS']: possibly delisted; no timezone found
+prices 1380 of 3433 errors 21
+$HBI: possibly delisted; no timezone found
+$HCIIP: possibly delisted; no timezone found
+$GTLS: possibly delisted; no timezone found
+
+3 Failed downloads:
+['HBI', 'HCIIP', 'GTLS']: possibly delisted; no timezone found
+prices 1440 of 3433 errors 24
+prices 1500 of 3433 errors 24
+$IHETW: possibly delisted; no timezone found
+$IAA: possibly delisted; no timezone found
+
+2 Failed downloads:
+['IHETW', 'IAA']: possibly delisted; no timezone found
+prices 1560 of 3433 errors 26
+prices 1620 of 3433 errors 26
+$JHG: possibly delisted; no timezone found
+$JWN: possibly delisted; no timezone found
+
+2 Failed downloads:
+['JHG', 'JWN']: possibly delisted; no timezone found
+prices 1680 of 3433 errors 28
+$LANC: possibly delisted; no timezone found
+
+1 Failed download:
+['LANC']: possibly delisted; no timezone found
+prices 1740 of 3433 errors 29
+$LHCG: possibly delisted; no timezone found
+
+1 Failed download:
+['LHCG']: possibly delisted; no timezone found
+prices 1800 of 3433 errors 30
+$LSI: possibly delisted; no timezone found
+
+1 Failed download:
+['LSI']: possibly delisted; no timezone found
+prices 1860 of 3433 errors 31
+$MASI: possibly delisted; no timezone found
+
+1 Failed download:
+['MASI']: possibly delisted; no timezone found
+prices 1920 of 3433 errors 32
+$MODG: possibly delisted; no timezone found
+
+1 Failed download:
+['MODG']: possibly delisted; no timezone found
+prices 1980 of 3433 errors 33
+$MPW: possibly delisted; no timezone found
+
+1 Failed download:
+['MPW']: possibly delisted; no timezone found
+prices 2040 of 3433 errors 34
+$NCR: possibly delisted; no timezone found
+$NATI: possibly delisted; no timezone found
+$NARI: possibly delisted; no timezone found
+$MXIM: possibly delisted; no timezone found
+
+4 Failed downloads:
+['NCR', 'NATI', 'NARI', 'MXIM']: possibly delisted; no timezone found
+prices 2100 of 3433 errors 38
+$NOTEW: possibly delisted; no timezone found
+$NSA: possibly delisted; no timezone found
+
+2 Failed downloads:
+['NOTEW', 'NSA']: possibly delisted; no timezone found
+prices 2160 of 3433 errors 40
+$NWSLL: possibly delisted; no timezone found
+$NYCB: possibly delisted; no timezone found
+$NUVA: possibly delisted; no timezone found
+
+3 Failed downloads:
+['NWSLL', 'NYCB', 'NUVA']: possibly delisted; no timezone found
+prices 2220 of 3433 errors 43
+$OFC: possibly delisted; no timezone found
+
+1 Failed download:
+['OFC']: possibly delisted; no timezone found
+prices 2280 of 3433 errors 44
+$PCH: possibly delisted; no timezone found
+$PACW: possibly delisted; no timezone found
+
+2 Failed downloads:
+['PCH', 'PACW']: possibly delisted; no timezone found
+prices 2340 of 3433 errors 46
+$PDCE: possibly delisted; no timezone found
+$PCTBP: possibly delisted; no timezone found
+$PDCO: possibly delisted; no timezone found
+
+3 Failed downloads:
+['PDCE', 'PCTBP', 'PDCO']: possibly delisted; no timezone found
+prices 2400 of 3433 errors 49
+$PNM: possibly delisted; no timezone found
+
+1 Failed download:
+['PNM']: possibly delisted; no timezone found
+prices 2460 of 3433 errors 50
+$PSTG: possibly delisted; no timezone found
+
+1 Failed download:
+['PSTG']: possibly delisted; no timezone found
+prices 2520 of 3433 errors 51
+$RCM: possibly delisted; no timezone found
+
+1 Failed download:
+['RCM']: possibly delisted; no timezone found
+prices 2580 of 3433 errors 52
+prices 2640 of 3433 errors 52
+prices 2700 of 3433 errors 52
+$SESCW: possibly delisted; no timezone found
+
+1 Failed download:
+['SESCW']: possibly delisted; no timezone found
+prices 2760 of 3433 errors 53
+$SKX: possibly delisted; no timezone found
+$SHAZW: possibly delisted; no timezone found
+
+2 Failed downloads:
+['SKX', 'SHAZW']: possibly delisted; no timezone found
+prices 2820 of 3433 errors 55
+$SNV: possibly delisted; no timezone found
+$SRCL: possibly delisted; no timezone found
+$SRC: possibly delisted; no timezone found
+
+3 Failed downloads:
+['SNV', 'SRCL', 'SRC']: possibly delisted; no timezone found
+prices 2880 of 3433 errors 58
+$SWAV: possibly delisted; no timezone found
+$STOR: possibly delisted; no timezone found
+
+2 Failed downloads:
+['SWAV', 'STOR']: possibly delisted; no timezone found
+prices 2940 of 3433 errors 60
+$SYNH: possibly delisted; no timezone found
+$SWN: possibly delisted; no timezone found
+$TDDWW: possibly delisted; no timezone found
+
+3 Failed downloads:
+['SYNH', 'SWN', 'TDDWW']: possibly delisted; no timezone found
+prices 3000 of 3433 errors 63
+$TGNA: possibly delisted; no timezone found
+$TPX: possibly delisted; no timezone found
+$TICAW: possibly delisted; no timezone found
+$TMHC: possibly delisted; no timezone found
+
+4 Failed downloads:
+['TGNA', 'TPX', 'TICAW', 'TMHC']: possibly delisted; no timezone found
+prices 3060 of 3433 errors 67
+$TSMWF: possibly delisted; no timezone found
+
+1 Failed download:
+['TSMWF']: possibly delisted; no timezone found
+prices 3120 of 3433 errors 68
+$UMPQ: possibly delisted; no timezone found
+$UNVR: possibly delisted; no timezone found
+
+2 Failed downloads:
+['UMPQ', 'UNVR']: possibly delisted; no timezone found
+prices 3180 of 3433 errors 70
+prices 3240 of 3433 errors 70
+$VRMWW: possibly delisted; no timezone found
+$VSCO: possibly delisted; no timezone found
+
+2 Failed downloads:
+['VRMWW', 'VSCO']: possibly delisted; no timezone found
+prices 3300 of 3433 errors 72
+prices 3360 of 3433 errors 72
+$XLNX: possibly delisted; no timezone found
+$X: possibly delisted; no timezone found
+$ZI: possibly delisted; no timezone found
+$Y: possibly delisted; no timezone found
+$WWE: possibly delisted; no timezone found
+
+5 Failed downloads:
+['XLNX', 'X', 'ZI', 'Y', 'WWE']: possibly delisted; no timezone found
+prices 3420 of 3433 errors 77
+prices 3433 of 3433 errors 77
+exit=0
