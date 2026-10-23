@@ -9,6 +9,7 @@ on:
     paths:
       - "relay/chart_factors.py"
       - "relay/chart_tickers.txt"
+      - "relay/chart_extra.txt"
       - ".github/workflows/chart_factors.yml"
 permissions:
   contents: write
