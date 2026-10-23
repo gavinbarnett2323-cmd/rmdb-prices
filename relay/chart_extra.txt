@@ -16,7 +16,7 @@ EWW
 FLMX
 ECH
 EPU
-GXG
+COLO
 ARGT
 # Countries: Asia Pacific
 EWJ
@@ -147,7 +147,6 @@ OIH
 XES
 AMLP
 PAVE
-BJK
 # Themes
 MAGS
 ARKK
