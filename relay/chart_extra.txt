@@ -1,9 +1,9 @@
 # chart_extra.txt (2026-10-23). Gavin: "expand the number of etfs we have on the charting ... include all of the latin
-# america ones and just way more" and "add a significant more amount of etfs into the logging system".
-# Chart-only tickers. fetch_tail.py logs them every weekday into chart_tail.json (so the live relay prices them too) and
-# research_charts.py pulls their full history once. They are NOT in tickers.txt, so daily_tail.json and everything the
-# engine reads from it stay exactly as they were. One ticker per line; lines starting with # are comments.
-# Group names and display names live in the vault: Investing/Charts/watchlist.json.
+# america ones and just way more", "add a significant more amount of etfs into the logging system", "graph out and add
+# hundreds of extra etfs to the system". Chart-only tickers. fetch_tail.py logs them every weekday into chart_tail.json (so
+# the live relay prices them too) and research_charts.py pulls their full history. They are NOT in tickers.txt, so
+# daily_tail.json and everything the engine reads from it stay exactly as they were. One ticker per line; lines starting
+# with # are comments. Group names and display names live in the vault: Investing/Charts/watchlist.json.
 # Latin America
 ILF
 FLLA
@@ -84,15 +84,45 @@ EZU
 FEZ
 AAXJ
 EPP
-# US size and style
+SCHF
+SPDW
+IXUS
+SCHE
+SPEM
+FRDM
+# International size, style and income
+SCZ
+VSS
+EWX
+EFAV
+EEMV
+IMTM
+IVLU
+EFG
+EFV
+HEFA
+DBEF
+HEDJ
+IDV
+VYMI
+DEM
+DVYE
+# US broad and large caps
 DIA
-MDY
 RSP
 VTI
 OEF
 MGK
-IJH
-IJR
+QQQE
+IVV
+SPLG
+ITOT
+SCHB
+IWV
+IWB
+SCHX
+XLG
+# US growth and value
 IWF
 IWD
 IWO
@@ -101,7 +131,27 @@ VUG
 VTV
 SPYG
 SPYV
-QQQE
+# US mid and small caps
+MDY
+IJH
+IJR
+IWR
+VO
+IWP
+IWS
+IJK
+IJJ
+MDYG
+MDYV
+VB
+SCHA
+VBR
+VBK
+IJS
+IJT
+SLYG
+SLYV
+IWC
 # Factors and dividends
 MTUM
 QUAL
@@ -117,6 +167,79 @@ DGRO
 DVY
 HDV
 NOBL
+# Income and covered calls
+JEPI
+JEPQ
+QYLD
+XYLD
+RYLD
+DIVO
+SVOL
+SDY
+SPYD
+SPHD
+VYM
+FVD
+PFF
+PGX
+# Sectors: Vanguard, iShares, Fidelity, equal weight
+VHT
+VFH
+VDE
+VIS
+VCR
+VDC
+VPU
+VAW
+VOX
+IYW
+IYF
+IYH
+IYE
+IYJ
+IYK
+IYC
+IDU
+IYM
+FTEC
+FHLC
+FNCL
+FENY
+FIDU
+FDIS
+FSTA
+FUTY
+FMAT
+FCOM
+FREL
+RSPT
+RSPH
+RSPF
+RSPN
+RSPD
+RSPS
+RSPU
+RSPM
+RSPR
+RSPC
+RSPG
+# Global sectors
+IXN
+IXJ
+IXG
+IXC
+KXI
+RXI
+EXI
+MXI
+JXI
+IXP
+IGF
+IGE
+GUNR
+PICK
+RING
+SLVP
 # Industries
 VGT
 IGV
@@ -147,6 +270,33 @@ OIH
 XES
 AMLP
 PAVE
+IGM
+XSW
+XNTK
+XITK
+PSI
+SOXQ
+QTEC
+KCE
+IYG
+IAT
+KBWB
+KBWR
+XTN
+PKB
+PPA
+SHLD
+XHS
+IHF
+IHE
+PJP
+BBH
+IEO
+IEZ
+FCG
+CRAK
+MLPX
+SLX
 # Themes
 MAGS
 ARKK
@@ -177,12 +327,33 @@ ESPO
 PHO
 MOO
 WOOD
-# Bonds
+CLOU
+WCLD
+SNSR
+BUG
+IGPT
+CHAT
+ROBT
+XT
+ARKF
+FPX
+IPO
+IBUY
+SOCL
+HERO
+BETZ
+MJ
+MSOS
+KRBN
+BATT
+IDRV
+BITQ
+DAPP
+# Bonds: Treasuries and cash
 BIL
 SGOV
 USFR
 MINT
-FLOT
 SHY
 IEI
 IEF
@@ -191,6 +362,18 @@ EDV
 ZROZ
 GOVT
 TIP
+VGSH
+VGIT
+VGLT
+SCHO
+SCHR
+SPTL
+SPTS
+STIP
+VTIP
+SCHP
+# Bonds: broad, credit and income
+FLOT
 AGG
 BND
 BNDX
@@ -200,6 +383,28 @@ VCSH
 JNK
 EMB
 MUB
+BSV
+BIV
+BLV
+MBB
+VMBS
+IGSB
+IGIB
+IGLB
+VCLT
+SPSB
+JAAA
+SRLN
+BKLN
+SHYG
+SJNK
+USHY
+HYLB
+ANGL
+FALN
+HYD
+EMLC
+PCY
 # Commodities
 IAU
 SLV
@@ -222,6 +427,19 @@ DBA
 CORN
 WEAT
 SOYB
+GLDM
+SGOL
+BAR
+SIVR
+USL
+DBO
+DBE
+DBP
+COMT
+BCI
+FTGC
+USCI
+CANE
 # Currencies and volatility
 UUP
 UDN
@@ -233,6 +451,12 @@ FXA
 FXC
 VIXY
 VIXM
+CEW
+UVXY
+SVXY
+VXX
+UVIX
+SVIX
 # Real estate
 VNQ
 IYR
@@ -240,8 +464,79 @@ REM
 RWX
 VNQI
 SRVR
+SCHH
+USRT
+REZ
+INDS
+REET
+KBWY
+MORT
 # Crypto funds
 FBTC
 GBTC
 BITO
 ETHE
+ARKB
+BITB
+HODL
+BTCO
+EZBC
+BRRR
+BTCW
+ETH
+FETH
+ETHW
+ETHV
+GSOL
+FSOL
+XRPR
+GXRP
+# Leveraged and inverse
+TQQQ
+SQQQ
+QLD
+PSQ
+UPRO
+SPXL
+SPXU
+SPXS
+SSO
+SDS
+SH
+TNA
+TZA
+SOXL
+SOXS
+TECL
+TECS
+FAS
+FAZ
+LABU
+LABD
+TMF
+TMV
+TBT
+NUGT
+DUST
+JNUG
+GUSH
+DRIP
+ERX
+ERY
+UCO
+SCO
+BOIL
+KOLD
+YINN
+YANG
+NAIL
+DPST
+CURE
+DFEN
+FNGU
+TSLL
+TSLQ
+NVDL
+CONL
+MSTU
+BITX
