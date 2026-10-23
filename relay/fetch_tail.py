@@ -453,6 +453,7 @@ def bh_block(got, last, n=BH_N, now=None):
 # otherwise it is left out and named in `tv_errors`, never guessed. Written to relay/chart_tail.json, separate from
 # daily_tail.json so nothing that reads the tail changes. A failure here never blocks the tail.
 CHART_OUT = os.path.join(HERE, "chart_tail.json")
+CHART_EXTRA = os.path.join(HERE, "chart_extra.txt")
 CHART_N = 40
 CHART_YF = ["^VIX9D", "^SKEW"]          # ^VIX, XLU, XLP, SPY are already in the main download
 TV_SCAN_URL = "https://scanner.tradingview.com/global/scan"
@@ -518,6 +519,39 @@ def _cboe_total_pc(day):
         except Exception:
             pass
     return None, "no TOTAL PUT/CALL RATIO in: " + raw[:300]
+
+
+def chart_extra(got):
+    """2026-10-23 (Gavin: "add a significant more amount of etfs into the logging system"): the chart-only tickers in
+    relay/chart_extra.txt that the main download does not already carry, downloaded over a short window (the chart block
+    keeps the last CHART_N sessions). They go into chart_tail.json, so the vault's chart page logs them every weekday and the
+    live relay prices them, and NOT into daily_tail.json, so nothing the engine reads from the daily tail changes."""
+    if not os.path.exists(CHART_EXTRA):
+        return {}
+    names = [l.strip().upper() for l in open(CHART_EXTRA) if l.strip() and not l.startswith("#")]
+    need = [t for t in dict.fromkeys(names) if t not in got]
+    if not need:
+        return {}
+    ysyms = [ymap(t) for t in need]
+    back = {ymap(t): t for t in need}
+    start = (datetime.date.today() - datetime.timedelta(days=120)).isoformat()
+    res = {}
+    for i in range(0, len(ysyms), BATCH):
+        chunk = ysyms[i:i + BATCH]
+        df = _dl(chunk, start=start, interval="1d")
+        if df is not None:
+            for ys in chunk:
+                adj = _col(df, "Adj Close", ys)
+                if adj is None:
+                    continue
+                adj = adj.dropna()
+                if len(adj) < 20:
+                    continue
+                res[back.get(ys, ys)] = {"adj": adj, "close": _col(df, "Close", ys), "low": _col(df, "Low", ys), "vol": _col(df, "Volume", ys),
+                                         "open": _col(df, "Open", ys), "high": _col(df, "High", ys)}
+        time.sleep(SLEEP)
+    print("chart extra: %d of %d chart-only tickers priced" % (len(res), len(need)), flush=True)
+    return res
 
 
 def chart_block(got, out, now=None):
@@ -620,7 +654,12 @@ def main():
         json.dump(out, f, separators=(",", ":"))
     os.replace(tmp, OUT)
     try:                                         # 2026-10-12: the chart page's daily candles; never blocks the tail
-        ch = chart_block(got, out)
+        gch = dict(got)
+        try:                                     # 2026-10-23: the chart-only tickers join the chart tail, not the daily tail
+            gch.update(chart_extra(got))
+        except Exception as e:
+            print("chart extra FAILED (the chart tail goes ahead without them): %s" % e, flush=True)
+        ch = chart_block(gch, out)
         with open(CHART_OUT + ".tmp", "w") as f:
             json.dump(ch, f, separators=(",", ":"))
         os.replace(CHART_OUT + ".tmp", CHART_OUT)

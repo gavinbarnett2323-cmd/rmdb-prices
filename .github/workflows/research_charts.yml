@@ -1,0 +1,36 @@
+# Research data job (2026-10-23): full daily history for the chart-only tickers in relay/chart_extra.txt, so the vault's
+# Charts page can store them (Investing/Charts/add_tickers.py). Runs when the list, the script or this file changes, or by
+# hand. Never scheduled. Writes relay/research/charts_history.json.gz.
+name: research-charts
+on:
+  workflow_dispatch: {}
+  push:
+    paths:
+      - "relay/research_charts.py"
+      - "relay/chart_extra.txt"
+      - ".github/workflows/research_charts.yml"
+permissions:
+  contents: write
+concurrency:
+  group: research-charts
+  cancel-in-progress: false
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Fetch chart history (yfinance, no key)
+        run: |
+          pip install --quiet yfinance pandas numpy
+          python3 relay/research_charts.py
+      - name: Commit the history
+        run: |
+          git config user.name  "research-charts-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add relay/research/charts_history.json.gz
+          git diff --staged --quiet && echo "nothing to commit" && exit 0
+          git commit -m "research charts $(date -u +%F\ %H:%M)"
+          for i in 1 2 3 4 5; do git pull --rebase --autostash origin main && git push && break || sleep 5; done

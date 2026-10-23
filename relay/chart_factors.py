@@ -18,6 +18,9 @@ YH = {"BRKB": "BRK-B", "HEIA": "HEI-A", "RBKB": "RBKB"}
 
 def main():
     names = [l.strip() for l in open(os.path.join(HERE, "chart_tickers.txt")) if l.strip() and not l.startswith("#")]
+    ex = os.path.join(HERE, "chart_extra.txt")          # 2026-10-23: the chart-only tickers get factors too
+    if os.path.exists(ex):
+        names += [t for t in dict.fromkeys(l.strip().upper() for l in open(ex) if l.strip() and not l.startswith("#")) if t not in names]
     out, gaps = {}, []
     for k in range(0, len(names), 40):
         chunk = names[k:k + 40]; ys = [YH.get(t, t) for t in chunk]
