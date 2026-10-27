@@ -8,7 +8,7 @@ runner (the vault and Claude's sandbox cannot reach Yahoo). Writes relay/researc
   {"built": iso, "symbols": {sym: {"name", "first", "last", "n", "d": [YYYY-MM-DD...], "o","h","l","c","ac","v": [...]}},
    "errors": {sym: msg}}
 c = raw close (split-adjusted only), ac = dividend-adjusted close (total return). Public prices only: nothing about the
-script, the book or any account. 2026-10-14: symbols extended for the ETF strength-rework study (Gavin: "completely rework it"). Triggered by a push of this file or by hand (workflow research-assets); never scheduled."""
+script, the book or any account. 2026-10-14: symbols extended for the ETF strength-rework study (Gavin: "completely rework it"). 2026-10-27: inverse and cash funds added for the hedge study. Triggered by a push of this file or by hand (workflow research-assets); never scheduled."""
 import datetime, gzip, json, math, os, sys, time
 
 import pandas as pd
@@ -45,6 +45,9 @@ SYMBOLS = {
     "XHB": "Homebuilders", "IYT": "Transports", "XRT": "Retail", "MTUM": "Momentum factor", "USMV": "Min vol factor",
     # reference
     "SPY": "S&P 500 ETF", "QQQ": "Nasdaq 100 ETF", "IWM": "Russell 2000 ETF",
+    # 2026-10-27 hedge study (Top Hunter round 4): inverse index funds and cash funds, to check a synthetic inverse fund
+    "SH": "Short S&P 500 (-1x daily)", "SDS": "UltraShort S&P 500 (-2x daily)", "PSQ": "Short QQQ (-1x daily)",
+    "MINT": "PIMCO Enhanced Short Maturity", "BIL": "1-3 month T-bills",
 }
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "research", "assets_history.json.gz")
 
