@@ -1,12 +1,10 @@
 {
- "generated_at": "2026-10-24 05:33 UTC",
+ "generated_at": "2026-10-31 06:48 UTC",
  "period": "12y",
- "n_tickers": 1209,
+ "n_tickers": 1214,
  "gaps": [
   "AVB",
   "BLD",
-  "BLSM",
-  "BRVE",
   "CRNX",
   "EA",
   "EDAP",
@@ -173,16 +171,17 @@
     "BKR",
     "BLDR",
     "BLK",
-    "BLX"
+    "BLSM"
    ],
-   "rows": 385337,
-   "bytes": 7138122,
-   "first_date": "2014-10-24",
-   "last_date": "2026-10-23"
+   "rows": 382585,
+   "bytes": 7095250,
+   "first_date": "2014-10-31",
+   "last_date": "2026-10-30"
   },
   {
    "file": "bars_01.parquet",
    "tickers": [
+    "BLX",
     "BMRN",
     "BMY",
     "BNY",
@@ -195,6 +194,7 @@
     "BRKR",
     "BRO",
     "BROS",
+    "BRVE",
     "BRX",
     "BSOL",
     "BSX",
@@ -222,6 +222,7 @@
     "CB",
     "CBOE",
     "CBRE",
+    "CBRS",
     "CBSH",
     "CBZ",
     "CCB",
@@ -329,19 +330,19 @@
     "DBX",
     "DCI",
     "DD",
-    "DDOG",
-    "DDS",
-    "DE",
-    "DECK"
+    "DDOG"
    ],
-   "rows": 397301,
-   "bytes": 7822051,
-   "first_date": "2014-10-24",
-   "last_date": "2026-10-24"
+   "rows": 391626,
+   "bytes": 7675267,
+   "first_date": "2014-10-31",
+   "last_date": "2026-10-31"
   },
   {
    "file": "bars_02.parquet",
    "tickers": [
+    "DDS",
+    "DE",
+    "DECK",
     "DELL",
     "DFDV",
     "DG",
@@ -427,6 +428,8 @@
     "EVTC",
     "EW",
     "EWBC",
+    "EWT",
+    "EWY",
     "EXC",
     "EXE",
     "EXEL",
@@ -486,21 +489,21 @@
     "FWDI",
     "FWONK",
     "FWRD",
-    "G",
-    "GAP",
-    "GBFH",
-    "GD",
-    "GDDY",
-    "GE"
+    "G"
    ],
-   "rows": 401402,
-   "bytes": 7750134,
-   "first_date": "2014-10-24",
-   "last_date": "2026-10-24"
+   "rows": 404142,
+   "bytes": 7803024,
+   "first_date": "2014-10-31",
+   "last_date": "2026-10-31"
   },
   {
    "file": "bars_03.parquet",
    "tickers": [
+    "GAP",
+    "GBFH",
+    "GD",
+    "GDDY",
+    "GE",
     "GEHC",
     "GEN",
     "GEV",
@@ -645,21 +648,21 @@
     "KMX",
     "KNSL",
     "KNX",
-    "KO",
-    "KR",
-    "KRC",
-    "KRE",
-    "KRMN",
-    "KTOS"
+    "KO"
    ],
-   "rows": 407413,
-   "bytes": 7758098,
-   "first_date": "2014-10-24",
-   "last_date": "2026-10-23"
+   "rows": 407632,
+   "bytes": 7799151,
+   "first_date": "2014-10-31",
+   "last_date": "2026-10-30"
   },
   {
    "file": "bars_04.parquet",
    "tickers": [
+    "KR",
+    "KRC",
+    "KRE",
+    "KRMN",
+    "KTOS",
     "KVUE",
     "L",
     "LAD",
@@ -804,21 +807,21 @@
     "NPB",
     "NRG",
     "NSC",
-    "NTAP",
-    "NTNX",
-    "NTR",
-    "NTRA",
-    "NTRS",
-    "NU"
+    "NTAP"
    ],
-   "rows": 403927,
-   "bytes": 7864135,
-   "first_date": "2014-10-24",
-   "last_date": "2026-10-23"
+   "rows": 404740,
+   "bytes": 7898660,
+   "first_date": "2014-10-31",
+   "last_date": "2026-10-30"
   },
   {
    "file": "bars_05.parquet",
    "tickers": [
+    "NTNX",
+    "NTR",
+    "NTRA",
+    "NTRS",
+    "NU",
     "NUE",
     "NVCR",
     "NVDA",
@@ -963,21 +966,21 @@
     "RH",
     "RHI",
     "RHLD",
-    "RITM",
-    "RIVN",
-    "RJF",
-    "RKLB",
-    "RKT",
-    "RL"
+    "RITM"
    ],
-   "rows": 387724,
-   "bytes": 6995964,
-   "first_date": "2014-10-24",
-   "last_date": "2026-10-23"
+   "rows": 389476,
+   "bytes": 6982759,
+   "first_date": "2014-10-31",
+   "last_date": "2026-10-30"
   },
   {
    "file": "bars_06.parquet",
    "tickers": [
+    "RIVN",
+    "RJF",
+    "RKLB",
+    "RKT",
+    "RL",
     "RLI",
     "RMD",
     "RNG",
@@ -1122,21 +1125,21 @@
     "TREX",
     "TRGP",
     "TRMB",
-    "TROW",
-    "TRU",
-    "TRV",
-    "TSCO",
-    "TSEM",
-    "TSLA"
+    "TROW"
    ],
-   "rows": 385631,
-   "bytes": 7314399,
-   "first_date": "2014-10-24",
-   "last_date": "2026-10-24"
+   "rows": 381244,
+   "bytes": 7205864,
+   "first_date": "2014-10-31",
+   "last_date": "2026-10-31"
   },
   {
    "file": "bars_07.parquet",
    "tickers": [
+    "TRU",
+    "TRV",
+    "TSCO",
+    "TSEM",
+    "TSLA",
     "TSM",
     "TSN",
     "TT",
@@ -1281,21 +1284,21 @@
     "ZBH",
     "ZBRA",
     "ZG",
-    "ZION",
-    "ZM",
-    "ZS",
-    "ZTS",
-    "^DJI",
-    "^FVX"
+    "ZION"
    ],
-   "rows": 417638,
-   "bytes": 7741587,
-   "first_date": "2014-10-23",
-   "last_date": "2026-10-23"
+   "rows": 419621,
+   "bytes": 7777069,
+   "first_date": "2014-10-31",
+   "last_date": "2026-10-30"
   },
   {
    "file": "bars_08.parquet",
    "tickers": [
+    "ZM",
+    "ZS",
+    "ZTS",
+    "^DJI",
+    "^FVX",
     "^GSPC",
     "^IRX",
     "^NDX",
@@ -1306,10 +1309,10 @@
     "^VIX3M",
     "^VVIX"
    ],
-   "rows": 27148,
-   "bytes": 627731,
-   "first_date": "2014-10-23",
-   "last_date": "2026-10-23"
+   "rows": 40263,
+   "bytes": 973514,
+   "first_date": "2014-10-30",
+   "last_date": "2026-10-30"
   }
  ],
  "fields": [
@@ -1323,6 +1326,6 @@
   "volume"
  ],
  "adjustment": "adj_close = dividends+splits adjusted (yfinance auto_adjust=False); open/high/low/close are split-adjusted raw prints",
- "rows": 3213521,
+ "rows": 3221329,
  "macro": "see fetch_fred.py / macro_manifest.json (decoupled 2026-09-16)"
 }
